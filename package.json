@@ -1,0 +1,31 @@
+{
+  "name": "effectlab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EffectLab MVP: effect template catalog, async render jobs, credits ledger, mock video provider, Stripe stub.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --import tsx --test tests/*.ts",
+    "import:templates": "tsx scripts/import-templates.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "^15.5.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

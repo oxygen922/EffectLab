@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+.env
+.env.local
+data/runtime.json
+data/runtime.json.tmp
+data/uploads
+tsconfig.tsbuildinfo
+next-env.d.ts

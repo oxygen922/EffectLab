@@ -1,0 +1,65 @@
+{
+  "_comment": "Manual merchandising reapplied by npm run import:templates. Do not paste competitor prompts, poster URLs, or sample video URLs.",
+  "tiny-desk": {
+    "featured": true,
+    "credit_cost": 2,
+    "blurb": "Five-photo desk performance card. Upload the full portrait set before generating."
+  },
+  "kung-fu-cat": {
+    "featured": true,
+    "category": "pet",
+    "blurb": "Single-pet action card. One clear animal photo."
+  },
+  "ozil-goal": {
+    "featured": true,
+    "blurb": "Single-photo pitch celebration card."
+  },
+  "birds-of-a-feather": {
+    "featured": true,
+    "tags_add": ["music"],
+    "blurb": "Single-photo music-trend card."
+  },
+  "ceiling-fan-elevator-outfits": {
+    "featured": true,
+    "category": "transform",
+    "blurb": "Single-photo outfit-change card tracked across fan and elevator listings."
+  },
+  "cardo-dinner": {
+    "featured": true,
+    "credit_cost": 2,
+    "category": "car",
+    "blurb": "Two-photo dinner bit. Upload both stills before generating."
+  },
+  "phone-on-the-train": {
+    "featured": true,
+    "blurb": "Single-photo commute card."
+  },
+  "closing-door-prank": {
+    "featured": true,
+    "credit_cost": 2,
+    "category": "meme",
+    "blurb": "Two-photo doorway prank card."
+  },
+  "flamingo-float": {
+    "featured": true,
+    "name": "Flamingo Float",
+    "blurb": "Single-photo pool-float card from the latest radar pass."
+  },
+  "dog-bartender": {
+    "featured": true,
+    "category": "pet",
+    "blurb": "Single-pet bar portrait."
+  },
+  "studio-slate": {
+    "origin": "manual",
+    "name": "Studio Slate",
+    "featured": false,
+    "photo_count": 1,
+    "duration_sec": 5,
+    "category": "lab",
+    "tags": ["original"],
+    "priority": 1,
+    "credit_cost": 1,
+    "blurb": "EffectLab-original slate for trying the upload flow. It does not come from the radar."
+  }
+}

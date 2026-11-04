@@ -1,0 +1,4532 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-04T06:04:20.953Z",
+  "source": "template-radar/latest/templates.json",
+  "source_scraped_at": "2026-11-04T12:30:00+08:00",
+  "template_count": 192,
+  "note": "Metadata only. No competitor preview files or proprietary generation text.",
+  "templates": [
+    {
+      "id": "first-time-in-a-fancy-cafe",
+      "name": "First Time in a Fancy Cafe",
+      "slug": "first-time-in-a-fancy-cafe",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-03",
+      "cross_count": 5,
+      "priority": 18,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/first-time-in-a-fancy-cafe"
+    },
+    {
+      "id": "bicep-heart",
+      "name": "Bicep Heart",
+      "slug": "bicep-heart",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 7,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bicep-heart"
+    },
+    {
+      "id": "car-alarm",
+      "name": "Car Alarm Dance",
+      "slug": "car-alarm",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 12,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-31",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/car-alarm"
+    },
+    {
+      "id": "cardo-dinner",
+      "name": "Cardo Dinner",
+      "slug": "cardo-dinner",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-31",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 2,
+      "blurb": "Two-photo dinner bit. Upload both stills before generating.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/cardo-dinner"
+    },
+    {
+      "id": "chipmunks",
+      "name": "Chipmunks Dance",
+      "slug": "chipmunks",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 3,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-01",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/chipmunks"
+    },
+    {
+      "id": "dog-bartender",
+      "name": "Dog Bartender",
+      "slug": "dog-bartender",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 29,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-31",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 1,
+      "blurb": "Single-pet bar portrait.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/dog-bartender"
+    },
+    {
+      "id": "jisoo-addicted",
+      "name": "Jisoo Addicted Dance",
+      "slug": "jisoo-addicted",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/jisoo-addicted"
+    },
+    {
+      "id": "mabel-matiz-umrumdisi",
+      "name": "Mabel Matiz Umrumdışı",
+      "slug": "mabel-matiz-umrumdisi",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 14,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 5,
+      "priority": 13,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/mabel-matiz-umrumdisi"
+    },
+    {
+      "id": "bye-bye",
+      "name": "Bye Bye Trend",
+      "slug": "bye-bye",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 11,
+      "tags": [
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-30",
+      "cross_count": 4,
+      "priority": 12,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bye-bye"
+    },
+    {
+      "id": "cats-making-coffee",
+      "name": "Cats Making Coffee",
+      "slug": "cats-making-coffee",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark"
+      ],
+      "photo_count": 2,
+      "duration_sec": 17,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-30",
+      "cross_count": 4,
+      "priority": 12,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/cats-making-coffee"
+    },
+    {
+      "id": "coffee-making",
+      "name": "Coffee Making",
+      "slug": "coffee-making",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-31",
+      "cross_count": 4,
+      "priority": 12,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/coffee-making"
+    },
+    {
+      "id": "phone-on-the-train",
+      "name": "Phone on the Train",
+      "slug": "phone-on-the-train",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 22,
+      "tags": [
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-30",
+      "cross_count": 4,
+      "priority": 12,
+      "credit_cost": 1,
+      "blurb": "Single-photo commute card.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/phone-on-the-train"
+    },
+    {
+      "id": "pick-it-up",
+      "name": "Pick It Up Dance",
+      "slug": "pick-it-up",
+      "sites": [
+        "jumponthetrend",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 13,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 4,
+      "priority": 12,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pick-it-up"
+    },
+    {
+      "id": "shaking-head",
+      "name": "Shaking Head",
+      "slug": "shaking-head",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 8,
+      "tags": [
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-29",
+      "cross_count": 4,
+      "priority": 12,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/shaking-head"
+    },
+    {
+      "id": "birds-of-a-feather",
+      "name": "Birds of a Feather",
+      "slug": "birds-of-a-feather",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [
+        "music",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-27",
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": "Single-photo music-trend card.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/birds-of-a-feather"
+    },
+    {
+      "id": "birds-of-a-feather-chair",
+      "name": "Birds of a Feather Chair",
+      "slug": "birds-of-a-feather-chair",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/birds-of-a-feather-chair"
+    },
+    {
+      "id": "birds-of-a-feather-chair-spin",
+      "name": "Birds of a Feather Chair Spin",
+      "slug": "birds-of-a-feather-chair-spin",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/birds-of-a-feather-chair-spin"
+    },
+    {
+      "id": "ceiling-fan",
+      "name": "Ceiling Fan",
+      "slug": "ceiling-fan",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 13,
+      "tags": [],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/ceiling-fan"
+    },
+    {
+      "id": "ceiling-fan-elevator-outfits",
+      "name": "Ceiling Fan / Elevator Outfits",
+      "slug": "ceiling-fan-elevator-outfits",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 14,
+      "tags": [],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-21",
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": "Single-photo outfit-change card tracked across fan and elevator listings.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/ceiling-fan-elevator-outfits"
+    },
+    {
+      "id": "ceiling-fan-outfit-change",
+      "name": "Ceiling Fan Outfit Change",
+      "slug": "ceiling-fan-outfit-change",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/ceiling-fan-outfit-change"
+    },
+    {
+      "id": "ceiling-fan-transition",
+      "name": "Ceiling Fan Transition",
+      "slug": "ceiling-fan-transition",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/ceiling-fan-transition"
+    },
+    {
+      "id": "halloween-ceiling-fan",
+      "name": "Halloween Ceiling Fan",
+      "slug": "halloween-ceiling-fan",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/halloween-ceiling-fan"
+    },
+    {
+      "id": "kung-fu-cat",
+      "name": "Kung Fu Cat",
+      "slug": "kung-fu-cat",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-24",
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": "Single-pet action card. One clear animal photo.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/kung-fu-cat"
+    },
+    {
+      "id": "outstanding-tiny-desk",
+      "name": "Outstanding (Tiny Desk)",
+      "slug": "outstanding-tiny-desk",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 5,
+      "duration_sec": 10,
+      "tags": [
+        "music"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/outstanding-tiny-desk"
+    },
+    {
+      "id": "ozil-goal",
+      "name": "Ozil Goal",
+      "slug": "ozil-goal",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-21",
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 1,
+      "blurb": "Single-photo pitch celebration card.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/ozil-goal"
+    },
+    {
+      "id": "tiny-desk",
+      "name": "Tiny Desk",
+      "slug": "tiny-desk",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 5,
+      "duration_sec": 15,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-27",
+      "cross_count": 6,
+      "priority": 11,
+      "credit_cost": 2,
+      "blurb": "Five-photo desk performance card. Upload the full portrait set before generating.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/tiny-desk"
+    },
+    {
+      "id": "closing-door-prank",
+      "name": "Closing Door Prank",
+      "slug": "closing-door-prank",
+      "sites": [
+        "jumponthetrend",
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 13,
+      "tags": [],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-04",
+      "cross_count": 3,
+      "priority": 11,
+      "credit_cost": 2,
+      "blurb": "Two-photo doorway prank card.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/closing-door-prank"
+    },
+    {
+      "id": "bad-times",
+      "name": "Bad Times Trend",
+      "slug": "bad-times",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-21",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bad-times"
+    },
+    {
+      "id": "cardo-your-dinner-is-ready",
+      "name": "Cardo, Your Dinner Is Ready",
+      "slug": "cardo-your-dinner-is-ready",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [
+        "viral"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/cardo-your-dinner-is-ready"
+    },
+    {
+      "id": "choosin-texas-emo",
+      "name": "Choosin' Texas Emo",
+      "slug": "choosin-texas-emo",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-26",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/choosin-texas-emo"
+    },
+    {
+      "id": "choosin-texas-remix-emo-version",
+      "name": "Choosin' Texas Remix Emo Version",
+      "slug": "choosin-texas-remix-emo-version",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/choosin-texas-remix-emo-version"
+    },
+    {
+      "id": "first-time-fancy-cafe",
+      "name": "First Time Fancy Cafe",
+      "slug": "first-time-fancy-cafe",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/first-time-fancy-cafe"
+    },
+    {
+      "id": "hop-hop-hop",
+      "name": "Hop Hop Hop Dance",
+      "slug": "hop-hop-hop",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 8,
+      "tags": [
+        "weekly"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-28",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hop-hop-hop"
+    },
+    {
+      "id": "hotel-lobby",
+      "name": "Hotel Lobby",
+      "slug": "hotel-lobby",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "rap",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hotel-lobby"
+    },
+    {
+      "id": "hotel-lobby-rap-duo",
+      "name": "Hotel Lobby Rap Duo",
+      "slug": "hotel-lobby-rap-duo",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "rap",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-24",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hotel-lobby-rap-duo"
+    },
+    {
+      "id": "puerto-rican-mami",
+      "name": "Puerto Rican Mami Dance",
+      "slug": "puerto-rican-mami",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-26",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/puerto-rican-mami"
+    },
+    {
+      "id": "skull-cap",
+      "name": "Skull Cap Trend",
+      "slug": "skull-cap",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 11,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-27",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/skull-cap"
+    },
+    {
+      "id": "toosie-slide",
+      "name": "Toosie Slide",
+      "slug": "toosie-slide",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 14,
+      "tags": [
+        "dance",
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/toosie-slide"
+    },
+    {
+      "id": "toy-car-to-real-car",
+      "name": "Toy Car to Real Car",
+      "slug": "toy-car-to-real-car",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "vidlark",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-21",
+      "cross_count": 5,
+      "priority": 10,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/toy-car-to-real-car"
+    },
+    {
+      "id": "58th-floor",
+      "name": "58th Floor",
+      "slug": "58th-floor",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "music",
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/58th-floor"
+    },
+    {
+      "id": "bottle-kick",
+      "name": "Bottle Kick",
+      "slug": "bottle-kick",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bottle-kick"
+    },
+    {
+      "id": "bottle-kick-challenge",
+      "name": "Bottle Kick Challenge",
+      "slug": "bottle-kick-challenge",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "starrd",
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bottle-kick-challenge"
+    },
+    {
+      "id": "bye-bye-outfit-change",
+      "name": "Bye Bye Outfit Change",
+      "slug": "bye-bye-outfit-change",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bye-bye-outfit-change"
+    },
+    {
+      "id": "end-of-watch",
+      "name": "End of Watch",
+      "slug": "end-of-watch",
+      "sites": [
+        "jumponthetrend",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 11,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/end-of-watch"
+    },
+    {
+      "id": "end-of-watch-locker",
+      "name": "End of Watch Locker",
+      "slug": "end-of-watch-locker",
+      "sites": [
+        "jumponthetrend",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/end-of-watch-locker"
+    },
+    {
+      "id": "end-of-watch-locker-scene",
+      "name": "End of Watch Locker Scene",
+      "slug": "end-of-watch-locker-scene",
+      "sites": [
+        "jumponthetrend",
+        "starrd",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 12,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/end-of-watch-locker-scene"
+    },
+    {
+      "id": "grease",
+      "name": "Grease Dance",
+      "slug": "grease",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-25",
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/grease"
+    },
+    {
+      "id": "hit-the-road-dude",
+      "name": "Hit the Road Dude",
+      "slug": "hit-the-road-dude",
+      "sites": [
+        "makeviral",
+        "starrd",
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 11,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-21",
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hit-the-road-dude"
+    },
+    {
+      "id": "phone-on-train",
+      "name": "Phone on Train Trend",
+      "slug": "phone-on-train",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/phone-on-train"
+    },
+    {
+      "id": "pick-it-up-make-it-jump",
+      "name": "Pick It Up Make It Jump Dance",
+      "slug": "pick-it-up-make-it-jump",
+      "sites": [
+        "jumponthetrend",
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 13,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pick-it-up-make-it-jump"
+    },
+    {
+      "id": "shaving-cream",
+      "name": "Shaving Cream Trend",
+      "slug": "shaving-cream",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 7,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-26",
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/shaving-cream"
+    },
+    {
+      "id": "strike-a-pole",
+      "name": "Strike a Pole",
+      "slug": "strike-a-pole",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/strike-a-pole"
+    },
+    {
+      "id": "wassup-in-a-minute",
+      "name": "Wassup in a Minute",
+      "slug": "wassup-in-a-minute",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 4,
+      "duration_sec": 10,
+      "tags": [
+        "new",
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-26",
+      "cross_count": 4,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/wassup-in-a-minute"
+    },
+    {
+      "id": "flamingo-float",
+      "name": "Flamingo Float",
+      "slug": "flamingo-float",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 12,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-04",
+      "cross_count": 1,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": "Single-photo pool-float card from the latest radar pass.",
+      "featured": true,
+      "origin": "radar",
+      "cover": "/covers/flamingo-float"
+    },
+    {
+      "id": "giant-ramp-climbing",
+      "name": "Giant Ramp Climbing",
+      "slug": "giant-ramp-climbing",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-03",
+      "cross_count": 1,
+      "priority": 9,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/giant-ramp-climbing"
+    },
+    {
+      "id": "just-a-lil-bit",
+      "name": "Just a Lil Bit Dance",
+      "slug": "just-a-lil-bit",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vellm"
+      ],
+      "photo_count": 3,
+      "duration_sec": 26,
+      "tags": [
+        "weekly"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-29",
+      "cross_count": 3,
+      "priority": 6,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/just-a-lil-bit"
+    },
+    {
+      "id": "lisa-tarantino",
+      "name": "LISA Tarantino Dance",
+      "slug": "lisa-tarantino",
+      "sites": [
+        "vellm",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-01",
+      "cross_count": 3,
+      "priority": 6,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/lisa-tarantino"
+    },
+    {
+      "id": "transmission-5",
+      "name": "Transmission 5 Dance",
+      "slug": "transmission-5",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "vidlark"
+      ],
+      "photo_count": 2,
+      "duration_sec": 14,
+      "tags": [
+        "weekly"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-29",
+      "cross_count": 3,
+      "priority": 6,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/transmission-5"
+    },
+    {
+      "id": "bing-bing-bing-kicks",
+      "name": "Bing Bing Bing Kicks",
+      "slug": "bing-bing-bing-kicks",
+      "sites": [
+        "jumponthetrend",
+        "vellm"
+      ],
+      "photo_count": 2,
+      "duration_sec": 12,
+      "tags": [
+        "weekly"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-29",
+      "cross_count": 2,
+      "priority": 5,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bing-bing-bing-kicks"
+    },
+    {
+      "id": "christmas-dances-this-year",
+      "name": "Christmas Dances This Year",
+      "slug": "christmas-dances-this-year",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 17,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 1,
+      "priority": 4,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/christmas-dances-this-year"
+    },
+    {
+      "id": "christmas-tree-dog",
+      "name": "Christmas Tree Dog",
+      "slug": "christmas-tree-dog",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 1,
+      "priority": 4,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/christmas-tree-dog"
+    },
+    {
+      "id": "it-s-my-life-dog",
+      "name": "It's My Life Dog",
+      "slug": "it-s-my-life-dog",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-01",
+      "cross_count": 1,
+      "priority": 4,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/it-s-my-life-dog"
+    },
+    {
+      "id": "mickey-d-s",
+      "name": "Mickey D's Dance",
+      "slug": "mickey-d-s",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 2,
+      "duration_sec": 9,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-01",
+      "cross_count": 1,
+      "priority": 4,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/mickey-d-s"
+    },
+    {
+      "id": "reindeer-dog",
+      "name": "Reindeer Dog",
+      "slug": "reindeer-dog",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-02",
+      "cross_count": 1,
+      "priority": 4,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/reindeer-dog"
+    },
+    {
+      "id": "talk-dirty",
+      "name": "Talk Dirty Dance",
+      "slug": "talk-dirty",
+      "sites": [
+        "vellm"
+      ],
+      "photo_count": 1,
+      "duration_sec": 13,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-11-01",
+      "cross_count": 1,
+      "priority": 4,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/talk-dirty"
+    },
+    {
+      "id": "24k-magic",
+      "name": "24K Magic",
+      "slug": "24k-magic",
+      "sites": [
+        "jumponthetrend",
+        "starrd",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 14,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/24k-magic"
+    },
+    {
+      "id": "24k-magic-cruise",
+      "name": "24K Magic Cruise",
+      "slug": "24k-magic-cruise",
+      "sites": [
+        "jumponthetrend",
+        "starrd",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 30,
+      "tags": [
+        "dance",
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/24k-magic-cruise"
+    },
+    {
+      "id": "cat-story",
+      "name": "AI Cat Story",
+      "slug": "cat-story",
+      "sites": [
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 12,
+      "tags": [
+        "new"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/cat-story"
+    },
+    {
+      "id": "alors-on-danse",
+      "name": "Alors On Danse",
+      "slug": "alors-on-danse",
+      "sites": [
+        "makeviral",
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 11,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/alors-on-danse"
+    },
+    {
+      "id": "bby-wow-guy",
+      "name": "Bby Wow Guy",
+      "slug": "bby-wow-guy",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bby-wow-guy"
+    },
+    {
+      "id": "cat-middle-finger",
+      "name": "Cat Middle Finger",
+      "slug": "cat-middle-finger",
+      "sites": [
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 6,
+      "tags": [
+        "new"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/cat-middle-finger"
+    },
+    {
+      "id": "dog-crew",
+      "name": "Dog Dance Crew",
+      "slug": "dog-crew",
+      "sites": [
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/dog-crew"
+    },
+    {
+      "id": "halloween-makeup",
+      "name": "Halloween Makeup Filter",
+      "slug": "halloween-makeup",
+      "sites": [
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/halloween-makeup"
+    },
+    {
+      "id": "mi-chico",
+      "name": "Mi Chico Dance",
+      "slug": "mi-chico",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 13,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/mi-chico"
+    },
+    {
+      "id": "pumpkin-kick",
+      "name": "Pumpkin Kick",
+      "slug": "pumpkin-kick",
+      "sites": [
+        "makeviral",
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pumpkin-kick"
+    },
+    {
+      "id": "rumpelstiltskin",
+      "name": "Rumpelstiltskin Dance",
+      "slug": "rumpelstiltskin",
+      "sites": [
+        "makeviral",
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/rumpelstiltskin"
+    },
+    {
+      "id": "stateside",
+      "name": "Stateside Dance",
+      "slug": "stateside",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/stateside"
+    },
+    {
+      "id": "thriller",
+      "name": "Thriller Dance",
+      "slug": "thriller",
+      "sites": [
+        "jumponthetrend",
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 20,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-28",
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/thriller"
+    },
+    {
+      "id": "tiptoeing-in-my-jordans",
+      "name": "Tiptoeing In My Jordans",
+      "slug": "tiptoeing-in-my-jordans",
+      "sites": [
+        "makeviral",
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/tiptoeing-in-my-jordans"
+    },
+    {
+      "id": "trouble-maker",
+      "name": "Trouble Maker Dance",
+      "slug": "trouble-maker",
+      "sites": [
+        "jumponthetrend",
+        "makeviral",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 3,
+      "priority": 3,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/trouble-maker"
+    },
+    {
+      "id": "angel-or-devil",
+      "name": "Angel or Devil Filter",
+      "slug": "angel-or-devil",
+      "sites": [
+        "jumponthetrend",
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/angel-or-devil"
+    },
+    {
+      "id": "bing-bing-bing-kicking",
+      "name": "Bing Bing Bing Kicking",
+      "slug": "bing-bing-bing-kicking",
+      "sites": [
+        "jumponthetrend",
+        "vellm"
+      ],
+      "photo_count": 2,
+      "duration_sec": 12,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-28",
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bing-bing-bing-kicking"
+    },
+    {
+      "id": "burning-bridges",
+      "name": "Burning Bridges",
+      "slug": "burning-bridges",
+      "sites": [
+        "makeviral",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/burning-bridges"
+    },
+    {
+      "id": "deep-down-in-my-heart",
+      "name": "Deep Down In My Heart",
+      "slug": "deep-down-in-my-heart",
+      "sites": [
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/deep-down-in-my-heart"
+    },
+    {
+      "id": "deep-down-in-my-heart-duo",
+      "name": "Deep Down In My Heart Duo",
+      "slug": "deep-down-in-my-heart-duo",
+      "sites": [
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/deep-down-in-my-heart-duo"
+    },
+    {
+      "id": "electric-shock-pet-prank",
+      "name": "Electric Shock Pet Prank",
+      "slug": "electric-shock-pet-prank",
+      "sites": [
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/electric-shock-pet-prank"
+    },
+    {
+      "id": "electric-shock-prank",
+      "name": "Electric Shock Prank",
+      "slug": "electric-shock-prank",
+      "sites": [
+        "vellm",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 12,
+      "tags": [],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": "2026-10-21",
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/electric-shock-prank"
+    },
+    {
+      "id": "gas-station",
+      "name": "Gas Station Dance",
+      "slug": "gas-station",
+      "sites": [
+        "jumponthetrend",
+        "makeviral"
+      ],
+      "photo_count": 3,
+      "duration_sec": 13,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/gas-station"
+    },
+    {
+      "id": "monkey-eating-apple",
+      "name": "Monkey Eating Apple",
+      "slug": "monkey-eating-apple",
+      "sites": [
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 8,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/monkey-eating-apple"
+    },
+    {
+      "id": "mr-and-mrs-stretchy",
+      "name": "Mr and Mrs Stretchy",
+      "slug": "mr-and-mrs-stretchy",
+      "sites": [
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 6,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/mr-and-mrs-stretchy"
+    },
+    {
+      "id": "ramalama-costume-walk",
+      "name": "Ramalama Costume Walk",
+      "slug": "ramalama-costume-walk",
+      "sites": [
+        "jumponthetrend",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/ramalama-costume-walk"
+    },
+    {
+      "id": "roadster-ramp",
+      "name": "Roadster Ramp",
+      "slug": "roadster-ramp",
+      "sites": [
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "car"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/roadster-ramp"
+    },
+    {
+      "id": "roadster-ramp-flip",
+      "name": "Roadster Ramp Flip",
+      "slug": "roadster-ramp-flip",
+      "sites": [
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/roadster-ramp-flip"
+    },
+    {
+      "id": "sidewalk-collision",
+      "name": "Sidewalk Collision",
+      "slug": "sidewalk-collision",
+      "sites": [
+        "jumponthetrend",
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/sidewalk-collision"
+    },
+    {
+      "id": "skyfall",
+      "name": "Skyfall AI Trend",
+      "slug": "skyfall",
+      "sites": [
+        "vidlark",
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 5,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/skyfall"
+    },
+    {
+      "id": "zombie-love-story",
+      "name": "Zombie Love Story",
+      "slug": "zombie-love-story",
+      "sites": [
+        "starrd",
+        "zooop"
+      ],
+      "photo_count": 2,
+      "duration_sec": 24,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 2,
+      "priority": 2,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/zombie-love-story"
+    },
+    {
+      "id": "a2o-lite-neon",
+      "name": "A2O LITE NEON Dance",
+      "slug": "a2o-lite-neon",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/a2o-lite-neon"
+    },
+    {
+      "id": "animal-micro-drama",
+      "name": "AI Animal Micro-Drama",
+      "slug": "animal-micro-drama",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/animal-micro-drama"
+    },
+    {
+      "id": "cat-front-door-ring-band",
+      "name": "AI Cat Front Door / Ring Band",
+      "slug": "cat-front-door-ring-band",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/cat-front-door-ring-band"
+    },
+    {
+      "id": "couple-prank",
+      "name": "AI Couple Prank",
+      "slug": "couple-prank",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/couple-prank"
+    },
+    {
+      "id": "crying",
+      "name": "AI Crying",
+      "slug": "crying",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/crying"
+    },
+    {
+      "id": "elf-yourself",
+      "name": "AI Elf Yourself",
+      "slug": "elf-yourself",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "seasonal",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/elf-yourself"
+    },
+    {
+      "id": "face",
+      "name": "AI Face Dance",
+      "slug": "face",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/face"
+    },
+    {
+      "id": "face-swap",
+      "name": "AI Face Swap Video",
+      "slug": "face-swap",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 30,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/face-swap"
+    },
+    {
+      "id": "grammy-winner",
+      "name": "AI Grammy Winner",
+      "slug": "grammy-winner",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/grammy-winner"
+    },
+    {
+      "id": "hug-me",
+      "name": "AI Hug Me Filter",
+      "slug": "hug-me",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hug-me"
+    },
+    {
+      "id": "pet-dancing-dog",
+      "name": "AI Pet Dance / Dancing Dog",
+      "slug": "pet-dancing-dog",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-dancing-dog"
+    },
+    {
+      "id": "pet-interview",
+      "name": "AI Pet Interview",
+      "slug": "pet-interview",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-interview"
+    },
+    {
+      "id": "red-riding-hood",
+      "name": "AI Red Riding Hood",
+      "slug": "red-riding-hood",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/red-riding-hood"
+    },
+    {
+      "id": "snow",
+      "name": "AI Snow Video",
+      "slug": "snow",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "seasonal",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/snow"
+    },
+    {
+      "id": "talking-pet",
+      "name": "AI Talking Pet",
+      "slug": "talking-pet",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/talking-pet"
+    },
+    {
+      "id": "ali-g-driving-scene",
+      "name": "Ali G Driving Scene",
+      "slug": "ali-g-driving-scene",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/ali-g-driving-scene"
+    },
+    {
+      "id": "anitkabir",
+      "name": "Anıtkabir",
+      "slug": "anitkabir",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/anitkabir"
+    },
+    {
+      "id": "apt",
+      "name": "APT.",
+      "slug": "apt",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 2,
+      "duration_sec": 26,
+      "tags": [
+        "music"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/apt"
+    },
+    {
+      "id": "baby-reindeer-santa",
+      "name": "Baby Reindeer Santa",
+      "slug": "baby-reindeer-santa",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "seasonal",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/baby-reindeer-santa"
+    },
+    {
+      "id": "baby-with-mustache",
+      "name": "Baby With Mustache",
+      "slug": "baby-with-mustache",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/baby-with-mustache"
+    },
+    {
+      "id": "becane",
+      "name": "Bécane",
+      "slug": "becane",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/becane"
+    },
+    {
+      "id": "biker-birthday",
+      "name": "Biker Birthday",
+      "slug": "biker-birthday",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/biker-birthday"
+    },
+    {
+      "id": "birthday-car",
+      "name": "Birthday Car",
+      "slug": "birthday-car",
+      "sites": [
+        "makeviral"
+      ],
+      "photo_count": 1,
+      "duration_sec": 8,
+      "tags": [],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/birthday-car"
+    },
+    {
+      "id": "birthday-car-drift-blow-out-the-candles",
+      "name": "Birthday Car: Drift & Blow Out the Candles",
+      "slug": "birthday-car-drift-blow-out-the-candles",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/birthday-car-drift-blow-out-the-candles"
+    },
+    {
+      "id": "bulin-47",
+      "name": "Bulin 47",
+      "slug": "bulin-47",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/bulin-47"
+    },
+    {
+      "id": "burger-pet-window",
+      "name": "Burger Pet Window",
+      "slug": "burger-pet-window",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/burger-pet-window"
+    },
+    {
+      "id": "button-eye-doll-reveal",
+      "name": "Button Eye Doll Reveal",
+      "slug": "button-eye-doll-reveal",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/button-eye-doll-reveal"
+    },
+    {
+      "id": "c-walk",
+      "name": "C-Walk AI Dance",
+      "slug": "c-walk",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/c-walk"
+    },
+    {
+      "id": "calcanhar-2",
+      "name": "Calcanhar 2 Dance",
+      "slug": "calcanhar-2",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/calcanhar-2"
+    },
+    {
+      "id": "caught-dancing-at-the-window",
+      "name": "Caught Dancing at the Window",
+      "slug": "caught-dancing-at-the-window",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/caught-dancing-at-the-window"
+    },
+    {
+      "id": "christmas-car-lights",
+      "name": "Christmas Car Lights",
+      "slug": "christmas-car-lights",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/christmas-car-lights"
+    },
+    {
+      "id": "clapping-cat",
+      "name": "Clapping Cat",
+      "slug": "clapping-cat",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/clapping-cat"
+    },
+    {
+      "id": "closer",
+      "name": "Closer Dance",
+      "slug": "closer",
+      "sites": [
+        "makeviral"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/closer"
+    },
+    {
+      "id": "club-spotlight-couple",
+      "name": "Club Spotlight Couple",
+      "slug": "club-spotlight-couple",
+      "sites": [
+        "makeviral"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/club-spotlight-couple"
+    },
+    {
+      "id": "costume-reveal",
+      "name": "Costume Reveal",
+      "slug": "costume-reveal",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/costume-reveal"
+    },
+    {
+      "id": "crazy-frog",
+      "name": "Crazy Frog",
+      "slug": "crazy-frog",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/crazy-frog"
+    },
+    {
+      "id": "dame-hombro",
+      "name": "Dame Hombro",
+      "slug": "dame-hombro",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/dame-hombro"
+    },
+    {
+      "id": "darts-170-prank",
+      "name": "Darts 170 Prank",
+      "slug": "darts-170-prank",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/darts-170-prank"
+    },
+    {
+      "id": "deserve-rain-scene",
+      "name": "DESERVE Rain Scene",
+      "slug": "deserve-rain-scene",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/deserve-rain-scene"
+    },
+    {
+      "id": "drink-fly-bump",
+      "name": "Drink Fly Bump",
+      "slug": "drink-fly-bump",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/drink-fly-bump"
+    },
+    {
+      "id": "face-squish",
+      "name": "Face Squish",
+      "slug": "face-squish",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "asmr"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/face-squish"
+    },
+    {
+      "id": "flying-broom-getaway",
+      "name": "Flying Broom Getaway",
+      "slug": "flying-broom-getaway",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/flying-broom-getaway"
+    },
+    {
+      "id": "flying-tesla-roadster",
+      "name": "Flying Tesla Roadster",
+      "slug": "flying-tesla-roadster",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/flying-tesla-roadster"
+    },
+    {
+      "id": "funny-pet-selfie-fail",
+      "name": "Funny Pet Selfie Fail",
+      "slug": "funny-pet-selfie-fail",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/funny-pet-selfie-fail"
+    },
+    {
+      "id": "gang-gang",
+      "name": "Gang Gang Dance",
+      "slug": "gang-gang",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/gang-gang"
+    },
+    {
+      "id": "gangnam-style",
+      "name": "Gangnam Style Dance",
+      "slug": "gangnam-style",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/gangnam-style"
+    },
+    {
+      "id": "hair-dye",
+      "name": "Hair Dye Filter",
+      "slug": "hair-dye",
+      "sites": [
+        "jumponthetrend"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hair-dye"
+    },
+    {
+      "id": "hello-2027",
+      "name": "Hello 2027",
+      "slug": "hello-2027",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/hello-2027"
+    },
+    {
+      "id": "i-need-a-girl",
+      "name": "I Need A Girl Dance",
+      "slug": "i-need-a-girl",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 2,
+      "duration_sec": 15,
+      "tags": [
+        "dance"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/i-need-a-girl"
+    },
+    {
+      "id": "i-wanna-love-you",
+      "name": "I Wanna Love You",
+      "slug": "i-wanna-love-you",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "pet"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/i-wanna-love-you"
+    },
+    {
+      "id": "knight-cat",
+      "name": "Knight Cat",
+      "slug": "knight-cat",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/knight-cat"
+    },
+    {
+      "id": "kolpacino-car-scene",
+      "name": "Kolpaçino Car Scene",
+      "slug": "kolpacino-car-scene",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/kolpacino-car-scene"
+    },
+    {
+      "id": "laughing-fairy",
+      "name": "Laughing Fairy",
+      "slug": "laughing-fairy",
+      "sites": [
+        "jumponthetrend"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/laughing-fairy"
+    },
+    {
+      "id": "mafia-boss",
+      "name": "Mafia Boss Filter",
+      "slug": "mafia-boss",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/mafia-boss"
+    },
+    {
+      "id": "meet-my-older-self",
+      "name": "Meet My Older Self",
+      "slug": "meet-my-older-self",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/meet-my-older-self"
+    },
+    {
+      "id": "mirror",
+      "name": "Mirror Dance",
+      "slug": "mirror",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/mirror"
+    },
+    {
+      "id": "money-flex",
+      "name": "Money Flex",
+      "slug": "money-flex",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/money-flex"
+    },
+    {
+      "id": "my-prime-1v1-dunk",
+      "name": "My Prime 1v1 Dunk",
+      "slug": "my-prime-1v1-dunk",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/my-prime-1v1-dunk"
+    },
+    {
+      "id": "nightwing",
+      "name": "Nightwing AI Trend",
+      "slug": "nightwing",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/nightwing"
+    },
+    {
+      "id": "parrot",
+      "name": "Parrot Dance",
+      "slug": "parrot",
+      "sites": [
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/parrot"
+    },
+    {
+      "id": "pet-afterlife-check-in",
+      "name": "Pet Afterlife Check-In",
+      "slug": "pet-afterlife-check-in",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-afterlife-check-in"
+    },
+    {
+      "id": "pet-bowl-cut",
+      "name": "Pet Bowl Cut",
+      "slug": "pet-bowl-cut",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-bowl-cut"
+    },
+    {
+      "id": "pet-carpool-karaoke",
+      "name": "Pet Carpool Karaoke",
+      "slug": "pet-carpool-karaoke",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-carpool-karaoke"
+    },
+    {
+      "id": "pet-fridge-cake-heist",
+      "name": "Pet Fridge Cake Heist",
+      "slug": "pet-fridge-cake-heist",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-fridge-cake-heist"
+    },
+    {
+      "id": "pet-halloween-costume-parade",
+      "name": "Pet Halloween Costume Parade",
+      "slug": "pet-halloween-costume-parade",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-halloween-costume-parade"
+    },
+    {
+      "id": "pet-orbit-cam",
+      "name": "Pet Orbit Cam",
+      "slug": "pet-orbit-cam",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-orbit-cam"
+    },
+    {
+      "id": "pet-podcast",
+      "name": "Pet Podcast Effect",
+      "slug": "pet-podcast",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pet-podcast"
+    },
+    {
+      "id": "pimp-walk-entrance",
+      "name": "Pimp Walk Entrance",
+      "slug": "pimp-walk-entrance",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/pimp-walk-entrance"
+    },
+    {
+      "id": "popstar",
+      "name": "Popstar",
+      "slug": "popstar",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/popstar"
+    },
+    {
+      "id": "put-a-ring-on-it-pets",
+      "name": "Put A Ring On It Pets",
+      "slug": "put-a-ring-on-it-pets",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/put-a-ring-on-it-pets"
+    },
+    {
+      "id": "raven-transition",
+      "name": "Raven Transition",
+      "slug": "raven-transition",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/raven-transition"
+    },
+    {
+      "id": "reverse-card-car-swap",
+      "name": "Reverse Card Car Swap",
+      "slug": "reverse-card-car-swap",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/reverse-card-car-swap"
+    },
+    {
+      "id": "riding-a-reindeer",
+      "name": "Riding a Reindeer",
+      "slug": "riding-a-reindeer",
+      "sites": [
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 8,
+      "tags": [],
+      "category": "seasonal",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/riding-a-reindeer"
+    },
+    {
+      "id": "roxbury-head-bob",
+      "name": "Roxbury Head Bob",
+      "slug": "roxbury-head-bob",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/roxbury-head-bob"
+    },
+    {
+      "id": "sawadika",
+      "name": "Sawadika",
+      "slug": "sawadika",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "dance"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/sawadika"
+    },
+    {
+      "id": "shake-it",
+      "name": "Shake It AI Dance",
+      "slug": "shake-it",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/shake-it"
+    },
+    {
+      "id": "shoulder-carry-i-m-the-one",
+      "name": "Shoulder Carry I'm the One",
+      "slug": "shoulder-carry-i-m-the-one",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 2,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "car",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/shoulder-carry-i-m-the-one"
+    },
+    {
+      "id": "sky-falling",
+      "name": "Sky Falling",
+      "slug": "sky-falling",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/sky-falling"
+    },
+    {
+      "id": "smalltown-boy-cat",
+      "name": "Smalltown Boy Cat Dance",
+      "slug": "smalltown-boy-cat",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/smalltown-boy-cat"
+    },
+    {
+      "id": "snow-leopard-meme",
+      "name": "Snow Leopard Meme",
+      "slug": "snow-leopard-meme",
+      "sites": [
+        "makeviral"
+      ],
+      "photo_count": 1,
+      "duration_sec": 5,
+      "tags": [],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/snow-leopard-meme"
+    },
+    {
+      "id": "spa-day",
+      "name": "Spa Day",
+      "slug": "spa-day",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "pet"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/spa-day"
+    },
+    {
+      "id": "stadium-calm-down",
+      "name": "Stadium Calm Down",
+      "slug": "stadium-calm-down",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 9,
+      "tags": [
+        "viral"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/stadium-calm-down"
+    },
+    {
+      "id": "stones-to-castle",
+      "name": "Stones to Castle",
+      "slug": "stones-to-castle",
+      "sites": [
+        "makeviral"
+      ],
+      "photo_count": 1,
+      "duration_sec": 15,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/stones-to-castle"
+    },
+    {
+      "id": "street-light-slide",
+      "name": "Street Light Slide",
+      "slug": "street-light-slide",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/street-light-slide"
+    },
+    {
+      "id": "subway-outfit-change",
+      "name": "Subway Outfit Change",
+      "slug": "subway-outfit-change",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "transform",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/subway-outfit-change"
+    },
+    {
+      "id": "sunset-squad",
+      "name": "Sunset Squad Dance",
+      "slug": "sunset-squad",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/sunset-squad"
+    },
+    {
+      "id": "then-i-walk-in",
+      "name": "Then I Walk In",
+      "slug": "then-i-walk-in",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/then-i-walk-in"
+    },
+    {
+      "id": "then-i-walk-in-meme",
+      "name": "Then I Walk In Meme",
+      "slug": "then-i-walk-in-meme",
+      "sites": [
+        "vidlark"
+      ],
+      "photo_count": 1,
+      "duration_sec": 8,
+      "tags": [],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/then-i-walk-in-meme"
+    },
+    {
+      "id": "thriller-pets",
+      "name": "Thriller Pets",
+      "slug": "thriller-pets",
+      "sites": [
+        "starrd"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "pet"
+      ],
+      "category": "pet",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/thriller-pets"
+    },
+    {
+      "id": "tiger-hug-me",
+      "name": "Tiger Hug Me",
+      "slug": "tiger-hug-me",
+      "sites": [
+        "mediaio"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "face_pet_zone"
+      ],
+      "category": "meme",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/tiger-hug-me"
+    },
+    {
+      "id": "tim-burton-girls",
+      "name": "Tim Burton Girls",
+      "slug": "tim-burton-girls",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/tim-burton-girls"
+    },
+    {
+      "id": "toc-toc",
+      "name": "Toc Toc Dance",
+      "slug": "toc-toc",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": "dance",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/toc-toc"
+    },
+    {
+      "id": "twilight-baseball-scene",
+      "name": "Twilight Baseball Scene",
+      "slug": "twilight-baseball-scene",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/twilight-baseball-scene"
+    },
+    {
+      "id": "witch-on-the-metro",
+      "name": "Witch on the Metro",
+      "slug": "witch-on-the-metro",
+      "sites": [
+        "viralvideoai"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [
+        "new"
+      ],
+      "category": "seasonal",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/witch-on-the-metro"
+    },
+    {
+      "id": "you-look-lonely-hologram",
+      "name": "You Look Lonely Hologram",
+      "slug": "you-look-lonely-hologram",
+      "sites": [
+        "zooop"
+      ],
+      "photo_count": 1,
+      "duration_sec": 10,
+      "tags": [],
+      "category": null,
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 1,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": null,
+      "featured": false,
+      "origin": "radar",
+      "cover": "/covers/you-look-lonely-hologram"
+    },
+    {
+      "id": "studio-slate",
+      "name": "Studio Slate",
+      "slug": "studio-slate",
+      "sites": [],
+      "photo_count": 1,
+      "duration_sec": 5,
+      "tags": [
+        "original"
+      ],
+      "category": "lab",
+      "aspect_ratio": "9:16",
+      "first_seen": null,
+      "cross_count": 0,
+      "priority": 1,
+      "credit_cost": 1,
+      "blurb": "EffectLab-original slate for trying the upload flow. It does not come from the radar.",
+      "featured": false,
+      "origin": "manual",
+      "cover": "/covers/studio-slate"
+    }
+  ]
+}
