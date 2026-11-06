@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { Header } from "@/components/Header";
 import "./globals.css";
 
@@ -18,7 +19,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         <div id="content">{children}</div>
         <footer className="site-footer">
-          EffectLab recreates trending video effects with your own photos. Pick a template, upload stills, and render the same clip with your face or pet.
+          <p>
+            EffectLab recreates trending video effects with your own photos. Pick a template, upload stills, and render the same clip with your face or pet.
+          </p>
+          <nav className="footer-nav" aria-label="Footer">
+            <Link href="/templates">Templates</Link>
+            <Link href="/upgrade">Upgrade</Link>
+            <Link href="/account">Ledger</Link>
+          </nav>
         </footer>
       </body>
     </html>
