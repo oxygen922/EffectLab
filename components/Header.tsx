@@ -28,6 +28,12 @@ export function Header() {
         EffectLab
       </Link>
       <nav className="nav">
+        <Link href="/templates" className="ghost">
+          Templates
+        </Link>
+        <Link href="/recipes" className="ghost">
+          Library
+        </Link>
         <Link href="/account" className="ghost">
           Ledger
         </Link>

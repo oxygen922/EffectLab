@@ -4,17 +4,17 @@ EffectLab is a face and pet effect template lab. Pick a template, upload the pho
 
 This MVP includes:
 
-- a template catalog (name, photo count, duration, original cover, tags)
+- a template catalog (name, photo count, duration, captured preview media, tags)
 - upload to an async job (`pending` → `running` → `done` or `failed`)
 - a credits ledger with balance, holds, captures, and releases
 - a mock video provider behind a small adapter
 - a Stripe stub that does not charge cards or grant credits
 
-Renders in this build are original SVG animations from the mock provider. They are not model output and they are not copies of anyone else's sample clips.
+Renders in this build are original SVG animations from the mock provider. They are not model output. Cards and template pages show preview posters and preview videos captured from the public catalog pages listed below.
 
 ## Monitored competitor sites
 
-Template discovery follows public catalog metadata from these sites. The links are their public homepages. EffectLab does not mirror their pages, sample videos, posters, or prompts.
+Template discovery follows public catalog metadata from these sites. The links are their public homepages. Preview posters and preview videos shown on cards and template pages are captured from those public catalog pages.
 
 | Site | Homepage |
 | --- | --- |
@@ -29,7 +29,7 @@ Template discovery follows public catalog metadata from these sites. The links a
 
 ## How to update templates
 
-The app catalog is metadata only. Update it from the radar export:
+The app catalog carries template metadata plus the preview media pointers shown on cards. Update it from the radar export:
 
 ```bash
 npm run import:templates
@@ -37,16 +37,14 @@ npm run import:templates
 
 That reads `template-radar/latest/templates.json` (override with `npm run import:templates -- --from path/to/templates.json` or `TEMPLATES_JSON`). The script rewrites `data/templates.json` from public fields: name, slug, site names, photo count, duration, tags, category, first-seen day, cross-site count, and a priority score. Priority favors templates seen on 4 or more catalogs and templates first seen within 48 hours of the radar timestamp.
 
-The import never copies competitor sample videos, preview files, posters, or prompts. Fields such as `preview_poster_url`, `video_url`, `sample_url`, and `prompt` are dropped, and any value that points at a video file is rejected. Covers are original SVGs served from `/covers/[slug]`. Nothing in the catalog points at a competitor asset.
+The import keeps `preview_poster_url` and `video_url` from the radar rows (including the `sample_url`, `preview`, and `poster` aliases) and writes them into `data/templates.json`. It then attaches any locally cached preview file found under `public/previews/<slug>-poster.*` or `public/previews/<slug>-preview.mp4`. Run `scripts/fetch-previews.ts` to refresh that cache from the public catalog pages first. `/covers/[slug]` remains the fallback cover for templates without captured media.
 
 Manual fields live in either of these places:
 
-- `data/editorial.json` — blurbs, credit cost, featured flag, hidden flag, tags, and display names. Every import reapplies this file, so it is the right place for merchandising that should stick.
+- `data/editorial.json` — blurbs, credit cost, featured flag, hidden flag, tags, display names, and per-template `video_url` / `preview_poster_url` overrides. Every import reapplies this file, so it is the right place for merchandising that should stick.
 - `data/templates.json` — rows with `"origin": "manual"` are kept when that slug is not in the radar file. `studio-slate` is one of these and is also declared in `data/editorial.json`.
 
-Radar-owned rows are regenerated. Put lasting edits for those rows in `data/editorial.json`, not only in the generated file. Do not paste competitor prompts or media URLs into either file. A blurb that contains a URL is discarded.
-
-The checked-in `template-radar/latest/templates.json` is a metadata snapshot from 2026-11-04. Replace that file with a newer radar export, then run the import again. Do not add video files next to it.
+Radar-owned rows are regenerated. Put lasting edits for those rows in `data/editorial.json`, not only in the generated file. The checked-in `template-radar/latest/templates.json` is a metadata snapshot from 2026-11-04. Replace that file with a newer radar export, then run the import again. Captured preview files live in `public/previews/`; videos there are gitignored to keep the repository small.
 
 ## Run locally
 
@@ -93,8 +91,3 @@ Uploads stay in `data/uploads/` (gitignored) and are readable only by the owning
 
 Checkout and the webhook exist so a later payment integration has a place to land. This version never creates a Checkout Session and never increments the balance from a webhook, even if `STRIPE_SECRET_KEY` is present. See `.env.example`.
 
-## What this repo refuses to store
-
-- competitor sample videos, preview posters, and proprietary prompts
-- copied cover artwork (covers and the mock clip are original SVG)
-- card charges

@@ -7,15 +7,22 @@ import type {
   Template,
 } from "../types";
 
-/** Keys that must never land in the catalog, even if a radar export contains them. */
-export const FORBIDDEN_KEY =
-  /prompt|preview|poster|thumbnail|video|sample|media|asset|cover_url|image_url/i;
-
-const VIDEO_URL = /\.(mp4|webm|mov|m4v|m3u8|avi)(\?|$)/i;
 const TAG_MAP: Record<string, string> = {
   week_page: "weekly",
   new_week: "new",
 };
+
+/** Canonical lookup key shared with the preview scraper (lowercase, alphanumeric, no leading "the", no trailing "ai"). */
+export function matchKey(value: string): string {
+  return value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "")
+    .replace(/^the/, "")
+    .replace(/ai$/, "");
+}
 
 const ALLOWED_TEMPLATE_KEYS = [
   "id",
@@ -35,6 +42,8 @@ const ALLOWED_TEMPLATE_KEYS = [
   "featured",
   "origin",
   "cover",
+  "video_url",
+  "preview_poster_url",
 ] as const;
 
 export function slugify(value: string): string {
@@ -49,12 +58,8 @@ export function slugify(value: string): string {
   return slug || "template";
 }
 
-export function stripForbidden<T extends Record<string, unknown>>(row: T): T {
-  const next = { ...row };
-  for (const key of Object.keys(next)) {
-    if (FORBIDDEN_KEY.test(key)) delete next[key];
-  }
-  return next;
+export function stripMediaText(value: string): string {
+  return value.trim();
 }
 
 function asPatch(value: EditorialFile[string]): EditorialPatch | null {
@@ -114,8 +119,13 @@ function cleanBlurb(value: string | null | undefined): string | null {
   if (!value) return null;
   const trimmed = value.trim();
   if (!trimmed) return null;
-  if (VIDEO_URL.test(trimmed) || /https?:\/\//i.test(trimmed)) return null;
   return trimmed.slice(0, 280);
+}
+
+function cleanMediaUrl(value: unknown): string | null {
+  if (typeof value !== "string") return null;
+  const trimmed = value.trim();
+  return trimmed || null;
 }
 
 function clampInt(value: number, min: number, max: number, fallback: number): number {
@@ -124,7 +134,7 @@ function clampInt(value: number, min: number, max: number, fallback: number): nu
 }
 
 export function sanitizeTemplate(input: Template): Template {
-  const raw = stripForbidden(input as unknown as Record<string, unknown>);
+  const raw = input as unknown as Record<string, unknown>;
   const slug = slugify(String(raw.slug || raw.name || "template"));
   const sites = Array.isArray(raw.sites)
     ? [...new Set(raw.sites.map((site) => String(site).trim()).filter(Boolean))].sort()
@@ -150,6 +160,8 @@ export function sanitizeTemplate(input: Template): Template {
     featured: Boolean(raw.featured),
     origin: raw.origin === "manual" ? "manual" : "radar",
     cover: `/covers/${slug}`,
+    video_url: cleanMediaUrl(raw.video_url),
+    preview_poster_url: cleanMediaUrl(raw.preview_poster_url),
   };
   for (const key of Object.keys(template)) {
     if (!ALLOWED_TEMPLATE_KEYS.includes(key as (typeof ALLOWED_TEMPLATE_KEYS)[number])) {
@@ -175,6 +187,10 @@ function applyEditorial(base: Template, patch: EditorialPatch): Template {
   }
   if (!base.sites.length && patch.origin === "manual") next.origin = "manual";
   if (base.origin === "manual") next.origin = "manual";
+  if (patch.video_url !== undefined) next.video_url = cleanMediaUrl(patch.video_url);
+  if (patch.preview_poster_url !== undefined) {
+    next.preview_poster_url = cleanMediaUrl(patch.preview_poster_url);
+  }
   return sanitizeTemplate(next);
 }
 
@@ -197,6 +213,8 @@ function blankManual(slug: string, patch: EditorialPatch): Template {
     featured: patch.featured ?? false,
     origin: "manual",
     cover: `/covers/${slug}`,
+    video_url: null,
+    preview_poster_url: null,
   });
 }
 
@@ -216,7 +234,7 @@ export function buildCatalog(
 ): CatalogFile {
   const groups = new Map<string, RadarTemplate[]>();
   for (const raw of radar.templates ?? []) {
-    const row = stripForbidden(raw);
+    const row = raw;
     const key = groupKey(row);
     if (!key) continue;
     const bucket = groups.get(key);
@@ -244,6 +262,8 @@ export function buildCatalog(
     const categories: string[] = [];
     const ratios: string[] = [];
     const days: string[] = [];
+    let posterUrl: string | null = null;
+    let videoUrl: string | null = null;
 
     for (const row of rows) {
       if (row.source_site) sites.add(String(row.source_site));
@@ -257,6 +277,10 @@ export function buildCatalog(
       if (row.aspect_ratio) ratios.push(String(row.aspect_ratio));
       const day = exactDay(row.listed_at);
       if (day) days.push(day);
+      posterUrl ??= cleanMediaUrl(
+        row.preview_poster_url ?? row.preview ?? row.poster ?? row.preview_image_url,
+      );
+      videoUrl ??= cleanMediaUrl(row.video_url ?? row.sample_url ?? null);
     }
 
     const siteList = [...sites].filter(Boolean).sort();
@@ -291,6 +315,8 @@ export function buildCatalog(
         featured: false,
         origin: "radar",
         cover: `/covers/${slug}`,
+        video_url: videoUrl,
+        preview_poster_url: posterUrl,
       }),
     );
   }
@@ -328,7 +354,7 @@ export function buildCatalog(
     source: "template-radar/latest/templates.json",
     source_scraped_at: radar.scraped_at ?? null,
     template_count: templates.length,
-    note: "Metadata only. No competitor preview files or proprietary generation text.",
+    note: "Template metadata plus preview posters and videos captured from public catalog pages.",
     templates,
   };
 }

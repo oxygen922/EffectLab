@@ -32,6 +32,8 @@ const template: Template = {
   featured: false,
   origin: "manual",
   cover: "/covers/studio-slate",
+  video_url: null,
+  preview_poster_url: null,
 };
 
 test("mock status moves pending to running to done", () => {

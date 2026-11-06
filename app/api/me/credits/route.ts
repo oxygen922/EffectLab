@@ -1,4 +1,4 @@
-import { starterCredits } from "@/lib/credits";
+import { claimDailyCredits, ensureUser, starterCredits } from "@/lib/credits";
 import { errorResponse } from "@/lib/errors";
 import { getOrCreateUserId } from "@/lib/session";
 import { mutate } from "@/lib/store";
@@ -10,11 +10,14 @@ export async function GET() {
   try {
     const userId = await getOrCreateUserId();
     const credits = await mutate((db) => {
+      const now = new Date().toISOString();
+      ensureUser(db, userId, now);
+      claimDailyCredits(db, userId, now);
       const user = db.users[userId];
       return {
         userId,
-        balance: user?.balance ?? 0,
-        held: user?.held ?? 0,
+        balance: user.balance,
+        held: user.held,
         starterGrant: starterCredits(),
       };
     });

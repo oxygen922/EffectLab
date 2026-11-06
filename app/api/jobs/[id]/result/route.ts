@@ -1,3 +1,5 @@
+import { readFile } from "fs/promises";
+import path from "path";
 import { findTemplate } from "@/lib/catalog";
 import { resultSvg } from "@/lib/covers";
 import { errorResponse } from "@/lib/errors";
@@ -6,6 +8,16 @@ import { getOrCreateUserId } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
+
+async function providerResult(jobId: string): Promise<string | null> {
+  if (!/^[0-9a-f-]{36}$/i.test(jobId)) return null;
+  try {
+    const svg = await readFile(path.join(process.cwd(), "data", "results", `${jobId}.svg`), "utf8");
+    return svg.includes("</svg>") ? svg : null;
+  } catch {
+    return null;
+  }
+}
 
 export async function GET(
   _request: Request,
@@ -25,11 +37,13 @@ export async function GET(
       );
     }
     const template = findTemplate(job.templateSlug);
-    const svg = resultSvg({
-      templateName: job.templateName,
-      photoCount: job.imageCount,
-      durationSec: template?.duration_sec ?? 10,
-    });
+    const svg =
+      (await providerResult(job.id)) ??
+      resultSvg({
+        templateName: job.templateName,
+        photoCount: job.imageCount,
+        durationSec: template?.duration_sec ?? 10,
+      });
     return new Response(svg, {
       headers: {
         "content-type": "image/svg+xml; charset=utf-8",

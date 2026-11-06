@@ -15,8 +15,10 @@ function walk(dir: string, found: string[]) {
   }
 }
 
-test("the repo does not carry competitor or sample media files", () => {
+test("captured preview media only lives in public/previews", () => {
   const found: string[] = [];
   walk(process.cwd(), found);
-  assert.deepEqual(found, []);
+  const allowedRoot = path.join(process.cwd(), "public", "previews") + path.sep;
+  const stray = found.filter((file) => !file.startsWith(allowedRoot));
+  assert.deepEqual(stray, []);
 });

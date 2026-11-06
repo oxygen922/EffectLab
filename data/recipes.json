@@ -1,0 +1,3950 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-05T02:22:43.913Z",
+  "tools": {
+    "kling-2.1-i2v": {
+      "name": "Kling 2.1 (image-to-video)",
+      "kind": "image-to-video",
+      "provider": "gateway",
+      "notes": "Cheap-token channel. Animates a still with a motion prompt."
+    },
+    "wan-2.5-i2v": {
+      "name": "Wan 2.5 (image-to-video)",
+      "kind": "image-to-video",
+      "provider": "gateway",
+      "notes": "Budget i2v alternative, good 9:16 compliance."
+    },
+    "hailuo-02-i2v": {
+      "name": "Hailuo 02 (image-to-video)",
+      "kind": "image-to-video",
+      "provider": "gateway",
+      "notes": "Strong character motion for dance/rap templates."
+    },
+    "qwen-image-edit": {
+      "name": "Qwen Image Edit",
+      "kind": "image-edit",
+      "provider": "gateway",
+      "notes": "Places the uploaded face/pet into a posed reference frame."
+    },
+    "flux-1-dev-t2i": {
+      "name": "FLUX.1 dev (text-to-image)",
+      "kind": "text-to-image",
+      "provider": "gateway",
+      "notes": "Generates the styled keyframe when no user photo fits the scene."
+    }
+  },
+  "recipes": {
+    "first-time-in-a-fancy-cafe": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bicep-heart": {
+      "pipeline": "storyboard",
+      "source": "curated",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "pose reference",
+          "input": "user face photo + muscle pose prompt",
+          "output": "styled first frame (9:16)",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "first frame + flex motion prompt",
+          "output": "5s clip",
+          "params": {
+            "duration": 5,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Face must land in the posed body first; direct i2v misses the gag."
+    },
+    "car-alarm": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "cardo-dinner": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "chipmunks": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "3 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "dog-bartender": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "29s clip",
+          "params": {
+            "duration": 29,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "jisoo-addicted": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "mabel-matiz-umrumdisi": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "14s clip",
+          "params": {
+            "duration": 14,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bye-bye": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "11s clip",
+          "params": {
+            "duration": 11,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "cats-making-coffee": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "17s clip",
+          "params": {
+            "duration": 17,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "coffee-making": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "phone-on-the-train": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "22s clip",
+          "params": {
+            "duration": 22,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pick-it-up": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "shaking-head": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "8s clip",
+          "params": {
+            "duration": 8,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "birds-of-a-feather": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "birds-of-a-feather-chair": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "birds-of-a-feather-chair-spin": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "ceiling-fan": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "ceiling-fan-elevator-outfits": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "14s clip",
+          "params": {
+            "duration": 14,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "ceiling-fan-outfit-change": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "ceiling-fan-transition": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "halloween-ceiling-fan": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "kung-fu-cat": {
+      "pipeline": "direct",
+      "source": "curated",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "pet photo + kung-fu motion prompt",
+          "output": "9s clip",
+          "params": {
+            "duration": 9,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Pets animate straight from the photo; no reference frame needed."
+    },
+    "outstanding-tiny-desk": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "5 user photos + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "ozil-goal": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "tiny-desk": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "5 user photos + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "closing-door-prank": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bad-times": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "cardo-your-dinner-is-ready": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "choosin-texas-emo": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "choosin-texas-remix-emo-version": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "first-time-fancy-cafe": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "hop-hop-hop": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "8s clip",
+          "params": {
+            "duration": 8,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "hotel-lobby": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "hotel-lobby-rap-duo": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "puerto-rican-mami": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "skull-cap": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "11s clip",
+          "params": {
+            "duration": 11,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "toosie-slide": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "14s clip",
+          "params": {
+            "duration": 14,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "toy-car-to-real-car": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "58th-floor": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bottle-kick": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bottle-kick-challenge": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bye-bye-outfit-change": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "end-of-watch": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "11s clip",
+          "params": {
+            "duration": 11,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "end-of-watch-locker": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "end-of-watch-locker-scene": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "grease": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "hit-the-road-dude": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "11s clip",
+          "params": {
+            "duration": 11,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "phone-on-train": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pick-it-up-make-it-jump": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "shaving-cream": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "7s clip",
+          "params": {
+            "duration": 7,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "strike-a-pole": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "wassup-in-a-minute": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "4 user photos + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "flamingo-float": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "giant-ramp-climbing": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "just-a-lil-bit": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "3 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "26s clip",
+          "params": {
+            "duration": 26,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "lisa-tarantino": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "transmission-5": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "14s clip",
+          "params": {
+            "duration": 14,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "bing-bing-bing-kicks": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "christmas-dances-this-year": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "17s clip",
+          "params": {
+            "duration": 17,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "christmas-tree-dog": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "it-s-my-life-dog": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "mickey-d-s": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "9s clip",
+          "params": {
+            "duration": 9,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "reindeer-dog": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "talk-dirty": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "24k-magic": {
+      "pipeline": "storyboard",
+      "source": "curated",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "outfit + stage reference",
+          "input": "2 user photos + stage outfit prompt",
+          "output": "stage look first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + dance motion prompt",
+          "output": "14s clip",
+          "params": {
+            "duration": 14,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Dance beat needs a strong motion model; stitch two clips for 14s."
+    },
+    "24k-magic-cruise": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "30s clip",
+          "params": {
+            "duration": 30,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "cat-story": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "alors-on-danse": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "11s clip",
+          "params": {
+            "duration": 11,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bby-wow-guy": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "cat-middle-finger": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "6s clip",
+          "params": {
+            "duration": 6,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "dog-crew": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "halloween-makeup": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "mi-chico": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "pumpkin-kick": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "rumpelstiltskin": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "stateside": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "thriller": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "20s clip",
+          "params": {
+            "duration": 20,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "tiptoeing-in-my-jordans": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "trouble-maker": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "angel-or-devil": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "bing-bing-bing-kicking": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "burning-bridges": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "deep-down-in-my-heart": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "deep-down-in-my-heart-duo": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "electric-shock-pet-prank": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "electric-shock-prank": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "12s clip",
+          "params": {
+            "duration": 12,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "gas-station": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "3 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "13s clip",
+          "params": {
+            "duration": 13,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "monkey-eating-apple": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "8s clip",
+          "params": {
+            "duration": 8,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "mr-and-mrs-stretchy": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "6s clip",
+          "params": {
+            "duration": 6,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "ramalama-costume-walk": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "roadster-ramp": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "roadster-ramp-flip": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "sidewalk-collision": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "skyfall": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "5s clip",
+          "params": {
+            "duration": 5,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "zombie-love-story": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "24s clip",
+          "params": {
+            "duration": 24,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "a2o-lite-neon": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "animal-micro-drama": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "cat-front-door-ring-band": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "couple-prank": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "crying": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "elf-yourself": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "face": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "face-swap": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "30s clip",
+          "params": {
+            "duration": 30,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "grammy-winner": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "hug-me": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-dancing-dog": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-interview": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "red-riding-hood": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "snow": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "talking-pet": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "ali-g-driving-scene": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "anitkabir": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "apt": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "26s clip",
+          "params": {
+            "duration": 26,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "baby-reindeer-santa": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "baby-with-mustache": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "becane": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "biker-birthday": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "birthday-car": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "8s clip",
+          "params": {
+            "duration": 8,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "birthday-car-drift-blow-out-the-candles": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "bulin-47": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "burger-pet-window": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "button-eye-doll-reveal": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "c-walk": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "calcanhar-2": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "caught-dancing-at-the-window": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "christmas-car-lights": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "clapping-cat": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "closer": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "club-spotlight-couple": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "costume-reveal": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "crazy-frog": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "dame-hombro": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "darts-170-prank": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "deserve-rain-scene": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "drink-fly-bump": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "face-squish": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "flying-broom-getaway": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "flying-tesla-roadster": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "funny-pet-selfie-fail": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "gang-gang": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "gangnam-style": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "hair-dye": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "hello-2027": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "i-need-a-girl": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "i-wanna-love-you": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "knight-cat": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "kolpacino-car-scene": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "laughing-fairy": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "2 user photos + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "mafia-boss": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "meet-my-older-self": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "mirror": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "money-flex": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "my-prime-1v1-dunk": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "nightwing": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "parrot": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-afterlife-check-in": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-bowl-cut": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-carpool-karaoke": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-fridge-cake-heist": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-halloween-costume-parade": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-orbit-cam": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pet-podcast": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "pimp-walk-entrance": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "popstar": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "put-a-ring-on-it-pets": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "raven-transition": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "reverse-card-car-swap": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "riding-a-reindeer": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "8s clip",
+          "params": {
+            "duration": 8,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "roxbury-head-bob": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "sawadika": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "shake-it": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "shoulder-carry-i-m-the-one": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "2 user photos + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "sky-falling": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "smalltown-boy-cat": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "snow-leopard-meme": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "5s clip",
+          "params": {
+            "duration": 5,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "spa-day": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "stadium-calm-down": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "9s clip",
+          "params": {
+            "duration": 9,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "stones-to-castle": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "15s clip",
+          "params": {
+            "duration": 15,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "street-light-slide": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "subway-outfit-change": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "sunset-squad": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "then-i-walk-in": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "then-i-walk-in-meme": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "8s clip",
+          "params": {
+            "duration": 8,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "thriller-pets": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "tiger-hug-me": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "tim-burton-girls": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "toc-toc": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "twilight-baseball-scene": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "witch-on-the-metro": {
+      "pipeline": "storyboard",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "qwen-image-edit",
+          "action": "reference frame",
+          "input": "user photo + scene/pose prompt",
+          "output": "styled first frame",
+          "params": {
+            "ratio": "9:16"
+          }
+        },
+        {
+          "tool": "hailuo-02-i2v",
+          "action": "animate",
+          "input": "first frame + motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: build the keyframe first, then animate. Review before wiring a real model."
+    },
+    "you-look-lonely-hologram": {
+      "pipeline": "direct",
+      "source": "auto",
+      "steps": [
+        {
+          "tool": "kling-2.1-i2v",
+          "action": "animate",
+          "input": "user photo + effect motion prompt",
+          "output": "10s clip",
+          "params": {
+            "duration": 10,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "Auto draft: photo animates straight into video. Review before wiring a real model."
+    },
+    "studio-slate": {
+      "pipeline": "direct",
+      "source": "curated",
+      "steps": [
+        {
+          "tool": "wan-2.5-i2v",
+          "action": "animate",
+          "input": "user photo + studio intro motion prompt",
+          "output": "5s clip",
+          "params": {
+            "duration": 5,
+            "ratio": "9:16"
+          }
+        }
+      ],
+      "notes": "House template. Cheapest model keeps the intro clip affordable."
+    }
+  }
+}

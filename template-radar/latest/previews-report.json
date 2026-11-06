@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-11-04T12:48:40.412Z",
+  "coverage": {
+    "radar_rows": 342,
+    "deduped_templates": 191,
+    "templates_with_poster": 132,
+    "templates_with_video": 20,
+    "poster_ratio": 0.6911
+  },
+  "totals": {
+    "sites_configured": 8,
+    "sites_with_cards": 7,
+    "cards": 0,
+    "preview_items": 1213,
+    "matched_templates": 143,
+    "posters_downloaded": 132,
+    "videos_downloaded": 20,
+    "poster_bytes": 8808120,
+    "video_bytes": 10661437,
+    "total_bytes": 19469557
+  },
+  "budget": {
+    "video_budget_bytes": 62914560,
+    "video_budget_used": 10661437
+  },
+  "page_errors": [
+    "mediaio: UND_ERR_CONNECT_TIMEOUT"
+  ],
+  "sites": [
+    {
+      "site": "viralvideoai",
+      "page_url": "https://viralvideoai.app/templates",
+      "http_status": 200,
+      "page_partial": false,
+      "page_error": null,
+      "cards": 104,
+      "matched_templates": 10,
+      "posters_downloaded": 6,
+      "videos_downloaded": 0,
+      "failures": {
+        "timeout": 3
+      },
+      "skips": {
+        "content_type_image/svg+xml": 1,
+        "site_unreachable": 1
+      },
+      "bytes": {
+        "posters": 339573,
+        "videos": 0
+      }
+    },
+    {
+      "site": "vidlark",
+      "page_url": "https://vidlark.ai/effects",
+      "http_status": 200,
+      "page_partial": false,
+      "page_error": null,
+      "cards": 308,
+      "matched_templates": 10,
+      "posters_downloaded": 10,
+      "videos_downloaded": 10,
+      "failures": {},
+      "skips": {},
+      "bytes": {
+        "posters": 281946,
+        "videos": 8073617
+      }
+    },
+    {
+      "site": "jumponthetrend",
+      "page_url": "https://jumponthetrend.app/",
+      "http_status": 200,
+      "page_partial": false,
+      "page_error": null,
+      "cards": 209,
+      "matched_templates": 62,
+      "posters_downloaded": 61,
+      "videos_downloaded": 1,
+      "failures": {
+        "timeout": 1
+      },
+      "skips": {
+        "video_attempt_cap": 64
+      },
+      "bytes": {
+        "posters": 5201221,
+        "videos": 356476
+      }
+    },
+    {
+      "site": "makeviral",
+      "page_url": "https://www.makeviral.ai/templates",
+      "http_status": 200,
+      "page_partial": false,
+      "page_error": null,
+      "cards": 356,
+      "matched_templates": 40,
+      "posters_downloaded": 40,
+      "videos_downloaded": 4,
+      "failures": {},
+      "skips": {
+        "video_attempt_cap": 43
+      },
+      "bytes": {
+        "posters": 1495658,
+        "videos": 747187
+      }
+    },
+    {
+      "site": "starrd",
+      "page_url": "https://www.getstarrd.app/templates",
+      "http_status": 200,
+      "page_partial": false,
+      "page_error": null,
+      "cards": 73,
+      "matched_templates": 8,
+      "posters_downloaded": 6,
+      "videos_downloaded": 5,
+      "failures": {
+        "http_400": 2
+      },
+      "skips": {
+        "video_attempt_cap": 1
+      },
+      "bytes": {
+        "posters": 385498,
+        "videos": 1484157
+      }
+    },
+    {
+      "site": "mediaio",
+      "page_url": "https://www.media.io/video-effects/",
+      "http_status": null,
+      "page_partial": false,
+      "page_error": "UND_ERR_CONNECT_TIMEOUT",
+      "cards": 0,
+      "matched_templates": 0,
+      "posters_downloaded": 0,
+      "videos_downloaded": 0,
+      "failures": {},
+      "skips": {},
+      "bytes": {
+        "posters": 0,
+        "videos": 0
+      }
+    },
+    {
+      "site": "zooop",
+      "page_url": "https://zooop.ai/templates",
+      "http_status": 200,
+      "page_partial": true,
+      "page_error": "timeout",
+      "cards": 6,
+      "matched_templates": 2,
+      "posters_downloaded": 2,
+      "videos_downloaded": 0,
+      "failures": {},
+      "skips": {},
+      "bytes": {
+        "posters": 78737,
+        "videos": 0
+      }
+    },
+    {
+      "site": "vellm",
+      "page_url": "https://vellm.app/explore",
+      "http_status": 200,
+      "page_partial": false,
+      "page_error": null,
+      "cards": 157,
+      "matched_templates": 11,
+      "posters_downloaded": 7,
+      "videos_downloaded": 0,
+      "failures": {
+        "timeout": 5
+      },
+      "skips": {},
+      "bytes": {
+        "posters": 1025487,
+        "videos": 0
+      }
+    }
+  ]
+}

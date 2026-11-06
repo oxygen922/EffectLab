@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import type { Template } from "@/lib/types";
 
-export function UploadForm({ template }: { template: Template }) {
+export function UploadForm({ template }: { template: Pick<Template, "id" | "photo_count" | "credit_cost"> }) {
   const router = useRouter();
   const [files, setFiles] = useState<(File | null)[]>(() => Array.from({ length: template.photo_count }, () => null));
   const [previews, setPreviews] = useState<(string | null)[]>(() => Array.from({ length: template.photo_count }, () => null));
@@ -69,13 +69,19 @@ export function UploadForm({ template }: { template: Template }) {
       if (typeof credits.balance === "number") setBalance(credits.balance);
       return;
     }
+    setFiles(Array.from({ length: template.photo_count }, () => null));
+    setPreviews((current) => {
+      for (const url of current) if (url) URL.revokeObjectURL(url);
+      return Array.from({ length: template.photo_count }, () => null);
+    });
+    setPending(false);
     router.push(`/jobs/${payload.job.id}`);
   }
 
   return (
     <form onSubmit={onSubmit} className="stack">
       <p className="muted">
-        {template.blurb} Cost is {template.credit_cost} {template.credit_cost === 1 ? "credit" : "credits"}.
+        Cost is {template.credit_cost} {template.credit_cost === 1 ? "credit" : "credits"}.
         {balance === null ? "" : ` Available balance: ${balance}.`}
       </p>
       <div className="slots">

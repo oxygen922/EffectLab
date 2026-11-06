@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "node --import tsx --test tests/*.ts",
-    "import:templates": "tsx scripts/import-templates.ts"
+    "import:templates": "tsx scripts/import-templates.ts",
+    "gen:recipes": "tsx scripts/gen-recipes.ts"
   },
   "dependencies": {
     "next": "^15.5.4",

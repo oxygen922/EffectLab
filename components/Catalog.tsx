@@ -1,78 +1,131 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import { siteLabel, type Template } from "@/lib/types";
+import { useMemo, useRef, useState } from "react";
+import type { Template } from "@/lib/types";
 
 function photoLabel(count: number): string {
   return count === 1 ? "1 photo" : `${count} photos`;
 }
 
-function Card({ template }: { template: Template }) {
+export function Card({ template }: { template: Template }) {
+  const poster = template.preview_poster_url;
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   return (
     <Link href={`/templates/${template.slug}`} className="card">
-      <img className="cover" src={template.cover} alt="" />
+      <div
+        className="thumb"
+        onMouseEnter={() => {
+          void videoRef.current?.play().catch(() => undefined);
+        }}
+        onMouseLeave={() => {
+          videoRef.current?.pause();
+        }}
+      >
+        <img className="cover" src={poster ?? template.cover} alt="" loading="lazy" decoding="async" />
+        {template.video_url ? (
+          <video
+            ref={videoRef}
+            className="cover-video"
+            src={template.video_url}
+            muted
+            loop
+            playsInline
+            preload="none"
+          />
+        ) : null}
+      </div>
       <div className="card-body">
         <h3>{template.name}</h3>
+        {template.blurb ? <p className="card-prompt">{template.blurb}</p> : null}
         <div className="meta">
           <span className="tag hot">{template.credit_cost} cr</span>
           <span className="tag">{photoLabel(template.photo_count)}</span>
           <span className="tag">{template.duration_sec}s</span>
-          {template.cross_count > 0 ? <span className="tag">{template.cross_count} catalogs</span> : <span className="tag">original</span>}
+          {template.cross_count > 0 ? <span className="tag">trending</span> : <span className="tag">exclusive</span>}
+          {template.video_url ? <span className="tag play">hover to play</span> : null}
         </div>
       </div>
     </Link>
   );
 }
 
-export function Catalog({ templates }: { templates: Template[] }) {
-  const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState("all");
-  const [sort, setSort] = useState<"priority" | "new" | "photos">("priority");
+type Facet = { key: string; label: string; count: number };
+
+export function Catalog({
+  templates,
+  initialCategory,
+  initialQuery = "",
+  initialSort = "priority",
+}: {
+  templates: Template[];
+  initialCategory?: string;
+  initialQuery?: string;
+  initialSort?: "priority" | "new" | "photos";
+}) {
+  const [query, setQuery] = useState(initialQuery);
+  const [active, setActive] = useState<Set<string>>(
+    () => new Set(initialCategory ? [`category:${initialCategory}`] : []),
+  );
+  const [sort, setSort] = useState<"priority" | "new" | "photos">(initialSort);
 
   const categories = useMemo(
-    () => [...new Set(templates.map((template) => template.category).filter((value): value is string => Boolean(value)))].sort(),
+    () =>
+      [...new Set(templates.map((t) => t.category).filter((v): v is string => Boolean(v)))]
+        .sort()
+        .map<Facet>((key) => ({ key: `category:${key}`, label: key, count: templates.filter((t) => t.category === key).length })),
     [templates],
   );
-  const featured = templates.filter((template) => template.featured);
+
+  const tags = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const template of templates) {
+      for (const tag of template.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map<Facet>(([tag, count]) => ({ key: `tag:${tag}`, label: `#${tag}`, count }));
+  }, [templates]);
+
+  function toggle(key: string) {
+    setActive((current) => {
+      const next = new Set(current);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
 
   const visible = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    // Prompt-bar queries arrive as natural language ("my cat doing a victory dance"),
+    // so match on any meaningful word instead of the whole string.
+    const words = query
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter((word) => word.length >= 3);
     const rows = templates.filter((template) => {
-      if (filter === "featured" && !template.featured) return false;
-      if (filter.startsWith("category:") && template.category !== filter.slice(9)) return false;
-      if (filter.startsWith("tag:") && !template.tags.includes(filter.slice(4))) return false;
-      if (!q) return true;
-      return [template.name, template.slug, template.category ?? "", ...template.tags, ...template.sites.map(siteLabel)]
+      for (const key of active) {
+        if (key.startsWith("category:") && template.category !== key.slice(9)) return false;
+        if (key.startsWith("tag:") && !template.tags.includes(key.slice(4))) return false;
+      }
+      if (words.length === 0) return true;
+      const haystack = [template.name, template.slug, template.category ?? "", ...template.tags]
         .join(" ")
-        .toLowerCase()
-        .includes(q);
+        .toLowerCase();
+      return words.some((word) => haystack.includes(word));
     });
     return rows.slice().sort((a, b) => {
       if (sort === "photos") return b.photo_count - a.photo_count || a.name.localeCompare(b.name);
       if (sort === "new") return (b.first_seen ?? "").localeCompare(a.first_seen ?? "") || b.priority - a.priority;
       return b.priority - a.priority || b.cross_count - a.cross_count || a.name.localeCompare(b.name);
     });
-  }, [templates, query, filter, sort]);
+  }, [templates, query, active, sort]);
 
-  const showFeatured = filter === "all" && query.trim() === "";
+  const filtersOn = active.size > 0 || query.trim() !== "";
 
   return (
     <div>
-      {showFeatured ? (
-        <section>
-          <div className="section-head">
-            <h2>Followed this week</h2>
-            <span className="muted">{featured.length} pinned from the public catalogs</span>
-          </div>
-          <div className="feature-row">
-            {featured.map((template) => (
-              <Card key={template.slug} template={template} />
-            ))}
-          </div>
-        </section>
-      ) : null}
-
       <div className="filters">
         <input
           aria-label="Search templates"
@@ -80,27 +133,63 @@ export function Catalog({ templates }: { templates: Template[] }) {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />
-        <select aria-label="Filter templates" value={filter} onChange={(event) => setFilter(event.target.value)}>
-          <option value="all">All templates</option>
-          <option value="featured">Featured</option>
-          {categories.map((category) => (
-            <option key={category} value={`category:${category}`}>
-              {category}
-            </option>
-          ))}
-          <option value="tag:new">New</option>
-          <option value="tag:music">Music</option>
-        </select>
         <select aria-label="Sort templates" value={sort} onChange={(event) => setSort(event.target.value as "priority" | "new" | "photos")}>
           <option value="priority">Sort by heat</option>
           <option value="new">Sort by first seen</option>
           <option value="photos">Sort by photo count</option>
         </select>
+        {filtersOn ? (
+          <button
+            type="button"
+            className="chip"
+            onClick={() => {
+              setActive(new Set());
+              setQuery("");
+            }}
+          >
+            clear ×
+          </button>
+        ) : null}
+      </div>
+
+      <div className="facet-block">
+        <p className="facet-label">Category</p>
+        <div className="chip-row">
+          {categories.map((facet) => (
+            <button
+              key={facet.key}
+              type="button"
+              className={active.has(facet.key) ? "chip on" : "chip"}
+              aria-pressed={active.has(facet.key)}
+              onClick={() => toggle(facet.key)}
+            >
+              {facet.label} <span className="chip-count">{facet.count}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="facet-block">
+        <p className="facet-label">Tags</p>
+        <div className="chip-row">
+          {tags.map((facet) => (
+            <button
+              key={facet.key}
+              type="button"
+              className={active.has(facet.key) ? "chip on" : "chip"}
+              aria-pressed={active.has(facet.key)}
+              onClick={() => toggle(facet.key)}
+            >
+              {facet.label} <span className="chip-count">{facet.count}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="section-head">
         <h2>Catalog</h2>
-        <span className="muted">{visible.length} templates</span>
+        <span className="muted">
+          {visible.length} of {templates.length} templates
+        </span>
       </div>
       {visible.length === 0 ? <p className="muted">No templates match that filter.</p> : null}
       <div className="grid">

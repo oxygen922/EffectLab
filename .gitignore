@@ -8,5 +8,8 @@ out
 data/runtime.json
 data/runtime.json.tmp
 data/uploads
+data/results
 tsconfig.tsbuildinfo
 next-env.d.ts
+public/previews/*-preview.mp4
+.tmp-verify/

@@ -18,6 +18,10 @@ export type Template = {
   featured: boolean;
   origin: TemplateOrigin;
   cover: string;
+  /** Local cached preview video, captured from the public catalog pages. */
+  video_url: string | null;
+  /** Local cached preview poster, captured from the public catalog pages. */
+  preview_poster_url: string | null;
 };
 
 export type CatalogFile = {
@@ -43,6 +47,8 @@ export type EditorialPatch = {
   tags?: string[];
   tags_add?: string[];
   origin?: TemplateOrigin;
+  video_url?: string | null;
+  preview_poster_url?: string | null;
 };
 
 export type EditorialFile = Record<string, EditorialPatch | string | undefined>;
@@ -61,7 +67,72 @@ export type RadarTemplate = {
   tags?: string[];
   category?: string | null;
   aspect_ratio?: string | null;
+  preview_poster_url?: string | null;
+  video_url?: string | null;
+  sample_url?: string | null;
+  preview?: string | null;
+  poster?: string | null;
   [key: string]: unknown;
+};
+
+export type PreviewMedia = {
+  poster_url: string | null;
+  video_url: string | null;
+};
+
+/** What a registered generation tool does. */
+export type ToolKind = "text-to-image" | "image-edit" | "image-to-video" | "text-to-video";
+
+/** A model or service in the generation toolbox (data/recipes.json → tools). */
+export type ToolInfo = {
+  name: string;
+  kind: ToolKind;
+  /** Gateway/provider the tool is reachable through, e.g. a cheap-token relay. */
+  provider?: string | null;
+  notes?: string | null;
+};
+
+/** One stage of a template's generation pipeline. */
+export type RecipeStep = {
+  tool: string;
+  action: string;
+  input: string;
+  output: string;
+  params?: Record<string, string | number>;
+};
+
+/**
+ * How a template is produced:
+ * - "direct": photo goes straight into an image-to-video model, single pass.
+ * - "storyboard": reference image / keyframe is generated first, then animated into video.
+ */
+export type TemplateRecipe = {
+  pipeline: "direct" | "storyboard";
+  /** "curated" recipes are hand-written; "auto" ones are category defaults pending review. */
+  source: "curated" | "auto";
+  steps: RecipeStep[];
+  notes?: string | null;
+};
+
+export type RecipeFile = {
+  schema_version: number;
+  generated_at: string;
+  tools: Record<string, ToolInfo>;
+  recipes: Record<string, TemplateRecipe>;
+};
+
+export type PreviewFile = {
+  generated_at?: string;
+  items?: Array<{
+    name?: string;
+    name_norm?: string;
+    source_site?: string;
+    page_url?: string | null;
+    poster_url?: string | null;
+    video_url?: string | null;
+    poster_local?: string | null;
+    video_local?: string | null;
+  }>;
 };
 
 export type RadarFile = {
@@ -87,6 +158,7 @@ export type UserRecord = {
   createdAt: string;
   balance: number;
   held: number;
+  lastDailyGrant?: string | null;
 };
 
 export type JobStatus = "pending" | "running" | "done" | "failed";

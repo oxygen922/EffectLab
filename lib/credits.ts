@@ -3,6 +3,25 @@ import { AppError } from "./errors";
 import type { Database, JobRecord, LedgerEntry, UserRecord } from "./types";
 
 export const DEFAULT_STARTER_CREDITS = 8;
+export const DAILY_FREE_CREDITS = 3;
+
+export function claimDailyCredits(db: Database, userId: string, now: string): number {
+  const user = db.users[userId];
+  if (!user) return 0;
+  const today = now.slice(0, 10);
+  if (user.lastDailyGrant === today) return 0;
+  user.lastDailyGrant = today;
+  pushEntry(db, {
+    userId,
+    type: "grant",
+    amount: DAILY_FREE_CREDITS,
+    jobId: null,
+    note: "Daily free credits",
+    createdAt: now,
+  });
+  user.balance += DAILY_FREE_CREDITS;
+  return DAILY_FREE_CREDITS;
+}
 
 export function starterCredits(): number {
   const raw = process.env.STARTER_CREDITS;

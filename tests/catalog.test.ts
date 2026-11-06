@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { buildCatalog, FORBIDDEN_KEY, stripForbidden } from "../lib/import/build-catalog";
+import { buildCatalog, matchKey } from "../lib/import/build-catalog";
 import { coverSvg } from "../lib/covers";
 import type { CatalogFile, RadarFile, Template } from "../lib/types";
 
@@ -18,7 +18,7 @@ const FEATURED = [
   "dog-bartender",
 ];
 
-test("import drops media fields, keeps manual rows, and lets editorial win", () => {
+test("import keeps preview media, drops prompts, keeps manual rows, and lets editorial win", () => {
   const radar: RadarFile = {
     scraped_at: "2026-11-04T12:30:00+08:00",
     templates: [
@@ -72,6 +72,8 @@ test("import drops media fields, keeps manual rows, and lets editorial win", () 
         featured: false,
         origin: "manual",
         cover: "/covers/hand-card",
+        video_url: null,
+        preview_poster_url: null,
       },
     ],
   };
@@ -87,20 +89,36 @@ test("import drops media fields, keeps manual rows, and lets editorial win", () 
   assert.equal(tiny.featured, true);
   assert.equal(tiny.blurb, "Desk card");
   assert.deepEqual(tiny.sites, ["makeviral", "starrd", "vidlark", "viralvideoai"]);
-  assert.equal(JSON.stringify(tiny).includes("mp4"), false);
+  assert.equal(tiny.preview_poster_url, "https://cdn.example/tiny.mp4");
+  assert.equal(tiny.video_url, null);
   assert.equal(JSON.stringify(tiny).includes("prompt"), false);
   assert.equal(catalog.templates.some((template) => template.slug === "secret-clip"), false);
   assert.equal(catalog.templates.some((template) => template.slug === "hand-card"), true);
   assert.equal(catalog.templates.find((template) => template.slug === "studio-slate")?.origin, "manual");
   for (const template of catalog.templates) {
-    for (const key of Object.keys(template)) assert.equal(FORBIDDEN_KEY.test(key), false);
     assert.equal(template.cover, `/covers/${template.slug}`);
+    assert.ok("preview_poster_url" in template);
+    assert.ok("video_url" in template);
   }
 });
 
-test("stripForbidden removes poster and prompt keys", () => {
-  const cleaned = stripForbidden({ name: "Ok", prompt: "x", preview_poster_url: "y" });
-  assert.deepEqual(cleaned, { name: "Ok" });
+test("video_url and editorial media overrides survive the import", () => {
+  const radar: RadarFile = {
+    templates: [
+      {
+        name: "Car Alarm",
+        source_site: "vidlark",
+        video_url: "https://cdn.example/car.mp4",
+      },
+    ],
+  };
+  const catalog = buildCatalog(radar, null, {
+    "car-alarm": { preview_poster_url: "/previews/car-alarm-poster.webp" },
+  });
+  const car = catalog.templates[0];
+  assert.equal(car.video_url, "https://cdn.example/car.mp4");
+  assert.equal(car.preview_poster_url, "/previews/car-alarm-poster.webp");
+  assert.equal(matchKey("Tiny Desk Concert AI"), "tinydeskconcert");
 });
 
 test("covers are original svg without remote assets", () => {
@@ -136,7 +154,9 @@ test("shipped catalog matches the radar import rules", () => {
   const manual = shipped.templates.find((template) => template.slug === "studio-slate");
   assert.equal(manual?.origin, "manual");
   const serialized = JSON.stringify(shipped.templates);
-  assert.equal(/\.(mp4|webm|mov|m3u8)/i.test(serialized), false);
-  assert.equal(serialized.includes("preview_poster_url"), false);
+  for (const template of shipped.templates) {
+    assert.ok("preview_poster_url" in template, template.slug);
+    assert.ok("video_url" in template, template.slug);
+  }
   assert.equal(serialized.includes("\"prompt\""), false);
 });

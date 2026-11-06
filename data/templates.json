@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T06:04:20.953Z",
+  "generated_at": "2026-11-04T13:00:04.476Z",
   "source": "template-radar/latest/templates.json",
   "source_scraped_at": "2026-11-04T12:30:00+08:00",
   "template_count": 192,
-  "note": "Metadata only. No competitor preview files or proprietary generation text.",
+  "note": "Template metadata plus preview posters and videos captured from public catalog pages.",
   "templates": [
     {
       "id": "first-time-in-a-fancy-cafe",
@@ -28,10 +28,12 @@
       "cross_count": 5,
       "priority": 18,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “First Time in a Fancy Cafe” — same energy, 2 photos, 15s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/first-time-in-a-fancy-cafe"
+      "cover": "/covers/first-time-in-a-fancy-cafe",
+      "video_url": null,
+      "preview_poster_url": "/previews/first-time-in-a-fancy-cafe-poster.jpg"
     },
     {
       "id": "bicep-heart",
@@ -55,10 +57,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Bicep Heart” effect with your face in the lead. 7s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bicep-heart"
+      "cover": "/covers/bicep-heart",
+      "video_url": null,
+      "preview_poster_url": "/previews/bicep-heart-poster.jpg"
     },
     {
       "id": "car-alarm",
@@ -83,10 +87,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Car Alarm Dance” — same energy, one photo, 12s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/car-alarm"
+      "cover": "/covers/car-alarm",
+      "video_url": null,
+      "preview_poster_url": "/previews/car-alarm-poster.jpg"
     },
     {
       "id": "cardo-dinner",
@@ -111,10 +117,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 2,
-      "blurb": "Two-photo dinner bit. Upload both stills before generating.",
+      "blurb": "Your take on “Cardo Dinner”. Feed it 2 photos, press render.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/cardo-dinner"
+      "cover": "/covers/cardo-dinner",
+      "video_url": null,
+      "preview_poster_url": "/previews/cardo-dinner-poster.jpg"
     },
     {
       "id": "chipmunks",
@@ -138,10 +146,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Chipmunks Dance”. Drop 3 photos, get the 15s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/chipmunks"
+      "cover": "/covers/chipmunks",
+      "video_url": null,
+      "preview_poster_url": "/previews/chipmunks-poster.jpg"
     },
     {
       "id": "dog-bartender",
@@ -166,10 +176,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 1,
-      "blurb": "Single-pet bar portrait.",
+      "blurb": "Recreate “Dog Bartender” — same energy, one photo, 29s.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/dog-bartender"
+      "cover": "/covers/dog-bartender",
+      "video_url": null,
+      "preview_poster_url": "/previews/dog-bartender-poster.jpg"
     },
     {
       "id": "jisoo-addicted",
@@ -193,10 +205,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Jisoo Addicted Dance”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/jisoo-addicted"
+      "cover": "/covers/jisoo-addicted",
+      "video_url": null,
+      "preview_poster_url": "/previews/jisoo-addicted-poster.jpg"
     },
     {
       "id": "mabel-matiz-umrumdisi",
@@ -220,10 +234,12 @@
       "cross_count": 5,
       "priority": 13,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Mabel Matiz Umrumdışı”, but it's you. 2 photos in, one 14s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/mabel-matiz-umrumdisi"
+      "cover": "/covers/mabel-matiz-umrumdisi",
+      "video_url": null,
+      "preview_poster_url": "/previews/mabel-matiz-umrumdisi-poster.jpg"
     },
     {
       "id": "bye-bye",
@@ -246,10 +262,12 @@
       "cross_count": 4,
       "priority": 12,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Bye Bye Trend” effect with your face in the lead. 11s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bye-bye"
+      "cover": "/covers/bye-bye",
+      "video_url": null,
+      "preview_poster_url": "/previews/bye-bye-poster.jpg"
     },
     {
       "id": "cats-making-coffee",
@@ -270,10 +288,12 @@
       "cross_count": 4,
       "priority": 12,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Cats Making Coffee”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/cats-making-coffee"
+      "cover": "/covers/cats-making-coffee",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "coffee-making",
@@ -296,10 +316,12 @@
       "cross_count": 4,
       "priority": 12,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Coffee Making” effect with your face in the lead. 15s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/coffee-making"
+      "cover": "/covers/coffee-making",
+      "video_url": null,
+      "preview_poster_url": "/previews/coffee-making-poster.jpg"
     },
     {
       "id": "phone-on-the-train",
@@ -322,10 +344,12 @@
       "cross_count": 4,
       "priority": 12,
       "credit_cost": 1,
-      "blurb": "Single-photo commute card.",
+      "blurb": "“Phone on the Train”, but it's you. one photo in, one 22s render out.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/phone-on-the-train"
+      "cover": "/covers/phone-on-the-train",
+      "video_url": null,
+      "preview_poster_url": "/previews/phone-on-the-train-poster.jpg"
     },
     {
       "id": "pick-it-up",
@@ -348,10 +372,12 @@
       "cross_count": 4,
       "priority": 12,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Pick It Up Dance” effect with your face in the lead. 13s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pick-it-up"
+      "cover": "/covers/pick-it-up",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "shaking-head",
@@ -374,10 +400,12 @@
       "cross_count": 4,
       "priority": 12,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Shaking Head”, but it's you. one photo in, one 8s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/shaking-head"
+      "cover": "/covers/shaking-head",
+      "video_url": null,
+      "preview_poster_url": "/previews/shaking-head-poster.jpg"
     },
     {
       "id": "birds-of-a-feather",
@@ -403,10 +431,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": "Single-photo music-trend card.",
+      "blurb": "You perform “Birds of a Feather” beat for beat. one photo, 15s.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/birds-of-a-feather"
+      "cover": "/covers/birds-of-a-feather",
+      "video_url": null,
+      "preview_poster_url": "/previews/birds-of-a-feather-poster.jpg"
     },
     {
       "id": "birds-of-a-feather-chair",
@@ -431,10 +461,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Birds of a Feather Chair”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/birds-of-a-feather-chair"
+      "cover": "/covers/birds-of-a-feather-chair",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "birds-of-a-feather-chair-spin",
@@ -457,10 +489,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Birds of a Feather Chair Spin”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/birds-of-a-feather-chair-spin"
+      "cover": "/covers/birds-of-a-feather-chair-spin",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "ceiling-fan",
@@ -483,10 +517,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Ceiling Fan”. Drop one photo, get the 13s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/ceiling-fan"
+      "cover": "/covers/ceiling-fan",
+      "video_url": null,
+      "preview_poster_url": "/previews/ceiling-fan-poster.jpg"
     },
     {
       "id": "ceiling-fan-elevator-outfits",
@@ -509,10 +545,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": "Single-photo outfit-change card tracked across fan and elevator listings.",
+      "blurb": "You, inside “Ceiling Fan / Elevator Outfits”. Drop one photo, get the 14s clip.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/ceiling-fan-elevator-outfits"
+      "cover": "/covers/ceiling-fan-elevator-outfits",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "ceiling-fan-outfit-change",
@@ -535,10 +573,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Ceiling Fan Outfit Change”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/ceiling-fan-outfit-change"
+      "cover": "/covers/ceiling-fan-outfit-change",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "ceiling-fan-transition",
@@ -561,10 +601,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Ceiling Fan Transition”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/ceiling-fan-transition"
+      "cover": "/covers/ceiling-fan-transition",
+      "video_url": null,
+      "preview_poster_url": "/previews/ceiling-fan-transition-poster.jpg"
     },
     {
       "id": "halloween-ceiling-fan",
@@ -589,10 +631,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Halloween Ceiling Fan” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/halloween-ceiling-fan"
+      "cover": "/covers/halloween-ceiling-fan",
+      "video_url": null,
+      "preview_poster_url": "/previews/halloween-ceiling-fan-poster.jpg"
     },
     {
       "id": "kung-fu-cat",
@@ -617,10 +661,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": "Single-pet action card. One clear animal photo.",
+      "blurb": "Your take on “Kung Fu Cat”. Feed it one photo, press render.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/kung-fu-cat"
+      "cover": "/covers/kung-fu-cat",
+      "video_url": null,
+      "preview_poster_url": "/previews/kung-fu-cat-poster.jpg"
     },
     {
       "id": "outstanding-tiny-desk",
@@ -645,10 +691,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Lip-sync “Outstanding (Tiny Desk)” like the original. 5 photos, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/outstanding-tiny-desk"
+      "cover": "/covers/outstanding-tiny-desk",
+      "video_url": "/previews/outstanding-tiny-desk-preview.mp4",
+      "preview_poster_url": "/previews/outstanding-tiny-desk-poster.jpg"
     },
     {
       "id": "ozil-goal",
@@ -673,10 +721,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 1,
-      "blurb": "Single-photo pitch celebration card.",
+      "blurb": "The “Ozil Goal” effect with your face in the lead. 15s, one photo.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/ozil-goal"
+      "cover": "/covers/ozil-goal",
+      "video_url": "/previews/ozil-goal-preview.mp4",
+      "preview_poster_url": "/previews/ozil-goal-poster.jpg"
     },
     {
       "id": "tiny-desk",
@@ -702,10 +752,12 @@
       "cross_count": 6,
       "priority": 11,
       "credit_cost": 2,
-      "blurb": "Five-photo desk performance card. Upload the full portrait set before generating.",
+      "blurb": "The “Tiny Desk” effect with your face in the lead. 15s, 5 photos.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/tiny-desk"
+      "cover": "/covers/tiny-desk",
+      "video_url": null,
+      "preview_poster_url": "/previews/tiny-desk-poster.jpg"
     },
     {
       "id": "closing-door-prank",
@@ -725,10 +777,12 @@
       "cross_count": 3,
       "priority": 11,
       "credit_cost": 2,
-      "blurb": "Two-photo doorway prank card.",
+      "blurb": "You, inside “Closing Door Prank”. Drop 2 photos, get the 13s clip.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/closing-door-prank"
+      "cover": "/covers/closing-door-prank",
+      "video_url": null,
+      "preview_poster_url": "/previews/closing-door-prank-poster.jpg"
     },
     {
       "id": "bad-times",
@@ -752,10 +806,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Bad Times Trend”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bad-times"
+      "cover": "/covers/bad-times",
+      "video_url": null,
+      "preview_poster_url": "/previews/bad-times-poster.jpg"
     },
     {
       "id": "cardo-your-dinner-is-ready",
@@ -779,10 +835,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Cardo, Your Dinner Is Ready”, but it's you. 2 photos in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/cardo-your-dinner-is-ready"
+      "cover": "/covers/cardo-your-dinner-is-ready",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "choosin-texas-emo",
@@ -807,10 +865,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Choosin' Texas Emo”. Drop one photo, get the 15s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/choosin-texas-emo"
+      "cover": "/covers/choosin-texas-emo",
+      "video_url": null,
+      "preview_poster_url": "/previews/choosin-texas-emo-poster.jpg"
     },
     {
       "id": "choosin-texas-remix-emo-version",
@@ -834,10 +894,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Choosin' Texas Remix Emo Version” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/choosin-texas-remix-emo-version"
+      "cover": "/covers/choosin-texas-remix-emo-version",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "first-time-fancy-cafe",
@@ -859,10 +921,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “First Time Fancy Cafe”. Drop one photo, get the 15s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/first-time-fancy-cafe"
+      "cover": "/covers/first-time-fancy-cafe",
+      "video_url": null,
+      "preview_poster_url": "/previews/first-time-fancy-cafe-poster.jpg"
     },
     {
       "id": "hop-hop-hop",
@@ -886,10 +950,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Hop Hop Hop Dance”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hop-hop-hop"
+      "cover": "/covers/hop-hop-hop",
+      "video_url": null,
+      "preview_poster_url": "/previews/hop-hop-hop-poster.jpg"
     },
     {
       "id": "hotel-lobby",
@@ -911,10 +977,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Hotel Lobby” effect with your face in the lead. 15s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hotel-lobby"
+      "cover": "/covers/hotel-lobby",
+      "video_url": null,
+      "preview_poster_url": "/previews/hotel-lobby-poster.jpg"
     },
     {
       "id": "hotel-lobby-rap-duo",
@@ -936,10 +1004,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Hotel Lobby Rap Duo”, but it's you. 2 photos in, one 15s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hotel-lobby-rap-duo"
+      "cover": "/covers/hotel-lobby-rap-duo",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "puerto-rican-mami",
@@ -964,10 +1034,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Puerto Rican Mami Dance”, but it's you. 2 photos in, one 15s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/puerto-rican-mami"
+      "cover": "/covers/puerto-rican-mami",
+      "video_url": null,
+      "preview_poster_url": "/previews/puerto-rican-mami-poster.jpg"
     },
     {
       "id": "skull-cap",
@@ -992,10 +1064,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Skull Cap Trend”, but it's you. one photo in, one 11s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/skull-cap"
+      "cover": "/covers/skull-cap",
+      "video_url": null,
+      "preview_poster_url": "/previews/skull-cap-poster.jpg"
     },
     {
       "id": "toosie-slide",
@@ -1020,10 +1094,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Lip-sync “Toosie Slide” like the original. 2 photos, 14s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/toosie-slide"
+      "cover": "/covers/toosie-slide",
+      "video_url": null,
+      "preview_poster_url": "/previews/toosie-slide-poster.jpg"
     },
     {
       "id": "toy-car-to-real-car",
@@ -1045,10 +1121,12 @@
       "cross_count": 5,
       "priority": 10,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Toy Car to Real Car”, but it's you. 2 photos in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/toy-car-to-real-car"
+      "cover": "/covers/toy-car-to-real-car",
+      "video_url": null,
+      "preview_poster_url": "/previews/toy-car-to-real-car-poster.jpg"
     },
     {
       "id": "58th-floor",
@@ -1072,10 +1150,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You perform “58th Floor” beat for beat. 2 photos, 15s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/58th-floor"
+      "cover": "/covers/58th-floor",
+      "video_url": null,
+      "preview_poster_url": "/previews/58th-floor-poster.jpg"
     },
     {
       "id": "bottle-kick",
@@ -1098,10 +1178,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Bottle Kick”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bottle-kick"
+      "cover": "/covers/bottle-kick",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "bottle-kick-challenge",
@@ -1122,10 +1204,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Bottle Kick Challenge”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bottle-kick-challenge"
+      "cover": "/covers/bottle-kick-challenge",
+      "video_url": null,
+      "preview_poster_url": "/previews/bottle-kick-challenge-poster.webp"
     },
     {
       "id": "bye-bye-outfit-change",
@@ -1148,10 +1232,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Bye Bye Outfit Change”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bye-bye-outfit-change"
+      "cover": "/covers/bye-bye-outfit-change",
+      "video_url": null,
+      "preview_poster_url": "/previews/bye-bye-outfit-change-poster.jpg"
     },
     {
       "id": "end-of-watch",
@@ -1174,10 +1260,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“End of Watch”, but it's you. one photo in, one 11s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/end-of-watch"
+      "cover": "/covers/end-of-watch",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "end-of-watch-locker",
@@ -1200,10 +1288,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“End of Watch Locker”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/end-of-watch-locker"
+      "cover": "/covers/end-of-watch-locker",
+      "video_url": null,
+      "preview_poster_url": "/previews/end-of-watch-locker-poster.jpg"
     },
     {
       "id": "end-of-watch-locker-scene",
@@ -1224,10 +1314,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “End of Watch Locker Scene” effect with your face in the lead. 12s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/end-of-watch-locker-scene"
+      "cover": "/covers/end-of-watch-locker-scene",
+      "video_url": null,
+      "preview_poster_url": "/previews/end-of-watch-locker-scene-poster.jpg"
     },
     {
       "id": "grease",
@@ -1251,10 +1343,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Grease Dance” — same energy, 2 photos, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/grease"
+      "cover": "/covers/grease",
+      "video_url": null,
+      "preview_poster_url": "/previews/grease-poster.jpg"
     },
     {
       "id": "hit-the-road-dude",
@@ -1277,10 +1371,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Hit the Road Dude” — same energy, one photo, 11s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hit-the-road-dude"
+      "cover": "/covers/hit-the-road-dude",
+      "video_url": null,
+      "preview_poster_url": "/previews/hit-the-road-dude-poster.webp"
     },
     {
       "id": "phone-on-train",
@@ -1301,10 +1397,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Phone on Train Trend”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/phone-on-train"
+      "cover": "/covers/phone-on-train",
+      "video_url": null,
+      "preview_poster_url": "/previews/phone-on-train-poster.jpg"
     },
     {
       "id": "pick-it-up-make-it-jump",
@@ -1325,10 +1423,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Pick It Up Make It Jump Dance”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pick-it-up-make-it-jump"
+      "cover": "/covers/pick-it-up-make-it-jump",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "shaving-cream",
@@ -1352,10 +1452,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Shaving Cream Trend”. Drop 2 photos, get the 7s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/shaving-cream"
+      "cover": "/covers/shaving-cream",
+      "video_url": null,
+      "preview_poster_url": "/previews/shaving-cream-poster.jpg"
     },
     {
       "id": "strike-a-pole",
@@ -1379,10 +1481,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Strike a Pole”, but it's you. 2 photos in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/strike-a-pole"
+      "cover": "/covers/strike-a-pole",
+      "video_url": null,
+      "preview_poster_url": "/previews/strike-a-pole-poster.jpg"
     },
     {
       "id": "wassup-in-a-minute",
@@ -1406,10 +1510,12 @@
       "cross_count": 4,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Wassup in a Minute”. Drop 4 photos, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/wassup-in-a-minute"
+      "cover": "/covers/wassup-in-a-minute",
+      "video_url": null,
+      "preview_poster_url": "/previews/wassup-in-a-minute-poster.jpg"
     },
     {
       "id": "flamingo-float",
@@ -1427,10 +1533,12 @@
       "cross_count": 1,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": "Single-photo pool-float card from the latest radar pass.",
+      "blurb": "You, inside “Flamingo Float”. Drop one photo, get the 12s clip.",
       "featured": true,
       "origin": "radar",
-      "cover": "/covers/flamingo-float"
+      "cover": "/covers/flamingo-float",
+      "video_url": null,
+      "preview_poster_url": "/previews/flamingo-float-poster.jpg"
     },
     {
       "id": "giant-ramp-climbing",
@@ -1448,10 +1556,12 @@
       "cross_count": 1,
       "priority": 9,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Giant Ramp Climbing” — same energy, one photo, 15s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/giant-ramp-climbing"
+      "cover": "/covers/giant-ramp-climbing",
+      "video_url": null,
+      "preview_poster_url": "/previews/giant-ramp-climbing-poster.jpg"
     },
     {
       "id": "just-a-lil-bit",
@@ -1473,10 +1583,12 @@
       "cross_count": 3,
       "priority": 6,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Just a Lil Bit Dance” effect with your face in the lead. 26s, 3 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/just-a-lil-bit"
+      "cover": "/covers/just-a-lil-bit",
+      "video_url": null,
+      "preview_poster_url": "/previews/just-a-lil-bit-poster.jpg"
     },
     {
       "id": "lisa-tarantino",
@@ -1498,10 +1610,12 @@
       "cross_count": 3,
       "priority": 6,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“LISA Tarantino Dance”, but it's you. one photo in, one 15s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/lisa-tarantino"
+      "cover": "/covers/lisa-tarantino",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "transmission-5",
@@ -1523,10 +1637,12 @@
       "cross_count": 3,
       "priority": 6,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Transmission 5 Dance” — same energy, 2 photos, 14s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/transmission-5"
+      "cover": "/covers/transmission-5",
+      "video_url": null,
+      "preview_poster_url": "/previews/transmission-5-poster.jpg"
     },
     {
       "id": "bing-bing-bing-kicks",
@@ -1547,10 +1663,12 @@
       "cross_count": 2,
       "priority": 5,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Bing Bing Bing Kicks” effect with your face in the lead. 12s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bing-bing-bing-kicks"
+      "cover": "/covers/bing-bing-bing-kicks",
+      "video_url": null,
+      "preview_poster_url": "/previews/bing-bing-bing-kicks-poster.jpg"
     },
     {
       "id": "christmas-dances-this-year",
@@ -1568,10 +1686,12 @@
       "cross_count": 1,
       "priority": 4,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Christmas Dances This Year”. Drop one photo, get the 17s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/christmas-dances-this-year"
+      "cover": "/covers/christmas-dances-this-year",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "christmas-tree-dog",
@@ -1589,10 +1709,12 @@
       "cross_count": 1,
       "priority": 4,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Christmas Tree Dog”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/christmas-tree-dog"
+      "cover": "/covers/christmas-tree-dog",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "it-s-my-life-dog",
@@ -1610,10 +1732,12 @@
       "cross_count": 1,
       "priority": 4,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “It's My Life Dog”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/it-s-my-life-dog"
+      "cover": "/covers/it-s-my-life-dog",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "mickey-d-s",
@@ -1631,10 +1755,12 @@
       "cross_count": 1,
       "priority": 4,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Mickey D's Dance” — same energy, 2 photos, 9s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/mickey-d-s"
+      "cover": "/covers/mickey-d-s",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "reindeer-dog",
@@ -1652,10 +1778,12 @@
       "cross_count": 1,
       "priority": 4,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Reindeer Dog”. Drop one photo, get the 15s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/reindeer-dog"
+      "cover": "/covers/reindeer-dog",
+      "video_url": null,
+      "preview_poster_url": "/previews/reindeer-dog-poster.jpg"
     },
     {
       "id": "talk-dirty",
@@ -1673,10 +1801,12 @@
       "cross_count": 1,
       "priority": 4,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Talk Dirty Dance”, but it's you. one photo in, one 13s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/talk-dirty"
+      "cover": "/covers/talk-dirty",
+      "video_url": null,
+      "preview_poster_url": "/previews/talk-dirty-poster.jpg"
     },
     {
       "id": "24k-magic",
@@ -1696,10 +1826,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “24K Magic”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/24k-magic"
+      "cover": "/covers/24k-magic",
+      "video_url": "/previews/24k-magic-preview.mp4",
+      "preview_poster_url": "/previews/24k-magic-poster.jpg"
     },
     {
       "id": "24k-magic-cruise",
@@ -1722,10 +1854,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Lip-sync “24K Magic Cruise” like the original. 2 photos, 30s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/24k-magic-cruise"
+      "cover": "/covers/24k-magic-cruise",
+      "video_url": "/previews/24k-magic-cruise-preview.mp4",
+      "preview_poster_url": "/previews/24k-magic-cruise-poster.jpg"
     },
     {
       "id": "cat-story",
@@ -1747,10 +1881,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “AI Cat Story”. Drop one photo, get the 12s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/cat-story"
+      "cover": "/covers/cat-story",
+      "video_url": null,
+      "preview_poster_url": "/previews/cat-story-poster.jpg"
     },
     {
       "id": "alors-on-danse",
@@ -1772,10 +1908,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Alors On Danse”. Drop 2 photos, get the 11s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/alors-on-danse"
+      "cover": "/covers/alors-on-danse",
+      "video_url": "/previews/alors-on-danse-preview.mp4",
+      "preview_poster_url": "/previews/alors-on-danse-poster.webp"
     },
     {
       "id": "bby-wow-guy",
@@ -1795,10 +1933,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Bby Wow Guy”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bby-wow-guy"
+      "cover": "/covers/bby-wow-guy",
+      "video_url": null,
+      "preview_poster_url": "/previews/bby-wow-guy-poster.jpg"
     },
     {
       "id": "cat-middle-finger",
@@ -1820,10 +1960,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Cat Middle Finger”, but it's you. one photo in, one 6s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/cat-middle-finger"
+      "cover": "/covers/cat-middle-finger",
+      "video_url": null,
+      "preview_poster_url": "/previews/cat-middle-finger-poster.jpg"
     },
     {
       "id": "dog-crew",
@@ -1845,10 +1987,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Dog Dance Crew”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/dog-crew"
+      "cover": "/covers/dog-crew",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "halloween-makeup",
@@ -1870,10 +2014,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Halloween Makeup Filter”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/halloween-makeup"
+      "cover": "/covers/halloween-makeup",
+      "video_url": null,
+      "preview_poster_url": "/previews/halloween-makeup-poster.jpg"
     },
     {
       "id": "mi-chico",
@@ -1893,10 +2039,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Mi Chico Dance”, but it's you. one photo in, one 13s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/mi-chico"
+      "cover": "/covers/mi-chico",
+      "video_url": null,
+      "preview_poster_url": "/previews/mi-chico-poster.jpg"
     },
     {
       "id": "pumpkin-kick",
@@ -1918,10 +2066,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Pumpkin Kick” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pumpkin-kick"
+      "cover": "/covers/pumpkin-kick",
+      "video_url": null,
+      "preview_poster_url": "/previews/pumpkin-kick-poster.jpg"
     },
     {
       "id": "rumpelstiltskin",
@@ -1941,10 +2091,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Rumpelstiltskin Dance”, but it's you. one photo in, one 15s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/rumpelstiltskin"
+      "cover": "/covers/rumpelstiltskin",
+      "video_url": "/previews/rumpelstiltskin-preview.mp4",
+      "preview_poster_url": "/previews/rumpelstiltskin-poster.webp"
     },
     {
       "id": "stateside",
@@ -1966,10 +2118,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Stateside Dance” — same energy, 2 photos, 15s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/stateside"
+      "cover": "/covers/stateside",
+      "video_url": null,
+      "preview_poster_url": "/previews/stateside-poster.jpg"
     },
     {
       "id": "thriller",
@@ -1989,10 +2143,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Thriller Dance”. Drop 2 photos, get the 20s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/thriller"
+      "cover": "/covers/thriller",
+      "video_url": null,
+      "preview_poster_url": "/previews/thriller-poster.jpg"
     },
     {
       "id": "tiptoeing-in-my-jordans",
@@ -2014,10 +2170,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Tiptoeing In My Jordans” effect with your face in the lead. 15s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/tiptoeing-in-my-jordans"
+      "cover": "/covers/tiptoeing-in-my-jordans",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "trouble-maker",
@@ -2039,10 +2197,12 @@
       "cross_count": 3,
       "priority": 3,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Trouble Maker Dance”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/trouble-maker"
+      "cover": "/covers/trouble-maker",
+      "video_url": null,
+      "preview_poster_url": "/previews/trouble-maker-poster.jpg"
     },
     {
       "id": "angel-or-devil",
@@ -2061,10 +2221,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Angel or Devil Filter”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/angel-or-devil"
+      "cover": "/covers/angel-or-devil",
+      "video_url": null,
+      "preview_poster_url": "/previews/angel-or-devil-poster.jpg"
     },
     {
       "id": "bing-bing-bing-kicking",
@@ -2083,10 +2245,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Bing Bing Bing Kicking” effect with your face in the lead. 12s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bing-bing-bing-kicking"
+      "cover": "/covers/bing-bing-bing-kicking",
+      "video_url": null,
+      "preview_poster_url": "/previews/bing-bing-bing-kicking-poster.jpg"
     },
     {
       "id": "burning-bridges",
@@ -2105,10 +2269,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Burning Bridges”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/burning-bridges"
+      "cover": "/covers/burning-bridges",
+      "video_url": null,
+      "preview_poster_url": "/previews/burning-bridges-poster.webp"
     },
     {
       "id": "deep-down-in-my-heart",
@@ -2129,10 +2295,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Deep Down In My Heart”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/deep-down-in-my-heart"
+      "cover": "/covers/deep-down-in-my-heart",
+      "video_url": null,
+      "preview_poster_url": "/previews/deep-down-in-my-heart-poster.jpg"
     },
     {
       "id": "deep-down-in-my-heart-duo",
@@ -2151,10 +2319,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Deep Down In My Heart Duo” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/deep-down-in-my-heart-duo"
+      "cover": "/covers/deep-down-in-my-heart-duo",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "electric-shock-pet-prank",
@@ -2173,10 +2343,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Electric Shock Pet Prank” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/electric-shock-pet-prank"
+      "cover": "/covers/electric-shock-pet-prank",
+      "video_url": null,
+      "preview_poster_url": "/previews/electric-shock-pet-prank-poster.jpg"
     },
     {
       "id": "electric-shock-prank",
@@ -2195,10 +2367,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Electric Shock Prank” effect with your face in the lead. 12s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/electric-shock-prank"
+      "cover": "/covers/electric-shock-prank",
+      "video_url": null,
+      "preview_poster_url": "/previews/electric-shock-prank-poster.jpg"
     },
     {
       "id": "gas-station",
@@ -2217,10 +2391,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Gas Station Dance”, but it's you. 3 photos in, one 13s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/gas-station"
+      "cover": "/covers/gas-station",
+      "video_url": null,
+      "preview_poster_url": "/previews/gas-station-poster.jpg"
     },
     {
       "id": "monkey-eating-apple",
@@ -2241,10 +2417,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Monkey Eating Apple”. Drop one photo, get the 8s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/monkey-eating-apple"
+      "cover": "/covers/monkey-eating-apple",
+      "video_url": "/previews/monkey-eating-apple-preview.mp4",
+      "preview_poster_url": "/previews/monkey-eating-apple-poster.webp"
     },
     {
       "id": "mr-and-mrs-stretchy",
@@ -2265,10 +2443,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Mr and Mrs Stretchy”. Drop 2 photos, get the 6s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/mr-and-mrs-stretchy"
+      "cover": "/covers/mr-and-mrs-stretchy",
+      "video_url": "/previews/mr-and-mrs-stretchy-preview.mp4",
+      "preview_poster_url": "/previews/mr-and-mrs-stretchy-poster.webp"
     },
     {
       "id": "ramalama-costume-walk",
@@ -2287,10 +2467,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Ramalama Costume Walk” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/ramalama-costume-walk"
+      "cover": "/covers/ramalama-costume-walk",
+      "video_url": null,
+      "preview_poster_url": "/previews/ramalama-costume-walk-poster.jpg"
     },
     {
       "id": "roadster-ramp",
@@ -2311,10 +2493,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Roadster Ramp”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/roadster-ramp"
+      "cover": "/covers/roadster-ramp",
+      "video_url": "/previews/roadster-ramp-preview.mp4",
+      "preview_poster_url": "/previews/roadster-ramp-poster.jpg"
     },
     {
       "id": "roadster-ramp-flip",
@@ -2333,10 +2517,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Roadster Ramp Flip”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/roadster-ramp-flip"
+      "cover": "/covers/roadster-ramp-flip",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "sidewalk-collision",
@@ -2355,10 +2541,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Sidewalk Collision”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/sidewalk-collision"
+      "cover": "/covers/sidewalk-collision",
+      "video_url": null,
+      "preview_poster_url": "/previews/sidewalk-collision-poster.jpg"
     },
     {
       "id": "skyfall",
@@ -2379,10 +2567,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Skyfall AI Trend” effect with your face in the lead. 5s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/skyfall"
+      "cover": "/covers/skyfall",
+      "video_url": null,
+      "preview_poster_url": "/previews/skyfall-poster.jpg"
     },
     {
       "id": "zombie-love-story",
@@ -2403,10 +2593,12 @@
       "cross_count": 2,
       "priority": 2,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Zombie Love Story” — same energy, 2 photos, 24s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/zombie-love-story"
+      "cover": "/covers/zombie-love-story",
+      "video_url": null,
+      "preview_poster_url": "/previews/zombie-love-story-poster.jpg"
     },
     {
       "id": "a2o-lite-neon",
@@ -2424,10 +2616,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “A2O LITE NEON Dance” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/a2o-lite-neon"
+      "cover": "/covers/a2o-lite-neon",
+      "video_url": "/previews/a2o-lite-neon-preview.mp4",
+      "preview_poster_url": "/previews/a2o-lite-neon-poster.webp"
     },
     {
       "id": "animal-micro-drama",
@@ -2447,10 +2641,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“AI Animal Micro-Drama”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/animal-micro-drama"
+      "cover": "/covers/animal-micro-drama",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "cat-front-door-ring-band",
@@ -2470,10 +2666,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “AI Cat Front Door / Ring Band”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/cat-front-door-ring-band"
+      "cover": "/covers/cat-front-door-ring-band",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "couple-prank",
@@ -2493,10 +2691,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “AI Couple Prank”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/couple-prank"
+      "cover": "/covers/couple-prank",
+      "video_url": null,
+      "preview_poster_url": "/previews/couple-prank-poster.jpg"
     },
     {
       "id": "crying",
@@ -2514,10 +2714,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“AI Crying”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/crying"
+      "cover": "/covers/crying",
+      "video_url": "/previews/crying-preview.mp4",
+      "preview_poster_url": "/previews/crying-poster.webp"
     },
     {
       "id": "elf-yourself",
@@ -2537,10 +2739,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “AI Elf Yourself”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/elf-yourself"
+      "cover": "/covers/elf-yourself",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "face",
@@ -2560,10 +2764,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “AI Face Dance” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/face"
+      "cover": "/covers/face",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "face-swap",
@@ -2583,10 +2789,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “AI Face Swap Video”. Drop one photo, get the 30s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/face-swap"
+      "cover": "/covers/face-swap",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "grammy-winner",
@@ -2604,10 +2812,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “AI Grammy Winner”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/grammy-winner"
+      "cover": "/covers/grammy-winner",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "hug-me",
@@ -2627,10 +2837,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “AI Hug Me Filter” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hug-me"
+      "cover": "/covers/hug-me",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "pet-dancing-dog",
@@ -2650,10 +2862,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “AI Pet Dance / Dancing Dog”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-dancing-dog"
+      "cover": "/covers/pet-dancing-dog",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "pet-interview",
@@ -2673,10 +2887,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “AI Pet Interview” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-interview"
+      "cover": "/covers/pet-interview",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "red-riding-hood",
@@ -2696,10 +2912,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “AI Red Riding Hood”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/red-riding-hood"
+      "cover": "/covers/red-riding-hood",
+      "video_url": null,
+      "preview_poster_url": "/previews/red-riding-hood-poster.jpg"
     },
     {
       "id": "snow",
@@ -2719,10 +2937,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “AI Snow Video”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/snow"
+      "cover": "/covers/snow",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "talking-pet",
@@ -2742,10 +2962,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“AI Talking Pet”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/talking-pet"
+      "cover": "/covers/talking-pet",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "ali-g-driving-scene",
@@ -2765,10 +2987,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Ali G Driving Scene”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/ali-g-driving-scene"
+      "cover": "/covers/ali-g-driving-scene",
+      "video_url": null,
+      "preview_poster_url": "/previews/ali-g-driving-scene-poster.jpg"
     },
     {
       "id": "anitkabir",
@@ -2788,10 +3012,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Anıtkabir”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/anitkabir"
+      "cover": "/covers/anitkabir",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "apt",
@@ -2811,10 +3037,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Lip-sync “APT.” like the original. 2 photos, 26s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/apt"
+      "cover": "/covers/apt",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "baby-reindeer-santa",
@@ -2834,10 +3062,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Baby Reindeer Santa” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/baby-reindeer-santa"
+      "cover": "/covers/baby-reindeer-santa",
+      "video_url": null,
+      "preview_poster_url": "/previews/baby-reindeer-santa-poster.jpg"
     },
     {
       "id": "baby-with-mustache",
@@ -2857,10 +3087,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Baby With Mustache”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/baby-with-mustache"
+      "cover": "/covers/baby-with-mustache",
+      "video_url": "/previews/baby-with-mustache-preview.mp4",
+      "preview_poster_url": "/previews/baby-with-mustache-poster.jpg"
     },
     {
       "id": "becane",
@@ -2880,10 +3112,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Bécane” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/becane"
+      "cover": "/covers/becane",
+      "video_url": "/previews/becane-preview.mp4",
+      "preview_poster_url": "/previews/becane-poster.webp"
     },
     {
       "id": "biker-birthday",
@@ -2901,10 +3135,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Biker Birthday” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/biker-birthday"
+      "cover": "/covers/biker-birthday",
+      "video_url": null,
+      "preview_poster_url": "/previews/biker-birthday-poster.jpg"
     },
     {
       "id": "birthday-car",
@@ -2922,10 +3158,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Birthday Car” effect with your face in the lead. 8s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/birthday-car"
+      "cover": "/covers/birthday-car",
+      "video_url": null,
+      "preview_poster_url": "/previews/birthday-car-poster.jpg"
     },
     {
       "id": "birthday-car-drift-blow-out-the-candles",
@@ -2943,10 +3181,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Birthday Car: Drift & Blow Out the Candles”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/birthday-car-drift-blow-out-the-candles"
+      "cover": "/covers/birthday-car-drift-blow-out-the-candles",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "bulin-47",
@@ -2966,10 +3206,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Bulin 47”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/bulin-47"
+      "cover": "/covers/bulin-47",
+      "video_url": null,
+      "preview_poster_url": "/previews/bulin-47-poster.jpg"
     },
     {
       "id": "burger-pet-window",
@@ -2987,10 +3229,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Burger Pet Window” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/burger-pet-window"
+      "cover": "/covers/burger-pet-window",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "button-eye-doll-reveal",
@@ -3008,10 +3252,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Button Eye Doll Reveal” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/button-eye-doll-reveal"
+      "cover": "/covers/button-eye-doll-reveal",
+      "video_url": null,
+      "preview_poster_url": "/previews/button-eye-doll-reveal-poster.jpg"
     },
     {
       "id": "c-walk",
@@ -3031,10 +3277,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “C-Walk AI Dance”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/c-walk"
+      "cover": "/covers/c-walk",
+      "video_url": null,
+      "preview_poster_url": "/previews/c-walk-poster.jpg"
     },
     {
       "id": "calcanhar-2",
@@ -3054,10 +3302,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Calcanhar 2 Dance”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/calcanhar-2"
+      "cover": "/covers/calcanhar-2",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "caught-dancing-at-the-window",
@@ -3075,10 +3325,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Caught Dancing at the Window” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/caught-dancing-at-the-window"
+      "cover": "/covers/caught-dancing-at-the-window",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "christmas-car-lights",
@@ -3098,10 +3350,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Christmas Car Lights”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/christmas-car-lights"
+      "cover": "/covers/christmas-car-lights",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "clapping-cat",
@@ -3119,10 +3373,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Clapping Cat” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/clapping-cat"
+      "cover": "/covers/clapping-cat",
+      "video_url": null,
+      "preview_poster_url": "/previews/clapping-cat-poster.jpg"
     },
     {
       "id": "closer",
@@ -3140,10 +3396,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Closer Dance”. Feed it 2 photos, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/closer"
+      "cover": "/covers/closer",
+      "video_url": null,
+      "preview_poster_url": "/previews/closer-poster.jpg"
     },
     {
       "id": "club-spotlight-couple",
@@ -3161,10 +3419,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Club Spotlight Couple”. Drop 2 photos, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/club-spotlight-couple"
+      "cover": "/covers/club-spotlight-couple",
+      "video_url": null,
+      "preview_poster_url": "/previews/club-spotlight-couple-poster.jpg"
     },
     {
       "id": "costume-reveal",
@@ -3182,10 +3442,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Costume Reveal” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/costume-reveal"
+      "cover": "/covers/costume-reveal",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "crazy-frog",
@@ -3203,10 +3465,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Crazy Frog” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/crazy-frog"
+      "cover": "/covers/crazy-frog",
+      "video_url": null,
+      "preview_poster_url": "/previews/crazy-frog-poster.jpg"
     },
     {
       "id": "dame-hombro",
@@ -3224,10 +3488,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Dame Hombro”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/dame-hombro"
+      "cover": "/covers/dame-hombro",
+      "video_url": "/previews/dame-hombro-preview.mp4",
+      "preview_poster_url": "/previews/dame-hombro-poster.webp"
     },
     {
       "id": "darts-170-prank",
@@ -3247,10 +3513,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Darts 170 Prank” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/darts-170-prank"
+      "cover": "/covers/darts-170-prank",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "deserve-rain-scene",
@@ -3270,10 +3538,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“DESERVE Rain Scene”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/deserve-rain-scene"
+      "cover": "/covers/deserve-rain-scene",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "drink-fly-bump",
@@ -3293,10 +3563,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Drink Fly Bump” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/drink-fly-bump"
+      "cover": "/covers/drink-fly-bump",
+      "video_url": null,
+      "preview_poster_url": "/previews/drink-fly-bump-poster.jpg"
     },
     {
       "id": "face-squish",
@@ -3316,10 +3588,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Face Squish”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/face-squish"
+      "cover": "/covers/face-squish",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "flying-broom-getaway",
@@ -3337,10 +3611,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Flying Broom Getaway”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/flying-broom-getaway"
+      "cover": "/covers/flying-broom-getaway",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "flying-tesla-roadster",
@@ -3358,10 +3634,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Flying Tesla Roadster” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/flying-tesla-roadster"
+      "cover": "/covers/flying-tesla-roadster",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "funny-pet-selfie-fail",
@@ -3379,10 +3657,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Funny Pet Selfie Fail”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/funny-pet-selfie-fail"
+      "cover": "/covers/funny-pet-selfie-fail",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "gang-gang",
@@ -3400,10 +3680,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Gang Gang Dance”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/gang-gang"
+      "cover": "/covers/gang-gang",
+      "video_url": null,
+      "preview_poster_url": "/previews/gang-gang-poster.jpg"
     },
     {
       "id": "gangnam-style",
@@ -3421,10 +3703,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Gangnam Style Dance” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/gangnam-style"
+      "cover": "/covers/gangnam-style",
+      "video_url": null,
+      "preview_poster_url": "/previews/gangnam-style-poster.webp"
     },
     {
       "id": "hair-dye",
@@ -3442,10 +3726,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Hair Dye Filter” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hair-dye"
+      "cover": "/covers/hair-dye",
+      "video_url": null,
+      "preview_poster_url": "/previews/hair-dye-poster.jpg"
     },
     {
       "id": "hello-2027",
@@ -3465,10 +3751,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Hello 2027”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/hello-2027"
+      "cover": "/covers/hello-2027",
+      "video_url": null,
+      "preview_poster_url": "/previews/hello-2027-poster.jpg"
     },
     {
       "id": "i-need-a-girl",
@@ -3488,10 +3776,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Lip-sync “I Need A Girl Dance” like the original. 2 photos, 15s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/i-need-a-girl"
+      "cover": "/covers/i-need-a-girl",
+      "video_url": "/previews/i-need-a-girl-preview.mp4",
+      "preview_poster_url": "/previews/i-need-a-girl-poster.jpg"
     },
     {
       "id": "i-wanna-love-you",
@@ -3511,10 +3801,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your pet stars in “I Wanna Love You”. one photo, 10s of chaos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/i-wanna-love-you"
+      "cover": "/covers/i-wanna-love-you",
+      "video_url": null,
+      "preview_poster_url": "/previews/i-wanna-love-you-poster.jpg"
     },
     {
       "id": "knight-cat",
@@ -3532,10 +3824,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Knight Cat”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/knight-cat"
+      "cover": "/covers/knight-cat",
+      "video_url": null,
+      "preview_poster_url": "/previews/knight-cat-poster.jpg"
     },
     {
       "id": "kolpacino-car-scene",
@@ -3555,10 +3849,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Kolpaçino Car Scene” effect with your face in the lead. 10s, 2 photos.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/kolpacino-car-scene"
+      "cover": "/covers/kolpacino-car-scene",
+      "video_url": null,
+      "preview_poster_url": "/previews/kolpacino-car-scene-poster.jpg"
     },
     {
       "id": "laughing-fairy",
@@ -3576,10 +3872,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Laughing Fairy” — same energy, 2 photos, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/laughing-fairy"
+      "cover": "/covers/laughing-fairy",
+      "video_url": null,
+      "preview_poster_url": "/previews/laughing-fairy-poster.jpg"
     },
     {
       "id": "mafia-boss",
@@ -3599,10 +3897,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Mafia Boss Filter”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/mafia-boss"
+      "cover": "/covers/mafia-boss",
+      "video_url": null,
+      "preview_poster_url": "/previews/mafia-boss-poster.jpg"
     },
     {
       "id": "meet-my-older-self",
@@ -3622,10 +3922,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Meet My Older Self”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/meet-my-older-self"
+      "cover": "/covers/meet-my-older-self",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "mirror",
@@ -3645,10 +3947,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Mirror Dance”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/mirror"
+      "cover": "/covers/mirror",
+      "video_url": null,
+      "preview_poster_url": "/previews/mirror-poster.jpg"
     },
     {
       "id": "money-flex",
@@ -3668,10 +3972,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Money Flex” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/money-flex"
+      "cover": "/covers/money-flex",
+      "video_url": null,
+      "preview_poster_url": "/previews/money-flex-poster.jpg"
     },
     {
       "id": "my-prime-1v1-dunk",
@@ -3689,10 +3995,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “My Prime 1v1 Dunk”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/my-prime-1v1-dunk"
+      "cover": "/covers/my-prime-1v1-dunk",
+      "video_url": null,
+      "preview_poster_url": "/previews/my-prime-1v1-dunk-poster.jpg"
     },
     {
       "id": "nightwing",
@@ -3712,10 +4020,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Nightwing AI Trend”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/nightwing"
+      "cover": "/covers/nightwing",
+      "video_url": null,
+      "preview_poster_url": "/previews/nightwing-poster.jpg"
     },
     {
       "id": "parrot",
@@ -3733,10 +4043,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Parrot Dance” effect with your face in the lead. 15s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/parrot"
+      "cover": "/covers/parrot",
+      "video_url": "/previews/parrot-preview.mp4",
+      "preview_poster_url": "/previews/parrot-poster.webp"
     },
     {
       "id": "pet-afterlife-check-in",
@@ -3754,10 +4066,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Pet Afterlife Check-In” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-afterlife-check-in"
+      "cover": "/covers/pet-afterlife-check-in",
+      "video_url": null,
+      "preview_poster_url": "/previews/pet-afterlife-check-in-poster.jpg"
     },
     {
       "id": "pet-bowl-cut",
@@ -3775,10 +4089,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Pet Bowl Cut” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-bowl-cut"
+      "cover": "/covers/pet-bowl-cut",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "pet-carpool-karaoke",
@@ -3798,10 +4114,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Pet Carpool Karaoke” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-carpool-karaoke"
+      "cover": "/covers/pet-carpool-karaoke",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "pet-fridge-cake-heist",
@@ -3819,10 +4137,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Pet Fridge Cake Heist”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-fridge-cake-heist"
+      "cover": "/covers/pet-fridge-cake-heist",
+      "video_url": null,
+      "preview_poster_url": "/previews/pet-fridge-cake-heist-poster.jpg"
     },
     {
       "id": "pet-halloween-costume-parade",
@@ -3840,10 +4160,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Pet Halloween Costume Parade” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-halloween-costume-parade"
+      "cover": "/covers/pet-halloween-costume-parade",
+      "video_url": null,
+      "preview_poster_url": "/previews/pet-halloween-costume-parade-poster.jpg"
     },
     {
       "id": "pet-orbit-cam",
@@ -3861,10 +4183,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Pet Orbit Cam”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-orbit-cam"
+      "cover": "/covers/pet-orbit-cam",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "pet-podcast",
@@ -3884,10 +4208,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Pet Podcast Effect”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pet-podcast"
+      "cover": "/covers/pet-podcast",
+      "video_url": null,
+      "preview_poster_url": "/previews/pet-podcast-poster.jpg"
     },
     {
       "id": "pimp-walk-entrance",
@@ -3907,10 +4233,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Pimp Walk Entrance” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/pimp-walk-entrance"
+      "cover": "/covers/pimp-walk-entrance",
+      "video_url": null,
+      "preview_poster_url": "/previews/pimp-walk-entrance-poster.jpg"
     },
     {
       "id": "popstar",
@@ -3928,10 +4256,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Popstar” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/popstar"
+      "cover": "/covers/popstar",
+      "video_url": null,
+      "preview_poster_url": "/previews/popstar-poster.jpg"
     },
     {
       "id": "put-a-ring-on-it-pets",
@@ -3949,10 +4279,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Put A Ring On It Pets”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/put-a-ring-on-it-pets"
+      "cover": "/covers/put-a-ring-on-it-pets",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "raven-transition",
@@ -3972,10 +4304,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Raven Transition”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/raven-transition"
+      "cover": "/covers/raven-transition",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "reverse-card-car-swap",
@@ -3993,10 +4327,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Reverse Card Car Swap” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/reverse-card-car-swap"
+      "cover": "/covers/reverse-card-car-swap",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "riding-a-reindeer",
@@ -4014,10 +4350,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Riding a Reindeer”. Drop one photo, get the 8s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/riding-a-reindeer"
+      "cover": "/covers/riding-a-reindeer",
+      "video_url": "/previews/riding-a-reindeer-preview.mp4",
+      "preview_poster_url": "/previews/riding-a-reindeer-poster.webp"
     },
     {
       "id": "roxbury-head-bob",
@@ -4035,10 +4373,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Roxbury Head Bob”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/roxbury-head-bob"
+      "cover": "/covers/roxbury-head-bob",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "sawadika",
@@ -4058,10 +4398,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Lip-sync “Sawadika” like the original. one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/sawadika"
+      "cover": "/covers/sawadika",
+      "video_url": null,
+      "preview_poster_url": "/previews/sawadika-poster.jpg"
     },
     {
       "id": "shake-it",
@@ -4081,10 +4423,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Shake It AI Dance”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/shake-it"
+      "cover": "/covers/shake-it",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "shoulder-carry-i-m-the-one",
@@ -4104,10 +4448,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Shoulder Carry I'm the One” — same energy, 2 photos, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/shoulder-carry-i-m-the-one"
+      "cover": "/covers/shoulder-carry-i-m-the-one",
+      "video_url": null,
+      "preview_poster_url": "/previews/shoulder-carry-i-m-the-one-poster.jpg"
     },
     {
       "id": "sky-falling",
@@ -4127,10 +4473,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Sky Falling” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/sky-falling"
+      "cover": "/covers/sky-falling",
+      "video_url": null,
+      "preview_poster_url": "/previews/sky-falling-poster.jpg"
     },
     {
       "id": "smalltown-boy-cat",
@@ -4148,10 +4496,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Smalltown Boy Cat Dance”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/smalltown-boy-cat"
+      "cover": "/covers/smalltown-boy-cat",
+      "video_url": null,
+      "preview_poster_url": "/previews/smalltown-boy-cat-poster.jpg"
     },
     {
       "id": "snow-leopard-meme",
@@ -4169,10 +4519,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Snow Leopard Meme”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/snow-leopard-meme"
+      "cover": "/covers/snow-leopard-meme",
+      "video_url": null,
+      "preview_poster_url": "/previews/snow-leopard-meme-poster.jpg"
     },
     {
       "id": "spa-day",
@@ -4192,10 +4544,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Put your pet inside “Spa Day” — one photo, 10s, pure viral.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/spa-day"
+      "cover": "/covers/spa-day",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "stadium-calm-down",
@@ -4215,10 +4569,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Stadium Calm Down” effect with your face in the lead. 9s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/stadium-calm-down"
+      "cover": "/covers/stadium-calm-down",
+      "video_url": "/previews/stadium-calm-down-preview.mp4",
+      "preview_poster_url": "/previews/stadium-calm-down-poster.jpg"
     },
     {
       "id": "stones-to-castle",
@@ -4236,10 +4592,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Stones to Castle” — same energy, one photo, 15s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/stones-to-castle"
+      "cover": "/covers/stones-to-castle",
+      "video_url": null,
+      "preview_poster_url": "/previews/stones-to-castle-poster.jpg"
     },
     {
       "id": "street-light-slide",
@@ -4259,10 +4617,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Street Light Slide” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/street-light-slide"
+      "cover": "/covers/street-light-slide",
+      "video_url": null,
+      "preview_poster_url": "/previews/street-light-slide-poster.jpg"
     },
     {
       "id": "subway-outfit-change",
@@ -4280,10 +4640,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Subway Outfit Change” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/subway-outfit-change"
+      "cover": "/covers/subway-outfit-change",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "sunset-squad",
@@ -4301,10 +4663,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Sunset Squad Dance” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/sunset-squad"
+      "cover": "/covers/sunset-squad",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "then-i-walk-in",
@@ -4324,10 +4688,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Then I Walk In” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/then-i-walk-in"
+      "cover": "/covers/then-i-walk-in",
+      "video_url": null,
+      "preview_poster_url": "/previews/then-i-walk-in-poster.jpg"
     },
     {
       "id": "then-i-walk-in-meme",
@@ -4345,10 +4711,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Then I Walk In Meme” — same energy, one photo, 8s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/then-i-walk-in-meme"
+      "cover": "/covers/then-i-walk-in-meme",
+      "video_url": "/previews/then-i-walk-in-meme-preview.mp4",
+      "preview_poster_url": "/previews/then-i-walk-in-meme-poster.webp"
     },
     {
       "id": "thriller-pets",
@@ -4368,10 +4736,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Put your pet inside “Thriller Pets” — one photo, 10s, pure viral.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/thriller-pets"
+      "cover": "/covers/thriller-pets",
+      "video_url": null,
+      "preview_poster_url": "/previews/thriller-pets-poster.jpg"
     },
     {
       "id": "tiger-hug-me",
@@ -4391,10 +4761,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "“Tiger Hug Me”, but it's you. one photo in, one 10s render out.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/tiger-hug-me"
+      "cover": "/covers/tiger-hug-me",
+      "video_url": null,
+      "preview_poster_url": null
     },
     {
       "id": "tim-burton-girls",
@@ -4414,10 +4786,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "The “Tim Burton Girls” effect with your face in the lead. 10s, one photo.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/tim-burton-girls"
+      "cover": "/covers/tim-burton-girls",
+      "video_url": null,
+      "preview_poster_url": "/previews/tim-burton-girls-poster.jpg"
     },
     {
       "id": "toc-toc",
@@ -4435,10 +4809,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “Toc Toc Dance”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/toc-toc"
+      "cover": "/covers/toc-toc",
+      "video_url": null,
+      "preview_poster_url": "/previews/toc-toc-poster.jpg"
     },
     {
       "id": "twilight-baseball-scene",
@@ -4458,10 +4834,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Recreate “Twilight Baseball Scene” — same energy, one photo, 10s.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/twilight-baseball-scene"
+      "cover": "/covers/twilight-baseball-scene",
+      "video_url": null,
+      "preview_poster_url": "/previews/twilight-baseball-scene-poster.jpg"
     },
     {
       "id": "witch-on-the-metro",
@@ -4481,10 +4859,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "You, inside “Witch on the Metro”. Drop one photo, get the 10s clip.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/witch-on-the-metro"
+      "cover": "/covers/witch-on-the-metro",
+      "video_url": null,
+      "preview_poster_url": "/previews/witch-on-the-metro-poster.jpg"
     },
     {
       "id": "you-look-lonely-hologram",
@@ -4502,10 +4882,12 @@
       "cross_count": 1,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": null,
+      "blurb": "Your take on “You Look Lonely Hologram”. Feed it one photo, press render.",
       "featured": false,
       "origin": "radar",
-      "cover": "/covers/you-look-lonely-hologram"
+      "cover": "/covers/you-look-lonely-hologram",
+      "video_url": "/previews/you-look-lonely-hologram-preview.mp4",
+      "preview_poster_url": "/previews/you-look-lonely-hologram-poster.webp"
     },
     {
       "id": "studio-slate",
@@ -4523,10 +4905,12 @@
       "cross_count": 0,
       "priority": 1,
       "credit_cost": 1,
-      "blurb": "EffectLab-original slate for trying the upload flow. It does not come from the radar.",
+      "blurb": "Recreate “Studio Slate” — same energy, one photo, 5s.",
       "featured": false,
       "origin": "manual",
-      "cover": "/covers/studio-slate"
+      "cover": "/covers/studio-slate",
+      "video_url": null,
+      "preview_poster_url": null
     }
   ]
 }

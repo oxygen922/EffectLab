@@ -1,13 +1,14 @@
-const PACKS = {
-  starter: { credits: 20, label: "Starter" },
-  studio: { credits: 60, label: "Studio" },
-} as const;
+import { PACKS, type PackId } from "@/lib/packs";
 
-type PackId = keyof typeof PACKS;
+const IDS: PackId[] = ["starter", "creator", "studio"];
+
+function isPackId(value: string): value is PackId {
+  return (IDS as string[]).includes(value);
+}
 
 export async function POST(request: Request) {
   const body = (await request.json().catch(() => ({}))) as { pack?: string };
-  const pack: PackId = body.pack === "studio" ? "studio" : "starter";
+  const pack: PackId = body.pack && isPackId(body.pack) ? body.pack : "creator";
   const selected = PACKS[pack];
   return Response.json(
     {

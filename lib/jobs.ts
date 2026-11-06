@@ -4,6 +4,7 @@ import path from "path";
 import { ensureUser, holdCredits, captureHold, releaseHold } from "./credits";
 import { AppError } from "./errors";
 import { assertImage, mimeFromExt, removeJobImages, saveJobImages, type StoredImage } from "./images";
+import { renderPlanForTemplate } from "./models";
 import { getProvider } from "./providers";
 import type { ProviderStatus } from "./providers/types";
 import { mutate } from "./store";
@@ -72,6 +73,7 @@ export async function createGenerationJob(input: {
   const id = randomUUID();
   const now = new Date().toISOString();
   const provider = getProvider();
+  const cost = renderPlanForTemplate(template.slug, template.credit_cost).unitCost;
 
   await mutate((db) => {
     ensureUser(db, userId, now);
@@ -82,7 +84,7 @@ export async function createGenerationJob(input: {
       templateSlug: template.slug,
       templateName: template.name,
       status: "pending",
-      creditCost: template.credit_cost,
+      creditCost: cost,
       creditsState: "held",
       provider: provider.name,
       providerJobId: null,
@@ -93,7 +95,7 @@ export async function createGenerationJob(input: {
       createdAt: now,
       updatedAt: now,
     };
-    holdCredits(db, userId, template.credit_cost, id, `Hold for ${template.name}`, now);
+    holdCredits(db, userId, cost, id, `Hold for ${template.name}`, now);
     db.jobs[id] = job;
   });
 

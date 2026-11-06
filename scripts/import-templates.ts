@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import path from "path";
-import { buildCatalog, FORBIDDEN_KEY } from "../lib/import/build-catalog";
-import type { CatalogFile, EditorialFile, RadarFile } from "../lib/types";
+import { buildCatalog } from "../lib/import/build-catalog";
+import type { CatalogFile, EditorialFile, RadarFile, Template } from "../lib/types";
 
 function arg(name: string): string | undefined {
   const index = process.argv.indexOf(name);
@@ -30,25 +30,32 @@ function readJson<T>(file: string, fallback: T): T {
   return JSON.parse(readFileSync(file, "utf8")) as T;
 }
 
-const VIDEO_URL = /\.(mp4|webm|mov|m4v|m3u8|avi)(\?|$)/i;
+const PREVIEW_DIR = path.join(process.cwd(), "public", "previews");
+const POSTER_EXTS = ["webp", "jpg", "jpeg", "png"];
 
-function assertCatalogClean(value: unknown, trail = "catalog"): void {
-  if (Array.isArray(value)) {
-    value.forEach((item, index) => assertCatalogClean(item, `${trail}[${index}]`));
-    return;
+/** Preview files captured by scripts/fetch-previews.ts are cached under public/previews by slug. */
+function findPoster(slug: string): string | null {
+  for (const ext of POSTER_EXTS) {
+    const file = path.join(PREVIEW_DIR, `${slug}-poster.${ext}`);
+    if (existsSync(file)) return `/previews/${slug}-poster.${ext}`;
   }
-  if (!value || typeof value !== "object") {
-    if (typeof value === "string" && VIDEO_URL.test(value)) {
-      throw new Error(`Import refused a video URL at ${trail}.`);
-    }
-    return;
-  }
-  for (const [key, child] of Object.entries(value)) {
-    if (FORBIDDEN_KEY.test(key)) {
-      throw new Error(`Import refused forbidden field "${key}" at ${trail}.`);
-    }
-    assertCatalogClean(child, `${trail}.${key}`);
-  }
+  return null;
+}
+
+function findVideo(slug: string): string | null {
+  const file = path.join(PREVIEW_DIR, `${slug}-preview.mp4`);
+  return existsSync(file) ? `/previews/${slug}-preview.mp4` : null;
+}
+
+function withLocalPreviews(template: Template): Template {
+  const poster = findPoster(template.slug);
+  const video = findVideo(template.slug);
+  if (!poster && !video) return template;
+  return {
+    ...template,
+    preview_poster_url: template.preview_poster_url ?? poster,
+    video_url: template.video_url ?? video,
+  };
 }
 
 const radarPath = resolveRadarPath();
@@ -59,12 +66,16 @@ const radar = JSON.parse(readFileSync(radarPath, "utf8")) as RadarFile;
 const editorial = readJson<EditorialFile>(editorialPath, {});
 const existing = readJson<CatalogFile | null>(outPath, null);
 const catalog = buildCatalog(radar, existing, editorial);
+const templates = catalog.templates.map(withLocalPreviews);
+const output: CatalogFile = { ...catalog, templates };
 
 mkdirSync(path.dirname(outPath), { recursive: true });
-writeFileSync(outPath, `${JSON.stringify(catalog, null, 2)}\n`);
+writeFileSync(outPath, `${JSON.stringify(output, null, 2)}\n`);
 
-assertCatalogClean(catalog);
+const withPoster = templates.filter((template) => template.preview_poster_url).length;
+const withVideo = templates.filter((template) => template.video_url).length;
 
 console.log(
-  `Imported ${catalog.template_count} templates from ${path.relative(process.cwd(), radarPath)} into data/templates.json`,
+  `Imported ${output.template_count} templates from ${path.relative(process.cwd(), radarPath)} into data/templates.json`,
 );
+console.log(`Preview posters: ${withPoster}/${output.template_count} · preview videos: ${withVideo}/${output.template_count}`);

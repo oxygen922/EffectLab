@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         <div id="content">{children}</div>
         <footer className="site-footer">
-          EffectLab stores template metadata, original SVG covers, and mock clips. Competitor sample videos and prompts are not in this repo.
+          EffectLab recreates trending video effects with your own photos. Pick a template, upload stills, and render the same clip with your face or pet.
         </footer>
       </body>
     </html>
