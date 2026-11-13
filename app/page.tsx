@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { AutoplayVideo } from "@/components/AutoplayVideo";
 import { Card } from "@/components/Catalog";
-import { Pricing } from "@/components/Pricing";
 import { PromptBar } from "@/components/PromptBar";
 import { loadTemplates } from "@/lib/catalog";
 import { renderPlanForTemplate } from "@/lib/models";
@@ -67,7 +66,14 @@ export default function HomePage() {
   const templates = loadTemplates();
 
   const withVideo = templates.filter((t): t is typeof t & { video_url: string } => t.video_url !== null);
-  const heroBg = templates.filter((t) => t.preview_poster_url).slice(0, HERO_BG_COUNT);
+  const posters = templates.filter((t) => t.preview_poster_url);
+  const heroBg =
+    posters.length <= HERO_BG_COUNT
+      ? posters
+      : Array.from({ length: HERO_BG_COUNT }, (_, index) => {
+          const slot = Math.round((index * (posters.length - 1)) / (HERO_BG_COUNT - 1));
+          return posters[slot];
+        });
   const demo = withVideo.find((t) => t.photo_count >= 2) ?? withVideo[0];
 
   const latest = templates
@@ -88,14 +94,17 @@ export default function HomePage() {
     <main>
       <section className="hero-stage">
         <div className="hero-bg" aria-hidden="true">
-          {heroBg.map((template) => (
-            <img
-              key={template.slug}
-              src={template.preview_poster_url ?? template.cover}
-              alt=""
-              decoding="async"
-            />
+          <div className="hero-glow" />
+          {heroBg.map((template, index) => (
+            <div key={template.slug} className={`hero-frame hero-frame-${index + 1}`}>
+              <img
+                src={template.preview_poster_url ?? template.cover}
+                alt=""
+                decoding="async"
+              />
+            </div>
           ))}
+          <div className="hero-grain" />
         </div>
         <div className="hero-veil" aria-hidden="true" />
         <div className="wrap hero-center">
@@ -200,8 +209,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
-      <Pricing />
 
       <section>
         <div className="section-head">
