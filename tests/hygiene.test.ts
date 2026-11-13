@@ -18,7 +18,11 @@ function walk(dir: string, found: string[]) {
 test("captured preview media only lives in public/previews", () => {
   const found: string[] = [];
   walk(process.cwd(), found);
-  const allowedRoot = path.join(process.cwd(), "public", "previews") + path.sep;
-  const stray = found.filter((file) => !file.startsWith(allowedRoot));
+  const allowed = [
+    path.join(process.cwd(), "public", "previews") + path.sep,
+    path.join(process.cwd(), "assets", "reference") + path.sep,
+    path.join(process.cwd(), "assets", "base") + path.sep,
+  ];
+  const stray = found.filter((file) => !allowed.some((root) => file.startsWith(root)));
   assert.deepEqual(stray, []);
 });

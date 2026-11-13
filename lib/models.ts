@@ -1,4 +1,6 @@
 import { findRecipe } from "./recipes";
+import { MODEL_REGISTRY } from "./render-models";
+import { findRenderRecord } from "./render-types";
 
 export type ModelTier = "standard" | "pro" | "flagship";
 
@@ -29,9 +31,14 @@ export type RenderPlan = {
   unitCost: number;
 };
 
-// A template renders at its most expensive tool's rate — storyboard recipes
-// chain an image edit before the video pass, so the video model sets the price.
+// A template renders at its suggested model's rate when that model is recorded.
+// Recipe tools still price templates that have no render record.
 export function renderPlanForTemplate(slug: string, fallbackCost: number): RenderPlan {
+  const suggested = findRenderRecord(slug);
+  const suggestedModel = suggested ? MODEL_REGISTRY[suggested.suggestedModel] : null;
+  if (suggestedModel) {
+    return { tier: suggestedModel.tier, modelNames: [suggestedModel.label], unitCost: suggestedModel.unitCost };
+  }
   const recipe = findRecipe(slug);
   if (!recipe) {
     return { tier: null, modelNames: [], unitCost: Math.max(1, fallbackCost) };

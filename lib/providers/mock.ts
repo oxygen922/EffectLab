@@ -1,3 +1,4 @@
+import { RENDER_TYPES } from "../render-models";
 import type { ProviderStatus, VideoProvider } from "./types";
 
 export const MOCK_PENDING_MS = 1600;
@@ -13,6 +14,7 @@ export function mockStatus(providerJobId: string, startedAt: string, now = Date.
 
 export const mockProvider: VideoProvider = {
   name: "mock",
+  supportedRenderTypes: RENDER_TYPES,
   async generate({ jobId }) {
     return { providerJobId: `mock_${jobId}` };
   },

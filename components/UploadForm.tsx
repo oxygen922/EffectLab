@@ -2,9 +2,28 @@
 
 import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useRef, useState } from "react";
+import { RENDER_TYPE_LABEL, type RenderType } from "@/lib/render-models";
 import type { Template } from "@/lib/types";
 
-export function UploadForm({ template }: { template: Pick<Template, "id" | "photo_count" | "credit_cost"> }) {
+const GUIDANCE: Record<RenderType, string> = {
+  motion_transfer:
+    "Use a full-body photo. The routine is copied from a motion reference, so the whole body should be in frame, with the face visible and one subject per photo.",
+  face_swap: "Use a clear, front-facing face photo. The template keeps its scene and swaps in this person.",
+  image_to_video: "Use a clear photo of the subject. The clip is generated from these stills and this template's prompt.",
+};
+
+const SLOT_LABEL: Record<RenderType, string> = {
+  motion_transfer: "Full-body photo",
+  face_swap: "Face photo",
+  image_to_video: "Photo",
+};
+
+export function UploadForm({
+  template,
+}: {
+  template: Pick<Template, "id" | "photo_count" | "credit_cost"> & { renderType?: RenderType };
+}) {
+  const renderType = template.renderType ?? "image_to_video";
   const router = useRouter();
   const [files, setFiles] = useState<(File | null)[]>(() => Array.from({ length: template.photo_count }, () => null));
   const [previews, setPreviews] = useState<(string | null)[]>(() => Array.from({ length: template.photo_count }, () => null));
@@ -84,10 +103,15 @@ export function UploadForm({ template }: { template: Pick<Template, "id" | "phot
         Cost is {template.credit_cost} {template.credit_cost === 1 ? "credit" : "credits"}.
         {balance === null ? "" : ` Available balance: ${balance}.`}
       </p>
+      <p className="muted">
+        <span className="tag">{RENDER_TYPE_LABEL[renderType]}</span> {GUIDANCE[renderType]}
+      </p>
       <div className="slots">
         {files.map((_, index) => (
           <label className="slot" key={index}>
-            <span>Photo {index + 1}</span>
+            <span>
+              {SLOT_LABEL[renderType]} {index + 1}
+            </span>
             {previews[index] ? <img src={previews[index]} alt={`Selected photo ${index + 1}`} /> : <span className="muted">JPEG, PNG, or WebP</span>}
             <input
               type="file"

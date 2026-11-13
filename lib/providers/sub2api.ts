@@ -1,5 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
+import { buildPrompt } from "../prompts";
+import { RENDER_TYPES } from "../render-models";
 import type { GenerateInput, ProviderStatus, VideoProvider } from "./types";
 
 const DEFAULT_BASE_URL = "https://ai-net.clariontech.top/v1";
@@ -55,14 +57,14 @@ async function readUploadsAsDataUrls(jobId: string): Promise<string[]> {
   return urls;
 }
 
-function buildPrompt(input: GenerateInput): string {
+function svgCardPrompt(input: GenerateInput): string {
   return [
-    `You are the renderer for the EffectLab template "${input.templateKey}".`,
-    `You receive ${input.imageUrls.length} user photo(s). Create a short vertical video-like motion card as ONE self-contained SVG.`,
+    buildPrompt(input),
+    `You receive ${input.imageUrls.length} user photo(s). Render the scene above as ONE self-contained SVG motion card.`,
     "Rules:",
-    '- Output ONLY the SVG markup. No markdown, no code fences, no commentary.',
+    "- Output ONLY the SVG markup. No markdown, no code fences, no commentary.",
     '- Root element: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640">.',
-    "- Use SMIL <animate>/<animateTransform> elements so the card plays as a looped animation (durations 2-5s, repeatCount=\"indefinite\").",
+    '- Use SMIL <animate>/<animateTransform> elements so the card plays as a looped animation (durations 2-5s, repeatCount="indefinite").',
     "- Describe the photos in one short caption line inside the SVG (subject, colors). Do not embed the photos.",
     "- Style: bold shapes, high contrast, dark background, playful hand-drawn feel.",
     "- Keep total markup under 6 KB.",
@@ -104,9 +106,10 @@ async function callUpstream(parts: unknown[]): Promise<string> {
 
 export const sub2apiProvider: VideoProvider = {
   name: "sub2api",
+  supportedRenderTypes: RENDER_TYPES,
   async generate(input) {
     const photoDataUrls = await readUploadsAsDataUrls(input.jobId);
-    const parts: unknown[] = [{ type: "text", text: buildPrompt(input) }];
+    const parts: unknown[] = [{ type: "text", text: svgCardPrompt(input) }];
     for (const url of photoDataUrls) {
       parts.push({ type: "image_url", image_url: { url } });
     }

@@ -121,6 +121,30 @@ export type RecipeFile = {
   recipes: Record<string, TemplateRecipe>;
 };
 
+/** How sure we are that a template prompt matches the public trend. */
+export type PromptConfidence = "high" | "low";
+
+/** Notes from the public pages or explainers used to write a prompt. */
+export type PromptResearch = {
+  sources: string[];
+  /** Observed beats, paraphrased. Not a generation prompt. */
+  beats: string;
+};
+
+/** One template's generation prompt, keyed by slug in data/prompts.json. */
+export type TemplatePrompt = {
+  prompt: string;
+  promptConfidence: PromptConfidence;
+  research: PromptResearch;
+};
+
+export type PromptFile = {
+  schema_version: number;
+  generated_at: string;
+  note: string;
+  prompts: Record<string, TemplatePrompt>;
+};
+
 export type PreviewFile = {
   generated_at?: string;
   items?: Array<{
@@ -162,6 +186,7 @@ export type UserRecord = {
 };
 
 export type JobStatus = "pending" | "running" | "done" | "failed";
+export type { RenderType } from "./render-models";
 export type CreditsState = "held" | "captured" | "released";
 
 export type JobRecord = {
@@ -175,6 +200,12 @@ export type JobRecord = {
   creditsState: CreditsState;
   provider: string;
   providerJobId: string | null;
+  /** Pipeline actually sent to the provider, after a missing-asset fallback. */
+  renderType: import("./render-models").RenderType;
+  /** Catalog type before that fallback. */
+  requestedRenderType: import("./render-models").RenderType;
+  /** Registry id of the model the router selected. */
+  modelId: string | null;
   imageCount: number;
   imagePaths: string[];
   resultUrl: string | null;

@@ -5,7 +5,8 @@ import { ensureUser, holdCredits, captureHold, releaseHold } from "./credits";
 import { AppError } from "./errors";
 import { assertImage, mimeFromExt, removeJobImages, saveJobImages, type StoredImage } from "./images";
 import { renderPlanForTemplate } from "./models";
-import { getProvider } from "./providers";
+import { getProviderByName } from "./providers";
+import { selectRoute } from "./providers/router";
 import type { ProviderStatus } from "./providers/types";
 import { mutate } from "./store";
 import type { JobPublic, JobRecord, Template } from "./types";
@@ -74,7 +75,16 @@ export async function createGenerationJob(input: {
 
   const id = randomUUID();
   const now = new Date().toISOString();
-  const provider = getProvider();
+  const route = selectRoute(template.slug);
+  for (const warning of route.warnings) console.warn(`render route: ${warning}`);
+  const provider = getProviderByName(route.providerName);
+  if (!provider.supportedRenderTypes.includes(route.renderType)) {
+    throw new AppError(
+      "provider_unsupported",
+      `${provider.name} does not support ${route.renderType}.`,
+      500,
+    );
+  }
   const cost = renderPlanForTemplate(template.slug, template.credit_cost).unitCost;
 
   await mutate((db) => {
@@ -90,6 +100,9 @@ export async function createGenerationJob(input: {
       creditsState: "held",
       provider: provider.name,
       providerJobId: null,
+      renderType: route.renderType,
+      requestedRenderType: route.requestedRenderType,
+      modelId: route.modelId,
       imageCount: files.length,
       imagePaths: [],
       resultUrl: null,
@@ -108,6 +121,9 @@ export async function createGenerationJob(input: {
       templateKey: template.slug,
       imageUrls: imagePaths.map((_, index) => `/api/jobs/${id}/images/${index}`),
       jobId: id,
+      renderType: route.renderType,
+      modelId: route.modelId,
+      referenceVideoPath: route.assetPath,
     });
     return await mutate((db) => {
       const job = db.jobs[id];
@@ -149,11 +165,18 @@ export async function readJob(userId: string, jobId: string): Promise<JobPublic 
     });
   }
 
-  const provider = getProvider();
-  const update =
-    snapshot.provider === provider.name
-      ? await provider.getStatus(snapshot.providerJobId, snapshot.createdAt)
-      : { status: snapshot.status };
+  let update: ProviderStatus = { status: snapshot.status };
+  if (snapshot.providerJobId) {
+    try {
+      const provider = getProviderByName(snapshot.provider);
+      update = await provider.getStatus(snapshot.providerJobId, snapshot.createdAt);
+    } catch (error) {
+      update = {
+        status: "failed",
+        error: error instanceof Error ? error.message : "Could not read the provider status.",
+      };
+    }
+  }
 
   return mutate((db) => {
     const job = db.jobs[jobId];
