@@ -19,6 +19,16 @@ test("every catalog template has a non-empty prompt", () => {
   assert.equal(Object.keys(prompts.prompts).length, catalog.templates.length);
 });
 
+test("high-confidence prompts cite at least one source URL", () => {
+  const prompts = loadPrompts();
+  for (const [slug, record] of Object.entries(prompts.prompts)) {
+    if (record.promptConfidence !== "high") continue;
+    const sources = record.research?.sources ?? [];
+    const confirmed = sources.some((url) => typeof url === "string" && /^https?:\/\//.test(url.trim()));
+    assert.equal(confirmed, true, `${slug} is high confidence with no source URL`);
+  }
+});
+
 test("buildPrompt includes the template motion, not only the slug", () => {
   const stored = loadPrompts().prompts["bicep-heart"];
   const out = buildPrompt({ templateKey: "bicep-heart", imageUrls: [], jobId: "job_bicep" });

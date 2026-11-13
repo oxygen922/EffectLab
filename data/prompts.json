@@ -860,8 +860,11 @@
       "prompt": "Both uploaded subjects are in a dim straw-filled barn, the first as a small impish dancer and the second seated in the straw. From 0 to 3 seconds the first subject tiptoes up to the camera in pointy elf shoes; from 3 to 6 seconds they shush with a finger on the lips; from 6 to 9 seconds they step back and spread both arms; from 9 to 12 seconds they tiptoe-dance with a smug grin; from 12 to 15 seconds the second subject, already in the straw, covers their mouth and then clutches their head in shock. The camera creeps with the imp, cuts to the elf shoes, then finds the seated face. Low warm lamps and a fake 1980s fairy-tale mood light the hay. Frame it vertical 9:16 with that soft film look rather than a plain selfie. Keep the first subject's face and hair on the imp, and keep the second subject's face, hair, and clothing exactly as in their photo. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "One small dancer tiptoes up, shushes, steps back, and tiptoe-dances in pointy elf shoes while the second person in the straw covers their mouth and clutches their head. No source URL was attached. The brief's own notes, citing public meme explainers, describe those two roles in a dim 1980s-style hay barn and match this two-photo brief. The notes specifically say the close-ups show elf shoes rather than sneakers."
+        "sources": [
+          "https://tiptoeinginmyjordansai.com/tip-toeing-in-my-jordans-trend",
+          "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans"
+        ],
+        "beats": "A public explainer and Know Your Meme describe the same two-person barn clip: a small dancer tiptoes up, shushes, then tiptoe-dances in pointy elf shoes while a second person in the straw reacts in shock. That matches this catalog row (2 photos, 15 seconds). The song is not included in the prompt."
       }
     },
     "trouble-maker": {
@@ -1060,11 +1063,14 @@
       }
     },
     "animal-micro-drama": {
-      "prompt": "The uploaded pet is the only animal in frame and carries a tiny three-part melodrama. From 0 to 3 seconds it sits at a small kitchen table looking hopeful as a bowl is set down, and from 3 to 6 seconds an off-screen hand slides the bowl away so the ears drop in exaggerated shock. From 6 to 8 seconds the pet leans in as if pleading, and in the last 2 seconds the bowl returns and the face brightens at the last-second rescue. The camera is a close, slightly low phone angle that eases in on the face. Warm indoor light and careful staging give the room a comic soap-opera mood, rendered as realistic phone footage in vertical 9:16. Keep the pet's breed, face, and markings from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
+      "prompt": "The uploaded pet is the only animal, and it plays the lead of a short indoor melodrama. From 0 to 3 seconds it faces the lens in a modest room, posture upright and hopeful, as if a small domestic scene is starting. From 3 to 7 seconds the expression breaks into exaggerated shock, ears and eyes widening, with no second pet and no readable words. From 7 to 10 seconds the mood turns and the pet lifts its head into a proud, relieved hold. The camera is a locked chest-up phone frame with a slow push-in. Dim light from one side gives it the look of a television short-drama close-up. The clip is vertical 9:16, with realistic fur and soap-opera acting. Keep the breed, face, and markings from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "Press writeups describe vertical pet soap shorts in which one animal is staged like a person: a setup, a setback such as a snatched treat, and a last-second turn, with big expressions and the original coat left intact. No source URL was stored on this brief."
+        "sources": [
+          "https://www.media.io/video-effects/ai-pet-drama.html",
+          "https://www.media.io/ai/explore/zone/ai-animal-drama-video-generator"
+        ],
+        "beats": "Media.io's pet-drama page and its animal micro-drama generator describe one pet photo turned into a short vertical soap scene: dramatic expressions, a human-style conflict, and a turn, not one fixed kitchen gag. The earlier bowl-snatch plot was not on those pages and was removed. Catalog length is 10 seconds and one photo."
       }
     },
     "cat-front-door-ring-band": {
@@ -1400,8 +1406,11 @@
       "prompt": "Both reference photos are on screen, the first on a nightclub balcony and the second on the dance floor below. From 0 to 2 seconds the first subject leans on the rail and smiles downward, and from 2 to 5 seconds the camera swings over their shoulder onto a crowded floor washed in blue light. From 5 to 7 seconds a white spotlight finds the second subject, and from 7 to 10 seconds that second subject looks up toward the balcony and holds the pose. The move is one continuous vertical swing from balcony to floor. Blue club light plus one hard white spot create a dramatic romantic mood, rendered as realistic phone footage in 9:16. Keep each person's face, hair, and clothing from their own reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "Photo one rests against a club balcony railing and smiles toward the floor below; the view then travels past that shoulder onto a blue-washed crowd, where a white spot isolates photo two looking upward until the end. Two photos match the catalog's 10 seconds. No URL list was stored; the sequence is paraphrased from the explainers named in the brief, including clubspotlightcouple.com."
+        "sources": [
+          "https://vellm.app/templates/te-he-perdido-entre-la-gente",
+          "https://dothetrend.ai/templates/te-he-perdido-entre-la-gente-ai-trend"
+        ],
+        "beats": "Vellm and DoTheTrend both describe this two-photo club clip: one person leans on a balcony rail, the camera finds the dance floor, and a white spotlight lands on the second person looking up. Catalog length is 10 seconds. No song or film dialogue is written into the prompt."
       }
     },
     "costume-reveal": {
@@ -1506,8 +1515,11 @@
       "prompt": "The uploaded pet is alone beside a garden lamp post, holding a phone out for a selfie. From 0 to 3 seconds it leans in and poses toward the screen, and from 3 to 5 seconds its head bumps the post. From 5 to 8 seconds it jerks back, cross, and bats at the metal, and in the last 2 seconds it glares at the lamp and then back at the phone. The camera is the phone's own selfie view, slightly wide and vertical. Daytime garden light and a slapstick mood surround the pet, shot as realistic phone footage in 9:16. Keep breed, face, and markings from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "A product note shows two animals lining up for a self-portrait next to a garden lamp until the lead knocks into it, gets cross, and swats while a companion holds them back. The catalog photo count is one, so only the pet from the photo is the one who poses, knocks the post, and reacts. No source URL was stored on the brief."
+        "sources": [
+          "https://zooop.ai/templates/video/strike-a-pole",
+          "https://zooop.ai/dog-ai-video"
+        ],
+        "beats": "Zooop's page titled Funny Pet Selfie Fail (hosted at the strike-a-pole path) and the dog-video guide describe two pets posing for a selfie until the lead bumps a garden lamp post, gets angry, and swats it while a friend holds them back. This catalog row allows one photo, so the prompt keeps only the uploaded pet as the lead and does not invent a second identity."
       }
     },
     "gang-gang": {
@@ -1590,8 +1602,12 @@
       "prompt": "Both reference photos sit in the back seat at night, the first subject on screen right and the second on screen left, seen from between the front seats. From 0 to 3 seconds the right-hand subject starts talking with small hand flicks while the left-hand subject stays blank; from 3 to 7 seconds the right-hand subject leans forward and gestures harder; from 7 to 10 seconds that subject is fully worked up and the left-hand subject answers with one slow nod. The camera is fixed between the front headrests, looking backward. Sodium light leaks through the windows of a dark car, and the mood is tense and comic. The clip is vertical 9:16 realistic phone footage. Keep each face, hair, and clothing matched to its own reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "At night the camera sits between the front seats and looks into the back, where the person on screen right grows more agitated and the person on screen left stays deadpan, offering at most a slow nod. No public URL was attached; the brief's web note describes that two-photo scene at about ten seconds and says not to quote the film. The catalog photo count matches the note."
+        "sources": [
+          "https://vidlark.ai/effects/dayimin-cocuklari-ai",
+          "https://viralvideoai.app/templates/dayimin-cocuklari-ai-trend",
+          "https://www.makeviral.ai/templates/dayimin-cocuklari-ai-trend"
+        ],
+        "beats": "Vidlark, ViralVideoAI, and MakeViral describe the same two-photo night scene: the camera looks into the back seat, one person boasts with bigger and bigger gestures, and the other stays deadpan. Catalog length is 10 seconds. The film's dialogue is not quoted."
       }
     },
     "laughing-fairy": {
@@ -1702,11 +1718,13 @@
       }
     },
     "pet-carpool-karaoke": {
-      "prompt": "The single uploaded pet perches tall on the passenger cushion, the only subject, while daylight traffic slides past the window. From 0 to 3 seconds the pet bobs its head and moves its mouth as if singing along; from 3 to 6 seconds it pauses and slides a pair of sunglasses on with one paw; from 6 to 10 seconds it goes back to bobbing and mouthing, more committed than before. The camera is a front-seat phone aimed at the pet. Bright daytime cabin light and a moving road make the trip feel silly. The clip is vertical 9:16 realistic phone footage. Keep the pet's breed, face, and markings from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
+      "prompt": "The single uploaded pet sits upright in the passenger seat, the only animal in the car, while daylight traffic slides past the window. From 0 to 4 seconds it bobs its head and moves its mouth as if singing along. From 4 to 7 seconds it pauses, ears forward, and glances toward the empty driver's side as if reacting to someone off camera. From 7 to 10 seconds it leans back into the bob and the mouthing, bigger than before. The camera is fixed inside the cabin at the pet's eye level. Bright window light and a casual road-trip mood carry the shot. The clip is vertical 9:16 realistic phone footage, with no on-screen words and no claim that a particular recording is in the file. Keep the breed, face, fur, and markings from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "One pet sits upright in a moving car, bobs and mouths as if singing, pauses to put on sunglasses, and then continues. No URL was attached; the brief's web note describes that single-photo daylight variant. The catalog photo count matches the note."
+        "sources": [
+          "https://www.media.io/ai/effect/create/pet-carpool-karaoke"
+        ],
+        "beats": "Media.io's Pet Carpool Karaoke page says one or more pet photos become an in-car performance where the animals sing, react, and ride. It does not describe sunglasses, so that beat was removed. This catalog row is one photo and 10 seconds, so only the uploaded pet is in the seat."
       }
     },
     "pet-fridge-cake-heist": {
@@ -1777,8 +1795,12 @@
       "prompt": "The single uploaded pet stays on all fours at the center of a dark stage, and two dancers in black behind it keep their faces turned away. From 0 to 3 seconds the dancers flip their hair while the pet dips its shoulders on the beat; from 3 to 7 seconds the pet tilts and tosses its head; from 7 to 10 seconds the pet hits a last low dip and the dancers freeze behind it. The camera is low, looking slightly up at the pet. A hard spotlight in a black room gives the rehearsal a fierce mood. The clip is vertical 9:16 realistic phone footage. Keep the pet's breed, face, and markings from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "One pet stays on its paws at the center of a dark stage, dipping and tossing its head, while two dancers in black flip their hair behind it under a low camera. No URL was attached; the brief's web note describes that single-pet rehearsal. The dancers are extras, not more uploads."
+        "sources": [
+          "https://zooop.ai/templates/video/put-a-ring-on-it-pets",
+          "https://www.makeviral.ai/templates/single-ladies-dog-dance-ai",
+          "https://vellm.app/templates/single-ladies-dog-dance"
+        ],
+        "beats": "Zooop, MakeViral, and Vellm describe one pet on a dark stage, dipping and tossing its head, with two backup dancers behind it. Their pages run about 19 seconds; this catalog row is 10 seconds, so the prompt compresses the same moves. The recording is not claimed in the file. The dancers are extras, not extra uploads."
       }
     },
     "raven-transition": {
@@ -1792,11 +1814,13 @@
       }
     },
     "reverse-card-car-swap": {
-      "prompt": "The single uploaded subject stands alone in an empty lot, holding two plain cards marked only with the digits 2 and 4 and carrying no brand mark. From 0 to 3 seconds the subject shows the cards to the lens; from 3 to 6 seconds the subject sweeps them across the camera and pulls them clear to reveal a sports car parked behind; from 6 to 10 seconds the subject points at the car, covers their mouth, and ends with both hands on the head. The camera is a steady chest-height phone shot. Flat daylight on bare asphalt makes the reveal feel like a shocked gag. The clip is vertical 9:16 realistic phone footage. Keep the face, hair, and clothing from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
+      "prompt": "The single uploaded person is the only recognizable face, walking onto an open rooftop at sunset. From 0 to 3 seconds they come toward the lens with two plain number cards in one hand and no logo on the cards. From 3 to 6 seconds they flick the cards across the camera so the frame is briefly covered. From 6 to 10 seconds the cards drop clear and a sports car is parked behind them; they turn and point at it. The phone stays around chest height, follows the walk-in, then holds for the reveal. Warm sunset light and open sky make the mood a playful flex. The clip is vertical 9:16 realistic phone footage. Keep the face, hair, and clothing from the reference. Avoid warped limbs, extra fingers, face drift, text, watermarks, and printed card-game logos.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "Standing on bare pavement, one person shows two unmarked numeral cards, a 2 and a 4, brushes them across the lens, and a sports car is parked behind once the cards leave; they point, cover the mouth, and finish with hands on the head. No URL was attached; the brief's web note sets that single-photo reveal at about ten seconds and says the cards should not carry a game logo. The catalog photo count matches."
+        "sources": [
+          "https://zooop.ai/templates/video/reverse-card-car-swap"
+        ],
+        "beats": "Zooop's page for this template, titled as the 24 car trend, says one photo walks up on a sunset rooftop, flicks two cards at the lens, and a sports car appears behind them. The earlier empty-lot version came from a different explainer and was replaced. Catalog length is 10 seconds and one photo. The subject is a person because the category is car."
       }
     },
     "riding-a-reindeer": {
@@ -1814,8 +1838,11 @@
       "prompt": "The single uploaded subject sits alone in the front seat of a car at night. From 0 to 4 seconds the head bobs stiffly from side to side in a syncopated rhythm; from 4 to 6 seconds the subject glances sideways out the side window; from 6 to 10 seconds the same tight side-to-side bob returns and runs to the end. The camera looks in through the windshield and stays locked. City lights smear on the glass, cool and night-bright, with a deadpan comic mood. The clip is vertical 9:16 realistic phone footage. Keep the face, hair, and clothing from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "Seen through the windshield of a car at night, one person ticks their head left and right in a rigid off-beat pattern, looks out the side glass, then picks the same tick back up, city lights behind. No URL was attached; the brief's web note describes that single-photo car shot and says not to include the song. The catalog photo count matches the note."
+        "sources": [
+          "https://zooop.ai/templates/video/roxbury-head-bob",
+          "https://jumponthetrend.app/trends/car-head-bob-ai-trend/"
+        ],
+        "beats": "Zooop's Roxbury template and Jump on the Trend's car head-bob page both show people in a car at night, seen through the windscreen, ticking their heads side to side with city lights behind them. Zooop also offers a solo option, which matches this one-photo row. Catalog length is 10 seconds; Zooop's sample is about 9."
       }
     },
     "sawadika": {
@@ -1833,8 +1860,11 @@
       "prompt": "The single uploaded subject dances alone, close to the lens. From 0 to 2 seconds the hips tick left and right, hands hovering by the waist; from 2 to 5 seconds the subject turns, brushes the chin, snaps one hip out, and lifts a hand to the forehead; from 5 to 8 seconds the fists roll and a finger points at the chest; from 8 to 10 seconds a shoulder roll lands on one last hip hit. The camera is a medium phone shot with a light sway. Bright even light keeps the mood playful and flirty. The clip is vertical 9:16 realistic phone footage. Keep the face, hair, and clothing from the reference. Avoid warped limbs, extra fingers, face drift, text, and watermarks.",
       "promptConfidence": "high",
       "research": {
-        "sources": [],
-        "beats": "One person pops the hips with hands at the waist, turns through a chin touch, brings a hand to the forehead, rolls the fists, points at the chest, rolls a shoulder, and ends on another hip pop. No URL was attached; the brief's web note sketches that solo phrase at roughly ten seconds. The catalog uses one photo, matching the note."
+        "sources": [
+          "https://aidanceapp.com/templates/shake-it-dance",
+          "https://www.media.io/video-effects/shake-it-ai-dance.html"
+        ],
+        "beats": "The AI Dance Shake It page lists the solo phrase: hip bounces with hands at the waist, a turn with a chin touch and hip pop, a hand to the forehead, rolling fists, a point to the chest, and a shoulder roll. Media.io's Shake It page is the catalog listing for the same one-photo rhythmic dance and does not add a different routine. Catalog length is 10 seconds; the explainer's sample is 15. No recording is embedded."
       }
     },
     "shoulder-carry-i-m-the-one": {
