@@ -1,0 +1,3702 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T06:00:00.000Z",
+  "note": "Per-template render type and suggested video model. referenceVideo and baseVideo stay null until a self-recorded or licensed file is added under assets/.",
+  "templates": {
+    "first-time-in-a-fancy-cafe": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A newcomer in a stripped-down cafe treats a wall-mounted metal disc as a seat until a second person sits on the concrete ledge correctly and sets a cup down,....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/first-time-in-a-fancy-cafe",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "bicep-heart": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person faces the camera in a dim green room, smiles, flexes a bicep, and cups the other hand over the muscle so the arm and hand form a heart.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/bicep-heart",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "car-alarm": {
+      "renderType": "motion_transfer",
+      "reason": "Car Alarm Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/car-alarm-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "cardo-dinner": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: In a living room, one person calls attention to a huge plate of red cheesy snacks and then hand-feeds the other person, whose chewing face is the joke.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "chipmunks": {
+      "renderType": "motion_transfer",
+      "reason": "Chipmunks Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/chipmunks-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "dog-bartender": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A pet behind a kitchen counter makes three increasingly silly drinks, a plain cola, a cola over ice, and a showy glass finished with smoke, lemon, broccoli,....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/dog-bartender",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "jisoo-addicted": {
+      "renderType": "motion_transfer",
+      "reason": "Jisoo Addicted Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/jisoo-addicted-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "mabel-matiz-umrumdisi": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Inside a practice room where stringed instruments hang behind the players, one subject sings with the chin lifted while the other waves, then turns and works....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/mabel-matiz-umrumdisi",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "bye-bye": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person laughs like a villain, waves goodbye, covers the lens, and comes back in theatrical clown paint and a wild wig, with the same face still recogniza....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "cats-making-coffee": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two pets stand at a kitchen counter, one pouring from a kettle into a mug while the other spills coffee grounds, then milk floods the counter and a pet hides....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/cats-making-coffee",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "coffee-making": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two subjects at a home counter make instant coffee badly: grounds scatter, the kettle pours from the left, milk floods the stone, and the one in front lifts....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "phone-on-the-train": {
+      "renderType": "face_swap",
+      "reason": "Phone on the Train keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/phone-on-the-train",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "pick-it-up": {
+      "renderType": "motion_transfer",
+      "reason": "Pick It Up Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/pick-it-up-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "shaking-head": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A close-up subject stares, squeezes the eyes shut into a smug grin, shakes the head slowly, and then opens into a happy smile.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/shaking-head",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "birds-of-a-feather": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person lies back across a chrome office chair with legs up in a wood-panelled room while the chair seems to slide on its own, then an overhead view turns....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "birds-of-a-feather-chair": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The same chair gag, tightened onto the lean-back, the legs in the air, and the chrome chair drifting across green carpet under a straight-down camera.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "birds-of-a-feather-chair-spin": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The overhead frame itself rotates while the tipped chair slides and the person spreads their arms, rolls their head, and looks up.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "ceiling-fan": {
+      "renderType": "face_swap",
+      "reason": "Ceiling Fan keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-ceiling-fan-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "ceiling-fan-elevator-outfits": {
+      "renderType": "face_swap",
+      "reason": "Ceiling Fan / Elevator Outfits keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "wan-2.2-animate-mix",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Wan 2.2 Animate Mix is the inferred face swap model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "pixverse-swap",
+        "kling-o3"
+      ]
+    },
+    "ceiling-fan-outfit-change": {
+      "renderType": "face_swap",
+      "reason": "Ceiling Fan Outfit Change keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-ceiling-fan-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "ceiling-fan-transition": {
+      "renderType": "face_swap",
+      "reason": "Ceiling Fan Transition keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-ceiling-fan-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "halloween-ceiling-fan": {
+      "renderType": "face_swap",
+      "reason": "Halloween Ceiling Fan keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/halloween-ceiling-fan-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "kung-fu-cat": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A pet sits upright on a lap, gets a white headband, has its paws guided into blocks, and chops a tissue in half.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/kung-fu-cat",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "outstanding-tiny-desk": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A cramped desk concert in front of bookshelves cuts from the lead, to a close-up, to a sax solo around the six-second mark, then to raised fists, over a funk....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "ozil-goal": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person in their own clothes dribbles on a floodlit night pitch, weaves past defenders, and drops one of them with a feint, with no match broadcast used.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/ozil-goal",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "tiny-desk": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A five-piece desk band performs in a cluttered office: a keyboard lead, a laughing close-up, a sax turn, and two people singing and clapping in the back row.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/tiny-desk",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "closing-door-prank": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person guards a hallway door while the other charges it, the panel shuts at the last instant, the runner pops into the near side of the frame whooping, a....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/closing-door-prank",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "bad-times": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One subject mimes a worsening argument at the camera: hands on the head, a hand on the hip, palms up to stop, then a stride that ends with a finger jabbed at....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/bad-times",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "cardo-your-dinner-is-ready": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At night in a living room, one person shows off a giant plate of red crusted rolls, the friend leans in, and after a cut the first person is chewing while th....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "choosin-texas-emo": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person in a black cowboy hat belts an emo-rock rooftop performance at night, with rock horns, head movement, a lunge at the lens, and a drop to one knee.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "choosin-texas-remix-emo-version": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The shorter rooftop version hits the same emo gestures in order: palms flapping toward the camera, a bounce in a crouch by the parapet, a dive forward, then....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "first-time-fancy-cafe": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Someone sits on a tiny wall table in a concrete cafe, sipping as if that were normal, until another figure uses the bench correctly and the first person clim....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/first-time-in-a-fancy-cafe",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "hop-hop-hop": {
+      "renderType": "motion_transfer",
+      "reason": "Hop Hop Hop Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/hop-hop-hop-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "hotel-lobby": {
+      "renderType": "face_swap",
+      "reason": "Hotel Lobby keeps one fixed booth or studio and replaces the people, so it needs a base clip plus face photos.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-hotel-lobby-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "hotel-lobby-rap-duo": {
+      "renderType": "face_swap",
+      "reason": "Hotel Lobby Rap Duo keeps one fixed booth or studio and replaces the people, so it needs a base clip plus face photos.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/hotel-lobby-rap-duo",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "puerto-rican-mami": {
+      "renderType": "motion_transfer",
+      "reason": "Puerto Rican Mami Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/puerto-rican-mami-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "skull-cap": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person starts awkward and messy in a bright room, the shot cuts to black, and they return in the dark wearing a tight black skull cap and a hoodie with a....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/skull-cap",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "toosie-slide": {
+      "renderType": "motion_transfer",
+      "reason": "Toosie Slide is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "toy-car-to-real-car": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A miniature of the uploaded car rests on the carriage sill while the sky is still warm, then the carriage goes dark, the rear lamps flare, and the full-size....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/toy-car-to-real-car",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "58th-floor": {
+      "renderType": "face_swap",
+      "reason": "58th Floor keeps one fixed booth or studio and replaces the people, so it needs a base clip plus face photos.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/the-58th-floor",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "bottle-kick": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One subject faces a pair of yellow bottles, one balanced on the other, on a crate in a sunny courtyard, misses a slow practice kick, then connects with a tur....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "bottle-kick-challenge": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The same courtyard challenge, played more as a comedy of effort: two air practice kicks, then a hit that sends both bottles flying, then a proud hobble away.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "bye-bye-outfit-change": {
+      "renderType": "face_swap",
+      "reason": "Bye Bye Outfit Change keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/bye-bye-outfit-change-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "end-of-watch": {
+      "renderType": "face_swap",
+      "reason": "End of Watch keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-o3",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on jumponthetrend.app name Kling O3.",
+      "citations": [
+        {
+          "site": "jumponthetrend.app",
+          "url": "https://jumponthetrend.app/trends/end-of-watch-locker-scene-ai-trend/",
+          "stated": "Kling O3"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-4.0",
+        "wan-2.2-animate-mix"
+      ]
+    },
+    "end-of-watch-locker": {
+      "renderType": "face_swap",
+      "reason": "End of Watch Locker keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-o3",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on jumponthetrend.app name Kling O3.",
+      "citations": [
+        {
+          "site": "jumponthetrend.app",
+          "url": "https://jumponthetrend.app/trends/end-of-watch-locker-scene-ai-trend/",
+          "stated": "Kling O3"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-4.0",
+        "wan-2.2-animate-mix"
+      ]
+    },
+    "end-of-watch-locker-scene": {
+      "renderType": "face_swap",
+      "reason": "End of Watch Locker Scene keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-o3",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on jumponthetrend.app name Kling O3.",
+      "citations": [
+        {
+          "site": "jumponthetrend.app",
+          "url": "https://jumponthetrend.app/trends/end-of-watch-locker-scene-ai-trend/",
+          "stated": "Kling O3"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-4.0",
+        "wan-2.2-animate-mix"
+      ]
+    },
+    "grease": {
+      "renderType": "motion_transfer",
+      "reason": "Grease Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "hit-the-road-dude": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One subject, a person or a pet, occupies the driver's seat of a faded white truck next to a pond, hangs an arm out the open window, and points a visitor off....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/hit-the-road-dude",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "phone-on-train": {
+      "renderType": "face_swap",
+      "reason": "Phone on Train Trend keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/phone-on-the-train",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "pick-it-up-make-it-jump": {
+      "renderType": "motion_transfer",
+      "reason": "Pick It Up Make It Jump Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/pick-it-up-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "shaving-cream": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person fusses over a speck of foam on the chin, an arm puts it back, and the selfie whips to a partner coated in foam, including two foam cat ears, looki....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "strike-a-pole": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two figures rise on their hind legs on a brick garden path, swing around a black lamp post, dance as a pair, and hug.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "wassup-in-a-minute": {
+      "renderType": "motion_transfer",
+      "reason": "Wassup in a Minute is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "flamingo-float": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person lounges on a huge pink pool bird high above a city, scrolling, until an off-camera hand shoves the float away from the glass lip.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/flamingo-float",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "giant-ramp-climbing": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A runner bounces at the base of a curved wet dam wall, sprints up in front of a crowd, backflips off the top railing, slides down through spray, and celebrat....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/giant-ramp-climbing",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "just-a-lil-bit": {
+      "renderType": "motion_transfer",
+      "reason": "Just a Lil Bit Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/just-a-lil-bit-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "lisa-tarantino": {
+      "renderType": "motion_transfer",
+      "reason": "LISA Tarantino Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/lisa-tarantino-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "transmission-5": {
+      "renderType": "motion_transfer",
+      "reason": "Transmission 5 Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "bing-bing-bing-kicks": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two figures share a damp lane lined with scooters, hop and kick at a shaky phone in turn, and then one charges the lens.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "christmas-dances-this-year": {
+      "renderType": "motion_transfer",
+      "reason": "Christmas Dances This Year is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/christmas-dance-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "christmas-tree-dog": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A pet in a Christmas-tree costume and pom-pom hat pushes its nose at a swaying phone, then nods in front of a lit tree.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/christmas-tree-dog",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/christmas-dance-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "it-s-my-life-dog": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A split screen shows a highway drive above and the pet below, belting from the driver's seat, going quiet with a serious stare, then grinning in sunglasses.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/its-my-life-dog",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "mickey-d-s": {
+      "renderType": "motion_transfer",
+      "reason": "Mickey D's Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/mickey-ds-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "reindeer-dog": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A flashlight finds a pet in glowing antlers and a red sweater in a dark room, the pet runs at the camera, and a cut lands on a close bobbing shot among Chris....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/reindeer-dog",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "talk-dirty": {
+      "renderType": "motion_transfer",
+      "reason": "Talk Dirty Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/talk-dirty-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "24k-magic": {
+      "renderType": "motion_transfer",
+      "reason": "24K Magic is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/24k-magic-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "24k-magic-cruise": {
+      "renderType": "motion_transfer",
+      "reason": "24K Magic Cruise is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/24k-magic-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "cat-story": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: An upright cartoon cat sells fish in the rain, cooks and counts cash, steps from a white limousine, and ends smiling in a tuxedo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-cat-story",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "alors-on-danse": {
+      "renderType": "motion_transfer",
+      "reason": "Alors On Danse is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/alors-on-danse",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "bby-wow-guy": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At a quinceañera, one person dances up to the phone, bites a sweet roll, chews through a deadpan stare, and dances back into the crowd.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/bby-wow-guy",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "cat-middle-finger": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A pet looks sweet, sits or stands up, and throws a cartoon two-paw rude gesture at the camera.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/cat-middle-finger-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "dog-crew": {
+      "renderType": "motion_transfer",
+      "reason": "Dog Dance Crew is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/dog-dance-crew",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "halloween-makeup": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A bare face ducks down and returns in full theatrical clown paint, pale base, a smeared red grin, and red marks across the eyes, then smirks.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/halloween-makeup-filter",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "mi-chico": {
+      "renderType": "motion_transfer",
+      "reason": "Mi Chico Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/mi-chico-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "pumpkin-kick": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At a night fair by the water the subject plants a lit carved pumpkin on a round table, scowls, spins, kicks it apart, and the burst locks into a colorless fr....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/pumpkin-kick-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "rumpelstiltskin": {
+      "renderType": "motion_transfer",
+      "reason": "Rumpelstiltskin Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/rumpelstiltskin",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "stateside": {
+      "renderType": "motion_transfer",
+      "reason": "Stateside Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/stateside-dance-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "thriller": {
+      "renderType": "motion_transfer",
+      "reason": "Thriller Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/thriller-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "tiptoeing-in-my-jordans": {
+      "renderType": "motion_transfer",
+      "reason": "Tiptoeing In My Jordans is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "trouble-maker": {
+      "renderType": "motion_transfer",
+      "reason": "Trouble Maker Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/trouble-maker-ai-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "angel-or-devil": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A cartoon angel and a cartoon devil sit over one person's head with racing meters, and the winning side leaves either a golden halo or small red horns.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "bing-bing-bing-kicking": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two people take turns throwing big side kicks at the phone and then kick together.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/bing-bing-bing-kicking",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "burning-bridges": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At a chandelier party one person raises a cup, covers their eyes while scanning the room, then grins and waves as friends point behind them.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/burning-bridges",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "deep-down-in-my-heart": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Under warm lamps, the person on the right of a leather couch makes a cracking confession and the person on the left waits, then sobs so hard it becomes funny....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "deep-down-in-my-heart-duo": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The sofa confession still has two bodies, but only the crying face is an uploaded identity: they hold still, then ugly-cry, while the speaker is turned away.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "electric-shock-pet-prank": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A pet and a person lean over a fake wiring gag, a spark and a cartoon smoke puff leave soot and standing fur, and they look at the camera.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/electric-shock-pet-prank",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "electric-shock-prank": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A person and a pet meet two loose leads over a table, a comic spark and smoke cloud leave soot plus standing hair and fur, and they look at the lens and then....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/electric-shock-pet-prank",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "gas-station": {
+      "renderType": "motion_transfer",
+      "reason": "Gas Station Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/gas-station-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "monkey-eating-apple": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A person bites a red apple by a forest railing, a macaque grabs it, they tug, and the person turns to the lens looking betrayed.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/monkey-eating-apple-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "mr-and-mrs-stretchy": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two adults become tall clay cartoons in a green kitchen, knock over a mug and a splash of milk, then reach a high jar and grin.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/mr-and-mrs-stretchy-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "ramalama-costume-walk": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A low camera on the cobbles follows costumed legs through fog and pumpkin light, then tilts up to the face and the full outfit.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/ramalama-costume-walk",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "roadster-ramp": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A driver in an open red roadster climbs a curved night ramp until the car hangs upside down, flips off the top on thruster flames, and lands in white smoke.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "roadster-ramp-flip": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The same night roadster stunt is told from the landing spot: the car climbs past vertical, hangs upside down, flips on thrusters, and drops into white smoke....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "sidewalk-collision": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Someone strides through a sunny plaza with coffee and a phone, a passer-by clips their shoulder, and coffee, sunglasses, and phone hang in slow motion before....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "skyfall": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person falls backward through a sunset above the clouds, the drop slows, and the camera travels past the shoes and a watch to a calm face.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "zombie-love-story": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Someone loved walks out of fog looking turned but still themselves, the other person drops a gun without firing, they hug, and the same angle cuts to the pai....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-zombie-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "veo-3.1",
+        "hailuo-02"
+      ]
+    },
+    "a2o-lite-neon": {
+      "renderType": "motion_transfer",
+      "reason": "A2O LITE NEON Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/a2o-lite-neon-dance",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/a2o-lite-neon-ai-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "animal-micro-drama": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Media.io's pet-drama page and its animal micro-drama generator describe one pet photo turned into a short vertical soap scene: dramatic expressions, a human-....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.media.io name Seedance 2.0.",
+      "citations": [
+        {
+          "site": "www.media.io",
+          "url": "https://www.media.io/video-effects/ai-pet-drama.html",
+          "stated": "Seedance 2.0"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "cat-front-door-ring-band": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: After dark the pet steps into a doorbell view, taps the bell, looks into the camera, and hangs on, hoping the door opens.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "couple-prank": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: On a sea-cliff plank, one partner argues over open water while the other stays icy, steps off the near end, and the board tips the far person into a comic drop.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-couple-prank-cliff",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "crying": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Under street lamps the subject tries to keep a smile toward someone whose shoulder blurs the foreground, then the expression fails, tears fall, and they turn....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-crying-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "seedance-2.0",
+        "veo-3.1"
+      ]
+    },
+    "elf-yourself": {
+      "renderType": "motion_transfer",
+      "reason": "AI Elf Yourself is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-elf-dance-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "face": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The linked page is only a generator title and publishes no move list, and nearby face-punch or squish ideas were set aside as different trends.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "face-swap": {
+      "renderType": "face_swap",
+      "reason": "AI Face Swap Video keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "wan-2.2-animate-mix",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Wan 2.2 Animate Mix is the inferred face swap model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "pixverse-swap",
+        "kling-o3"
+      ]
+    },
+    "grammy-winner": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person stands on a night awards stage with a gold-record trophy, holds it by the microphone, then lifts it as two cannons throw gold confetti.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "hug-me": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Two people with a pace between them in soft daylight step in and stay in an embrace; one page uses a sunlit room and the other a park.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-hug-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "seedance-2.0",
+        "veo-3.1"
+      ]
+    },
+    "pet-dancing-dog": {
+      "renderType": "motion_transfer",
+      "reason": "AI Pet Dance / Dancing Dog is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "pet-interview": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A reporter's microphone drops to a pet on a busy sidewalk, the mouth moves as if answering, and a paw comes up toward the lens.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "red-riding-hood": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Wearing a deep crimson velvet cape over their own clothes, the subject walks a snowy pine path, the wolves come up alongside, they stop, and a close shot sho....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-red-riding-hood",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "snow": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Large flakes fall on a hushed evening lane, catch in the hair, and the subject tips their chin up, then meets the camera again with a faint smile.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "talking-pet": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The page only says one pet photo becomes a clip in which the animal speaks or sings, with no fixed setting or script.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "ali-g-driving-scene": {
+      "renderType": "face_swap",
+      "reason": "Ali G Driving Scene keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ali-g-driving-scene-ai",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "anitkabir": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: On a sunny day the subject stands still and full-length on the stone plaza before the long colonnade, calm, with visitors small in the distance, wearing the....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's page assigns Kling 3.0 to the one-person colonnade clip (this template) and Seedance 2.5 to a pet variant. This row is the person, so the suggestion is Kling 3.0.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/anitkabir-ai-trend",
+          "stated": "Kling 3.0"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "seedance-2.5",
+        "seedance-2.0"
+      ]
+    },
+    "apt": {
+      "renderType": "motion_transfer",
+      "reason": "APT. is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/apt",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "baby-reindeer-santa": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A child from one photo rides a small reindeer slowly down a snowy, light-strung street at night while Santa follows nearby, in a sleigh on one page and on fo....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/baby-reindeer-santa-ai-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "baby-with-mustache": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A phone looks down on a swaddled infant on a hospital bassinet liner; an oversized black adult mustache and a tiny chin beard sit on the face while the baby....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/baby-mustache-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "becane": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: In a monochrome orange studio the performer starts close on a hanging mic with one palm hiding the mouth, leans back, and finishes with open arms as the came....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/becane-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "biker-birthday": {
+      "renderType": "face_swap",
+      "reason": "Biker Birthday keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/biker-birthday-cake-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "birthday-car": {
+      "renderType": "face_swap",
+      "reason": "Birthday Car keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/birthday-car",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "birthday-car-drift-blow-out-the-candles": {
+      "renderType": "face_swap",
+      "reason": "Birthday Car: Drift & Blow Out the Candles keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "wan-2.2-animate-mix",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Wan 2.2 Animate Mix is the inferred face swap model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "pixverse-swap",
+        "kling-o3"
+      ]
+    },
+    "bulin-47": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The subject is placed in a night street freestyle under red lights, next to a portable speaker, with a crowd filming on phones.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/bulin-47",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "burger-pet-window": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Through glowing evening glass the pet sits at a tiny table munching a burger held in both forepaws, notices the camera, freezes, sets the food aside, and ris....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "button-eye-doll-reveal": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The clip opens as an ordinary selfie of cheek-squishing and silly faces, a hand blocks the glass, and after it drops away the same person has a pale cracked....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "c-walk": {
+      "renderType": "motion_transfer",
+      "reason": "C-Walk AI Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/c-walk-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "calcanhar-2": {
+      "renderType": "motion_transfer",
+      "reason": "Calcanhar 2 Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "caught-dancing-at-the-window": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At night the camera rises toward the building's single glowing window, catches someone halfway through a hamburger, takes a hard stare, and watches the curta....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "christmas-car-lights": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A single car photo becomes the vehicle parked in snow at blue hour, outlined in warm string lights, with snow falling and a lit house behind.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's page assigns Kling 3.0 to the car clip (this template) and Seedance 2.5 to the champagne-window variant. This row is the car, so the suggestion is Kling 3.0.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/christmas-lights-car-ai-trend",
+          "stated": "Kling 3.0"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "seedance-2.5",
+        "hailuo-02"
+      ]
+    },
+    "clapping-cat": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: On tile, the pet rears up, shows a broad toothy smile, and applauds slowly, seen from overhead.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/clapping-cat-ai-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0",
+        "seedance-2.0"
+      ]
+    },
+    "closer": {
+      "renderType": "motion_transfer",
+      "reason": "Closer Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/closer-dance",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/closer-dance-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "club-spotlight-couple": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Vellm and DoTheTrend both describe this two-photo club clip: one person leans on a balcony rail, the camera finds the dance floor, and a white spotlight land....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on dothetrend.ai name Seedance 2.0. Other pages name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "dothetrend.ai",
+          "url": "https://dothetrend.ai/templates/te-he-perdido-entre-la-gente-ai-trend",
+          "stated": "Seedance 2.0"
+        }
+      ],
+      "disagreements": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/te-he-perdido-entre-la-gente",
+          "stated": "Seedance 2.5",
+          "model": "seedance-2.5"
+        }
+      ],
+      "alternates": [
+        "seedance-2.0-mini",
+        "seedance-2.5"
+      ]
+    },
+    "costume-reveal": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The one-photo page lets a cloud of haze and brittle leaves blow clear, revealing the subject already in a Halloween outfit and frozen in a pose.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "crazy-frog": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The uploaded subject crouches in mid-air with fists forward, racing a futuristic highway as if on an invisible bike, while a silver car chases.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/crazy-frog",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/crazy-frog-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "dame-hombro": {
+      "renderType": "motion_transfer",
+      "reason": "Dame Hombro is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "darts-170-prank": {
+      "renderType": "face_swap",
+      "reason": "Darts 170 Prank keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/darts-170-ai-prank",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "deserve-rain-scene": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At night in heavy rain on wet parking-lot pavement, with a fire and an old car behind, the subject looks down, pushes wet hair back, looks around, and the ca....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "drink-fly-bump": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The subject walks a bright street on a phone with an iced coffee, a passerby clips a shoulder, and the next moments stretch as the shades and cup travel towa....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/drink-fly-bump-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "face-squish": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The face rests on a wood tabletop as a glossy soft toy; two hands press it pancake-flat, then let go so the features pop back.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "flying-broom-getaway": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: From inside a car waiting at a suburban signal, the subject in ordinary clothes perches sideways on a worn household broom, glances over with a blank face, a....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/my-ride-is-here-broom-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "flying-tesla-roadster": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Boxed in by a jam that never ends, the roadster driver gives the lens a bored look, hits one lit button, and rear rockets carry the car above the queue.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/flying-roadster",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "funny-pet-selfie-fail": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Zooop's page titled Funny Pet Selfie Fail (hosted at the strike-a-pole path) and the dog-video guide describe two pets posing for a selfie until the lead bum....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "gang-gang": {
+      "renderType": "motion_transfer",
+      "reason": "Gang Gang Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/gang-gang-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "gangnam-style": {
+      "renderType": "motion_transfer",
+      "reason": "Gangnam Style Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/gangnam-style-ai-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "hair-dye": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: In the place from the photo, the subject paints burgundy dye from a bowl through their hair, a straightener follows, and the finish is long glossy curls.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/hair-dye-filter",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-hair-dye-filter",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "hello-2027": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: In one continuous shot, hands catch a giant white block of the year numerals on a mountain top, the subject pulls up, stands, laughs, then spreads both arms....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/hello-2027",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "i-need-a-girl": {
+      "renderType": "motion_transfer",
+      "reason": "I Need A Girl Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/i-need-a-girl-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "i-wanna-love-you": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One pet in a mustard corduroy jacket performs a night selfie beside tennis courts, paw raised, leaning back as if singing.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/i-wanna-love-you",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "knight-cat": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A lone pet in small silver armor grips an oversized sword on a stormy moor, braces into a gust, and lifts its chin without retreating.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/knight-cat-ai-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "seedance-2.0",
+        "veo-3.1"
+      ]
+    },
+    "kolpacino-car-scene": {
+      "renderType": "face_swap",
+      "reason": "Kolpaçino Car Scene keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/dayimin-cocuklari-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "laughing-fairy": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: At night under a phone flash, two tiny fairies sit on a mossy branch; one whispers, the other startles, and both break into shaking laughter that eases off a....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's page names Kling 3.0 for a one-photo You portrait and Seedance 2.5 for the fairy clip that copies the trend. This row is the fairy scene, so the suggestion is Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/laughing-fairy-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0",
+        "hailuo-02"
+      ]
+    },
+    "mafia-boss": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One portrait becomes a grainy black-and-white restaurant scene: a hard seated look, a slow walk with men in suits behind, and a final held stare into the lens.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/mafia-boss-ai-filter",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "meet-my-older-self": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: On a park path at golden hour the subject meets a lined, grey-haired version of the same face, takes a hand on the shoulder, and hugs.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "mirror": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Late at night a cheek touch at the bathroom mirror is copied, then the reflection lags, smirks, and steps through rippling glass to wave.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "money-flex": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A handset resting on a dresser looks upward while one person clutches a long string of strapped bills, shoves the stack toward the glass, snaps a strap, and....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/money-flex",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "my-prime-1v1-dunk": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Still dressed as in the photo, one player launches from the foul line in a crowded nighttime arena, floats over a defender, stuffs the ball, and shouts at th....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/dunk-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "nightwing": {
+      "renderType": "motion_transfer",
+      "reason": "Nightwing AI Trend is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/nightwing-costume",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/nightwing-costume-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "parrot": {
+      "renderType": "motion_transfer",
+      "reason": "Parrot Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "pet-afterlife-check-in": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The pet follows a path of lit marigolds to a glass counter, gets a pass stamped by a skeleton attendant, is sent through a gilded gateway toward a city hung....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pet-bowl-cut": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One pet sits for a barbershop trim and blow-dry that leaves a shiny bowl cut, while breed, face, and markings stay put.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pet-carpool-karaoke": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Media.io's Pet Carpool Karaoke page says one or more pet photos become an in-car performance where the animals sing, react, and ride.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pet-fridge-cake-heist": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A camera hidden in the fridge watches one pet work through a cocoa-dusted layer cake with a spoon; the door shuts, reopens, and the dish is scraped clean.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pet-halloween-costume-parade": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One pet in a felt witch hat and cape sits between two glowing pumpkins, then turns and looks straight into the lens.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/ai-pet-halloween-costume",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pet-orbit-cam": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: The camera starts nose to nose with one still pet, circles a full turn, and comes back to the face.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pet-podcast": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One pet in headphones leans into a studio mic, chats with little head tilts, then laughs at its own joke and looks into the lens.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "pimp-walk-entrance": {
+      "renderType": "motion_transfer",
+      "reason": "Pimp Walk Entrance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/pimp-walk-entrance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "popstar": {
+      "renderType": "motion_transfer",
+      "reason": "Popstar is a performed walk copied from the trend clip; MakeViral says Kling 3.0 Motion Control plays those moves.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's Popstar page says Kling 3.0 Motion Control (this template) copies the moves, camera, and mouth movement of the clip.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/popstar-ai-trend",
+          "stated": "Kling 3.0 Motion Control"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "put-a-ring-on-it-pets": {
+      "renderType": "motion_transfer",
+      "reason": "Put A Ring On It Pets is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/single-ladies-dog-dance-ai",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/single-ladies-dog-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "raven-transition": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Black smoke and a wheel of crows wrap one person on a dusk rooftop, hide them, then scatter to show the same person with glowing orange eyes.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "reverse-card-car-swap": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Zooop's page for this template, titled as the 24 car trend, says one photo walks up on a sunset rooftop, flicks two cards at the lens, and a sports car appea....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "riding-a-reindeer": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: On a snowy night street lined with shops, one adult in their own clothes sits on a reindeer coming at the lens, laughing and lifting a hand, with a sleigh an....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/reindeer-dog",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "roxbury-head-bob": {
+      "renderType": "motion_transfer",
+      "reason": "Roxbury Head Bob is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "sawadika": {
+      "renderType": "motion_transfer",
+      "reason": "Sawadika is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/sawadika-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "shake-it": {
+      "renderType": "motion_transfer",
+      "reason": "Shake It AI Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "shoulder-carry-i-m-the-one": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Below street level in a concrete garage, one person supports the other across the shoulders, points at the phone, then folds so the carried person swings up....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/im-the-one-shoulder-carry",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "sky-falling": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One car falls through open blue sky beside an airliner, rotates as it sweeps near the lens, and comes down in a controlled finish without a wreck.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/car-falling-from-sky-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "smalltown-boy-cat": {
+      "renderType": "motion_transfer",
+      "reason": "Smalltown Boy Cat Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/smalltown-boy",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "snow-leopard-meme": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One pet crowds the camera in a grassy field while pink petals drift, raises both front paws, and bats toward the viewer with oversized round eyes.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "spa-day": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: From overhead, one pet rests on soft white bath linens with a towel wrapped on its head while hands place cucumber rounds, work in a dab of cream, and pass a....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "stadium-calm-down": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person in a dark suit turns away from a jumping stadium crowd, walks slowly toward a camera that retreats, and presses both palms down.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/stadium-calm-down-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "stones-to-castle": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: A blurred crowd throws stones, the subject gathers them, a castle rises out of the pile, and the subject smiles from a window.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/stones-to-castle-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "street-light-slide": {
+      "renderType": "motion_transfer",
+      "reason": "Street Light Slide is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/street-light-slide-ai-effect",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "subway-outfit-change": {
+      "renderType": "face_swap",
+      "reason": "Subway Outfit Change keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "MakeViral's generate spec and Vellm's template page both name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/subway-outfit-change",
+          "stated": "Seedance 2.5"
+        },
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/subway-outfit-change-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "sunset-squad": {
+      "renderType": "motion_transfer",
+      "reason": "Sunset Squad Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "kling-3.0-motion-control",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Kling 3.0 Motion Control is the inferred motion transfer model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-move",
+        "viggle-remix"
+      ]
+    },
+    "then-i-walk-in": {
+      "renderType": "face_swap",
+      "reason": "Then I Walk In keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/then-i-walk-in-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "then-i-walk-in-meme": {
+      "renderType": "face_swap",
+      "reason": "Then I Walk In Meme keeps one fixed scene and replaces the person, so it needs a base clip plus a face photo.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/then-i-walk-in-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "wan-2.2-animate-mix",
+        "pixverse-swap"
+      ]
+    },
+    "thriller-pets": {
+      "renderType": "motion_transfer",
+      "reason": "Thriller Pets is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/thriller-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "tiger-hug-me": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Seated in high sunlit grass, one person is approached from behind by an adult tiger that lays its forelegs across the shoulders and nuzzles cheek to cheek, a....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "tim-burton-girls": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person sits in a dark studio while pale gothic figures lean in and one covers their eyes, with only small shifts of pose.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/tim-burton-girls-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "toc-toc": {
+      "renderType": "motion_transfer",
+      "reason": "Toc Toc Dance is a beat-matched routine, so the subject has to follow a motion reference rather than a free prompt.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "Vellm's template page says its videos are AI-generated with Seedance 2.5 by ByteDance. No other fetched source page names an engine.",
+      "citations": [
+        {
+          "site": "vellm.app",
+          "url": "https://vellm.app/templates/toc-toc-dance",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "kling-3.0-motion-control",
+        "wan-2.2-animate-move"
+      ]
+    },
+    "twilight-baseball-scene": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: Alone in a misty pine clearing under lightning, one person rushes in at a blur, kicks a leg high, pitches, swings as thunder hits, and leaps for the catch.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/twilight-baseball-scene-ai",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "witch-on-the-metro": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person fixes a handset to a carriage window, the picture switches to that handset, they ride a broom next to the moving train, bump the wall where the pl....",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/witch-flying-on-broom-video",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "you-look-lonely-hologram": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: One person becomes a skyscraper-tall hologram glowing pink and cyan over a rainy neon city and leans down toward a small figure on a footbridge.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.5",
+      "modelSource": "source_page",
+      "modelReason": "1 source page on www.makeviral.ai name Seedance 2.5.",
+      "citations": [
+        {
+          "site": "www.makeviral.ai",
+          "url": "https://www.makeviral.ai/templates/you-look-lonely-ai-trend",
+          "stated": "Seedance 2.5"
+        }
+      ],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    },
+    "studio-slate": {
+      "renderType": "image_to_video",
+      "reason": "No locked choreography or base clip: No public page describes this clip.",
+      "referenceVideo": null,
+      "baseVideo": null,
+      "suggestedModel": "seedance-2.0-mini",
+      "modelSource": "inferred",
+      "modelReason": "No source page names an engine for this template. Seedance 2.0 Mini is the inferred image to video model.",
+      "citations": [],
+      "disagreements": [],
+      "alternates": [
+        "hailuo-02",
+        "kling-3.0"
+      ]
+    }
+  }
+}

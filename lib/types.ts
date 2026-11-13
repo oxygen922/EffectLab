@@ -186,6 +186,7 @@ export type UserRecord = {
 };
 
 export type JobStatus = "pending" | "running" | "done" | "failed";
+export type { RenderType } from "./render-models";
 export type CreditsState = "held" | "captured" | "released";
 
 export type JobRecord = {
@@ -199,6 +200,12 @@ export type JobRecord = {
   creditsState: CreditsState;
   provider: string;
   providerJobId: string | null;
+  /** Pipeline actually sent to the provider, after a missing-asset fallback. */
+  renderType: import("./render-models").RenderType;
+  /** Catalog type before that fallback. */
+  requestedRenderType: import("./render-models").RenderType;
+  /** Registry id of the model the router selected. */
+  modelId: string | null;
   imageCount: number;
   imagePaths: string[];
   resultUrl: string | null;

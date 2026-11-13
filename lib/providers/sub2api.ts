@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
 import { buildPrompt } from "../prompts";
+import { RENDER_TYPES } from "../render-models";
 import type { GenerateInput, ProviderStatus, VideoProvider } from "./types";
 
 const DEFAULT_BASE_URL = "https://ai-net.clariontech.top/v1";
@@ -105,6 +106,7 @@ async function callUpstream(parts: unknown[]): Promise<string> {
 
 export const sub2apiProvider: VideoProvider = {
   name: "sub2api",
+  supportedRenderTypes: RENDER_TYPES,
   async generate(input) {
     const photoDataUrls = await readUploadsAsDataUrls(input.jobId);
     const parts: unknown[] = [{ type: "text", text: svgCardPrompt(input) }];

@@ -1,11 +1,17 @@
 import { mkdir, readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
 import { buildPrompt } from "../prompts";
-import type { ProviderStatus, VideoProvider } from "./types";
+import { findTemplate } from "../catalog";
+import { RENDER_TYPES } from "../render-models";
+import type { GenerateInput, ProviderStatus, VideoProvider } from "./types";
 
 const DEFAULT_BASE_URL = "https://aigc-new.sailf.work";
 // doubao-seedance-2.0-mini, the cheapest public video model on the gateway.
 const DEFAULT_MODEL = "model-4e2cf014f835822786c5d25d207257e3-zyf";
+// Public gateway ids from GET /api/pricing on 2026-11-13. Descriptions on that payload:
+// doubao-seedance-2-5-260628 and doubao-seedance-2-0-260128.
+const SEEDANCE_25_MODEL = "model-31931a2794d803dce3b998d3e974f349-zyf";
+const SEEDANCE_20_MODEL = "model-d46d99cfb921dbdee0b4965fe6e80029-zyf";
 const DEFAULT_RESOLUTION = "720p";
 const DEFAULT_ASPECT_RATIO = "9:16";
 const DEFAULT_DURATION = "5";
@@ -49,7 +55,13 @@ type SailfTask = {
   error?: { code?: string; message?: string } | string;
 };
 
-function config(): SailfConfig {
+function gatewayModel(modelId: string | undefined): string {
+  if (modelId === "seedance-2.5") return process.env.SAILF_MODEL_SEEDANCE_25 || SEEDANCE_25_MODEL;
+  if (modelId === "seedance-2.0") return process.env.SAILF_MODEL_SEEDANCE_20 || SEEDANCE_20_MODEL;
+  return process.env.SAILF_MODEL || DEFAULT_MODEL;
+}
+
+function config(modelId?: string): SailfConfig {
   const apiKey = process.env.SAILF_API_KEY;
   if (!apiKey) {
     throw new Error("SAILF_API_KEY is not set. Add it to .env.local to use the sailf provider.");
@@ -57,7 +69,7 @@ function config(): SailfConfig {
   return {
     baseUrl: (process.env.SAILF_BASE_URL || DEFAULT_BASE_URL).replace(/\/+$/, ""),
     apiKey,
-    model: process.env.SAILF_MODEL || DEFAULT_MODEL,
+    model: gatewayModel(modelId),
     resolution: process.env.SAILF_RESOLUTION || DEFAULT_RESOLUTION,
     aspectRatio: process.env.SAILF_ASPECT_RATIO || DEFAULT_ASPECT_RATIO,
     duration: process.env.SAILF_DURATION || DEFAULT_DURATION,
@@ -114,9 +126,13 @@ async function readUploads(jobId: string): Promise<{ name: string; bytes: Buffer
   return files;
 }
 
-/** Reference photos must be uploaded first; the API refuses external URLs and base64. */
-async function uploadAsset(cfg: SailfConfig, file: { name: string; bytes: Buffer; mime: string }): Promise<string> {
-  const query = new URLSearchParams({ model: cfg.model, mode: "reference", kind: "images" });
+/** Reference photos and videos must be uploaded first; the API refuses external URLs and base64. */
+async function uploadAsset(
+  cfg: SailfConfig,
+  file: { name: string; bytes: Buffer; mime: string },
+  kind: "images" | "videos",
+): Promise<string> {
+  const query = new URLSearchParams({ model: cfg.model, mode: "reference", kind });
   const form = new FormData();
   form.append("file", new Blob([new Uint8Array(file.bytes)], { type: file.mime }), file.name);
   const response = await fetch(`${cfg.baseUrl}/studio-api/assets?${query}`, {
@@ -135,17 +151,33 @@ async function uploadAsset(cfg: SailfConfig, file: { name: string; bytes: Buffer
   return payload.asset_id;
 }
 
-async function submitTask(cfg: SailfConfig, prompt: string, assetIds: string[]): Promise<string> {
+async function submitTask(
+  cfg: SailfConfig,
+  prompt: string,
+  imageIds: string[],
+  videoIds: string[],
+): Promise<string> {
+  const hasMedia = imageIds.length > 0 || videoIds.length > 0;
   const body: Record<string, unknown> = {
     model: cfg.model,
     prompt,
     count: 1,
-    mode: assetIds.length > 0 ? "reference" : "text-to-video",
+    // Public studio modes are text-to-video, reference (images, videos, audio),
+    // first-frame, and first-last. There is no face-swap or motion-control mode.
+    mode: hasMedia ? "reference" : "text-to-video",
     duration: cfg.duration,
     resolution: cfg.resolution,
     aspect_ratio: cfg.aspectRatio,
   };
-  if (assetIds.length > 0) body.images = assetIds;
+  if (imageIds.length > 0) body.images = imageIds;
+  if (videoIds.length > 0) {
+    body.videos = videoIds;
+    body.video_total_duration_sec = Number(cfg.duration) || 5;
+    body.reference_roles = {
+      images: imageIds.map(() => "reference_image"),
+      videos: videoIds.map(() => "reference_video"),
+    };
+  }
 
   const response = await fetch(`${cfg.baseUrl}/v1/videos`, {
     method: "POST",
@@ -195,19 +227,37 @@ function taskFailure(task: SailfTask): string {
 
 const lastPoll = new Map<string, { at: number; status: ProviderStatus }>();
 
+async function referenceVideo(input: GenerateInput): Promise<{ name: string; bytes: Buffer; mime: string } | null> {
+  if (!input.referenceVideoPath) return null;
+  if (input.renderType !== "motion_transfer" && input.renderType !== "face_swap") return null;
+  const bytes = await readFile(input.referenceVideoPath);
+  const ext = path.extname(input.referenceVideoPath).slice(1).toLowerCase();
+  const mime = ext === "mov" ? "video/quicktime" : ext === "webm" ? "video/webm" : "video/mp4";
+  return { name: path.basename(input.referenceVideoPath), bytes, mime };
+}
+
 export const sailfProvider: VideoProvider = {
   name: "sailf",
+  // Reference mode accepts images plus up to a few videos. That covers
+  // image-to-video, a reference-video motion pass, and a base-clip recreate.
+  // It is not a dedicated motion-control or face-swap endpoint.
+  supportedRenderTypes: RENDER_TYPES,
   async generate(input) {
-    const cfg = config();
+    const template = findTemplate(input.templateKey);
+    const cfg = config(input.modelId);
+    if (template?.duration_sec) cfg.duration = String(template.duration_sec);
     const uploads = await readUploads(input.jobId);
     if (uploads.length === 0) {
       throw new Error(`No usable photo found for job ${input.jobId}.`);
     }
-    const assetIds: string[] = [];
+    const imageIds: string[] = [];
     for (const file of uploads) {
-      assetIds.push(await uploadAsset(cfg, file));
+      imageIds.push(await uploadAsset(cfg, file, "images"));
     }
-    const taskId = await submitTask(cfg, buildPrompt(input), assetIds);
+    const videoIds: string[] = [];
+    const video = await referenceVideo(input);
+    if (video) videoIds.push(await uploadAsset(cfg, video, "videos"));
+    const taskId = await submitTask(cfg, buildPrompt(input), imageIds, videoIds);
     return { providerJobId: `sailf_${taskId}_${input.jobId}` };
   },
   async getStatus(providerJobId, startedAt): Promise<ProviderStatus> {

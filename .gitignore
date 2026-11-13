@@ -12,4 +12,8 @@ data/results
 tsconfig.tsbuildinfo
 next-env.d.ts
 public/previews/*-preview.mp4
+assets/reference/*
+!assets/reference/.gitkeep
+assets/base/*
+!assets/base/.gitkeep
 .tmp-verify/

@@ -76,7 +76,7 @@ npm run build
 | `POST` | `/api/stripe/webhook` | Stub. Acknowledges and does not grant credits. |
 | `POST` | `/api/webhooks/provider` | Provider callback. Body `{ jobId, status, providerJobId }`. `status` is `running`, `done`, or `failed`. The provider job id must match the stored id. If `PROVIDER_WEBHOOK_SECRET` is set, also send `x-effectlab-provider-secret`. |
 
-`VIDEO_PROVIDER` defaults to `mock`. Any other value throws. The mock provider reports `pending` for about 1.6s, `running` until about 5.2s, then `done`, using the job clock so a poll still completes after the request that created the job has finished.
+`VIDEO_PROVIDER` defaults to `mock`. `mock` and `sub2api` run every render type on that adapter. `router` and `sailf` choose a provider from the template's render type and suggested model (`docs/render-types.md`). Motion-transfer and face-swap templates with no local reference or base video fall back to image-to-video. The mock provider reports `pending` for about 1.6s, `running` until about 5.2s, then `done`, using the job clock so a poll still completes after the request that created the job has finished.
 
 Credits move inside one file-backed transaction (`data/runtime.json`, not committed):
 

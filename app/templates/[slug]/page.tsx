@@ -5,6 +5,8 @@ import { UploadForm } from "@/components/UploadForm";
 import { findTemplate, loadTemplates } from "@/lib/catalog";
 import { TIER_META, renderPlanForTemplate } from "@/lib/models";
 import { findRecipe } from "@/lib/recipes";
+import { RENDER_TYPE_LABEL } from "@/lib/render-models";
+import { requireRenderRecord } from "@/lib/render-types";
 
 export function generateStaticParams() {
   return loadTemplates().map((template) => ({ slug: template.slug }));
@@ -26,6 +28,7 @@ export default async function TemplatePage({ params }: { params: Promise<{ slug:
   if (!template) notFound();
   const recipe = findRecipe(slug);
   const plan = renderPlanForTemplate(slug, template.credit_cost);
+  const render = requireRenderRecord(slug);
 
   return (
     <main className="wrap detail">
@@ -56,6 +59,7 @@ export default async function TemplatePage({ params }: { params: Promise<{ slug:
           </span>
           {plan.tier ? <span className="tag play">{TIER_META[plan.tier].label} model</span> : null}
           {plan.modelNames.length > 0 ? <span className="tag">{plan.modelNames.join(" + ")}</span> : null}
+          <span className="tag">{RENDER_TYPE_LABEL[render.renderType]}</span>
           <span className="tag">{template.photo_count === 1 ? "1 photo" : `${template.photo_count} photos`}</span>
           <span className="tag">{template.duration_sec}s</span>
           <span className="tag">{template.aspect_ratio}</span>
@@ -77,6 +81,7 @@ export default async function TemplatePage({ params }: { params: Promise<{ slug:
             id: template.id,
             photo_count: template.photo_count,
             credit_cost: plan.unitCost,
+            renderType: render.renderType,
           }}
         />
         {recipe ? (
