@@ -121,6 +121,30 @@ export type RecipeFile = {
   recipes: Record<string, TemplateRecipe>;
 };
 
+/** How sure we are that a template prompt matches the public trend. */
+export type PromptConfidence = "high" | "low";
+
+/** Notes from the public pages or explainers used to write a prompt. */
+export type PromptResearch = {
+  sources: string[];
+  /** Observed beats, paraphrased. Not a generation prompt. */
+  beats: string;
+};
+
+/** One template's generation prompt, keyed by slug in data/prompts.json. */
+export type TemplatePrompt = {
+  prompt: string;
+  promptConfidence: PromptConfidence;
+  research: PromptResearch;
+};
+
+export type PromptFile = {
+  schema_version: number;
+  generated_at: string;
+  note: string;
+  prompts: Record<string, TemplatePrompt>;
+};
+
 export type PreviewFile = {
   generated_at?: string;
   items?: Array<{
