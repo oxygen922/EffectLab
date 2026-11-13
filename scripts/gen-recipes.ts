@@ -12,6 +12,9 @@ import type { RecipeFile, RecipeStep, Template, TemplateRecipe } from "../lib/ty
  * Curated recipes below are hand-written for well-known templates. Everything else
  * gets a category default marked "auto" so the library is complete but honest about
  * what still needs human review.
+ *
+ * Motion prompt text is not stored here. data/prompts.json is the only copy,
+ * keyed by the same template slug these recipes use.
  */
 
 const TOOLBOX: RecipeFile["tools"] = {

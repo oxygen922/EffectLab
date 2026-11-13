@@ -1,7 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
-import { findTemplate } from "../catalog";
-import type { GenerateInput, ProviderStatus, VideoProvider } from "./types";
+import { buildPrompt } from "../prompts";
+import type { ProviderStatus, VideoProvider } from "./types";
 
 const DEFAULT_BASE_URL = "https://aigc-new.sailf.work";
 // doubao-seedance-2.0-mini, the cheapest public video model on the gateway.
@@ -133,16 +133,6 @@ async function uploadAsset(cfg: SailfConfig, file: { name: string; bytes: Buffer
     throw new Error("Sailf accepted the photo but returned no asset id.");
   }
   return payload.asset_id;
-}
-
-function buildPrompt(input: GenerateInput): string {
-  const template = findTemplate(input.templateKey);
-  const subject = template?.name ?? input.templateKey;
-  return [
-    `Animate the reference photo(s) into the "${subject}" effect as one short vertical clip.`,
-    "Keep the subject's face, outfit and colours consistent with the reference.",
-    "Add subtle camera movement, natural lighting and a smooth, seamless motion.",
-  ].join(" ");
 }
 
 async function submitTask(cfg: SailfConfig, prompt: string, assetIds: string[]): Promise<string> {
