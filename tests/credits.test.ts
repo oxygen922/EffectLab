@@ -20,6 +20,7 @@ function job(partial: Partial<JobRecord> = {}): JobRecord {
     imageCount: 1,
     imagePaths: [],
     resultUrl: null,
+    resultMime: null,
     error: null,
     createdAt: "2026-11-04T00:00:00.000Z",
     updatedAt: "2026-11-04T00:00:00.000Z",

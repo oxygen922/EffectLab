@@ -22,6 +22,7 @@ export function toPublic(job: JobRecord): JobPublic {
     provider: job.provider,
     imageCount: job.imageCount,
     resultUrl: job.resultUrl,
+    resultMime: job.resultMime ?? null,
     error: job.error,
     createdAt: job.createdAt,
     updatedAt: job.updatedAt,
@@ -44,6 +45,7 @@ export function applyProviderUpdate(dbJobsUser: {
   if (update.status === "done") {
     job.status = "done";
     job.resultUrl = update.resultUrl || `/api/jobs/${job.id}/result`;
+    job.resultMime = update.resultMime ?? null;
     job.error = null;
     job.updatedAt = now;
     captureHold(db, job, now);
@@ -91,6 +93,7 @@ export async function createGenerationJob(input: {
       imageCount: files.length,
       imagePaths: [],
       resultUrl: null,
+      resultMime: null,
       error: null,
       createdAt: now,
       updatedAt: now,

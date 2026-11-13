@@ -9,6 +9,8 @@ export type GenerateInput = {
 export type ProviderStatus = {
   status: JobStatus;
   resultUrl?: string;
+  /** Media type of the finished render, e.g. "video/mp4"; SVG renders leave it unset. */
+  resultMime?: string;
   error?: string;
 };
 

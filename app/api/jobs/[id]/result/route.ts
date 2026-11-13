@@ -9,6 +9,16 @@ import { getOrCreateUserId } from "@/lib/session";
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
+async function providerVideo(jobId: string): Promise<Buffer | null> {
+  if (!/^[0-9a-f-]{36}$/i.test(jobId)) return null;
+  try {
+    const bytes = await readFile(path.join(process.cwd(), "data", "results", `${jobId}.mp4`));
+    return bytes.length > 0 ? bytes : null;
+  } catch {
+    return null;
+  }
+}
+
 async function providerResult(jobId: string): Promise<string | null> {
   if (!/^[0-9a-f-]{36}$/i.test(jobId)) return null;
   try {
@@ -37,6 +47,16 @@ export async function GET(
       );
     }
     const template = findTemplate(job.templateSlug);
+    const video = await providerVideo(job.id);
+    if (video) {
+      return new Response(new Uint8Array(video), {
+        headers: {
+          "content-type": "video/mp4",
+          "content-length": String(video.length),
+          "cache-control": "private, max-age=3600",
+        },
+      });
+    }
     const svg =
       (await providerResult(job.id)) ??
       resultSvg({

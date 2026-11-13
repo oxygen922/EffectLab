@@ -3,7 +3,7 @@ import { readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
 
-const SKIP = new Set(["node_modules", ".next", ".git", "uploads"]);
+const SKIP = new Set(["node_modules", ".next", ".git", "uploads", "results"]);
 
 function walk(dir: string, found: string[]) {
   for (const entry of readdirSync(dir)) {

@@ -178,6 +178,8 @@ export type JobRecord = {
   imageCount: number;
   imagePaths: string[];
   resultUrl: string | null;
+  /** Media type of the stored result; null means the built-in SVG render. */
+  resultMime: string | null;
   error: string | null;
   createdAt: string;
   updatedAt: string;
@@ -194,6 +196,7 @@ export type JobPublic = {
   provider: string;
   imageCount: number;
   resultUrl: string | null;
+  resultMime: string | null;
   error: string | null;
   createdAt: string;
   updatedAt: string;

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { JobPublic } from "@/lib/types";
+import { AutoplayVideo } from "./AutoplayVideo";
 
 const STEPS = ["pending", "running", "done"] as const;
 
@@ -70,9 +71,13 @@ export function JobPanel({ id }: { id: string }) {
       </div>
       {job.status === "done" && job.resultUrl ? (
         <div className="stage">
-          <object data={job.resultUrl} type="image/svg+xml" aria-label={`${job.templateName} mock render`}>
-            Mock clip
-          </object>
+          {job.resultMime?.startsWith("video/") ? (
+            <AutoplayVideo src={job.resultUrl} />
+          ) : (
+            <object data={job.resultUrl} type="image/svg+xml" aria-label={`${job.templateName} mock render`}>
+              Mock clip
+            </object>
+          )}
         </div>
       ) : null}
     </div>
